@@ -8,9 +8,9 @@ type: default
 # Configuration for "Return to top" link.
 # Customize with 'text' and 'href' properties.
 # Comment out to the following section to hide.
-top:
-  text: Return to top
-  href: "#"
+# top:
+#   text: Return to top
+#   href: "#"
 
 # Configuration for "Edit this page" link in the footer.
 # Customize with 'text' property.
@@ -20,7 +20,7 @@ top:
 
 # Configuration for "Last updated" date and time.
 # Uncomment the following line to show.
-last_updated: false
+last_updated: true
 
 # Configuration for which links show at the top of the footer.
 # this is a key into _data/navigation.yml
@@ -32,13 +32,13 @@ links: footer
 big_footer_signup_form: false
 
 # Configuration for footer heading. (optional)
-heading: Name of agency
+heading: Talaria Software
 
 # Configuration for agency logo(s) (shown side by side).
 # If the logo is external add external: true
 logos:
-  - src: https://18f.gsa.gov/assets/img/logos/18f-logo.svg
-    alt: 18F
+  - src: images/foot-color.png
+    alt: Talaria Software
     external: true
 
 # Configuration for footer contact links
@@ -46,26 +46,32 @@ contact:
   # Configuration for social media links
   # Comment out links you don't want to use (RSS is an example)
   social_links:
-    - text: Facebook
-      href: https://facebook.com
-      external: true
-      type: facebook
     - text: Twitter
-      href: https://twitter.com
+      href: https://twitter.com/talariasoftware
       external: true
       type: twitter
-    - text: YouTube
-      href: https://youtube.com
+    - text: GitHub
+      href: https://github.com/talariasoftware
       external: true
-      type: youtube
-  # - text: RSS Feed
-  #   href: https://usa.gov/
-  #   external: true
-  #   type: rss
-  heading: Agency contact center
+      type: github
+    # - text: LinkedIn
+    #   href: https://www.linkedin.com/in/damienburke/
+    #   external: true
+    #   type: linkedin
+    # - text: Facebook
+    #   href: https://facebook.com
+    #   external: true
+    #   type: facebook
+    # - text: YouTube
+    #   href: https://youtube.com
+    #   external: true
+    #   type: youtube
+    # - text: RSS Feed
+    #   href: https://usa.gov/
+    #   external: true
+    #   type: rss
+  heading: Contact
   # Configuration for contact links for email, phone, etc...
   contact_links:
-    - text: (800) CALL-GOVT
-      href: tel:1-800-555-5555
-    - text: info@agency.gov
-      href: mailto:info@agency.gov
+    - text: help@talariasoftware.com
+      href: mailto:help@talariasoftware.com

@@ -13,7 +13,7 @@ type: extended
 # If the logo is external add external: true
 logo:
   src: /images/foot-color.png
-  alt: Talaria Software
+  alt: logo
   external: true
 
 # this is a key into _data/navigation.yml
