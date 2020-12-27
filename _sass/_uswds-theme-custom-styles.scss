@@ -1,5 +1,9 @@
 a.usa-media-block { text-decoration: none; }
 
+.policy-list {
+  & li + li::before { content: " | "; }
+}
+
 .usa-social-link--github {
   background-image: url('../../images/social-icons/png/github32.png');
   background-repeat: no-repeat;

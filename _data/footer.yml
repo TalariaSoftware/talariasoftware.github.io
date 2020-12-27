@@ -56,3 +56,8 @@ contact:
   contact_links:
     - text: help@talariasoftware.com
       href: mailto:help@talariasoftware.com
+policy_links:
+  - text: Privacy Policy
+    href: /privacy_policy
+  - text: Terms of Service
+    href: /terms_of_service

@@ -89,6 +89,20 @@
                 {% endfor %}
                 </div>
               </address>
+
+              {% if footer.policy_links %}
+                <div class="usa-footer__contact-info grid-row grid-gap">
+                  <ul class="policy-list usa-list usa-list--unstyled text-right">
+                    {% for _link in footer.policy_links %}
+                        <li class="display-inline">
+                          <a href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}">
+                            {{ _link.text }}
+                          </a>
+                        </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
           {% endif %}
         {% endif %}
       </div>
