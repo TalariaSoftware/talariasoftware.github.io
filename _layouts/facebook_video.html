@@ -1,25 +1,11 @@
 ---
-layout: default
+layout: post
 main:
   class: usa-grid usa-section usa-content usa-layout-docs
 ---
-<div class="usa-section">
-  <div class="grid-container">
-    <div class="grid-row grid-gap flex-align-start">
-      <main class="usa-layout-docs usa-layout-docs__main usa-prose" id="main-content">
-        <h1>{{ post.title }}</h1>
-        <h6>Published: {{ post.date | date_to_string: "ordinal", "US" }}</h6>
-        {% if post.updated_at %}
-          <h6>Updated: {{ post.updated_at | date_to_string: "ordinal", "US" }}</h6>
-        {% endif %}
-
-        <div class="display-flex flex-column flex-align-center">
-        <iframe allow="encrypted-media" allowfullscreen="true" frameborder="0" height="413" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTalariaSoftware%2Fvideos%2F646468779243234%2F&amp;show_text=false" style="border:none;overflow:hidden" width="734"></iframe>
-        <p class="measure-1">{{post.description}}</p>
-        </div>
-
-        {{ content }}
-      </main>
-    </div>
-  </div>
+<div class="display-flex flex-column flex-align-center">
+<iframe allow="encrypted-media" allowfullscreen="true" frameborder="0" height="413" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTalariaSoftware%2Fvideos%2F646468779243234%2F&amp;show_text=false" style="border:none;overflow:hidden" width="734"></iframe>
+<p class="measure-1">{{ page.description }}</p>
 </div>
+
+{{ content }}
