@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 hero:
   image: /images/hero.png
   callout: Start for Free
