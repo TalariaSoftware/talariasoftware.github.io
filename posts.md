@@ -12,6 +12,12 @@ layout: default
 
           {% if post.layout == 'facebook_video' %}
             <i class='fab fa-youtube usa-media-block__img font-sans-3xl'></i>
+          {% elsif post.layout == 'youtube' %}
+            <i class='fab fa-youtube usa-media-block__img font-sans-3xl'></i>
+          {% elsif post.layout == 'fireside_fm' %}
+            <i class='fas fa-microphone-alt usa-media-block__img font-sans-3xl'></i>
+          {% elsif post.layout == 'anchor_fm' %}
+            <i class='fas fa-microphone-alt usa-media-block__img font-sans-3xl'></i>
           {% else %}
             <i class='fas fa-pen-nib usa-media-block__img font-sans-3xl'></i>
           {% endif %}
