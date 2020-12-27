@@ -9,4 +9,3 @@ fireside_url: https://fireside.fm/player/v2/nERs6yQ-+0crABEgT
 Also: treating expertise as transferable to different fields, loving yourself
 unconditionally, his background in theater and applying it to tech, and
 "ontological coaching."
-
