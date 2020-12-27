@@ -14,6 +14,9 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
 
+feed:
+  path: /articles.xml
+
 permalink: /articles/:title
 
 defaults:
