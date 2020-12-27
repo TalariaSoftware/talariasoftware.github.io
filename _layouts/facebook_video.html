@@ -4,8 +4,15 @@ main:
   class: usa-grid usa-section usa-content usa-layout-docs
 ---
 <div class="display-flex flex-column flex-align-center">
-<iframe allow="encrypted-media" allowfullscreen="true" frameborder="0" height="413" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTalariaSoftware%2Fvideos%2F646468779243234%2F&amp;show_text=false" style="border:none;overflow:hidden" width="734"></iframe>
+  <iframe allow="encrypted-media" allowfullscreen="true" frameborder="0"
+    height="413" scrolling="no"
+    src="https://www.facebook.com/plugins/video.php?href={{
+        page.facebook_video_url | url_encode }}&amp;show_text=false"
+    style="border:none;overflow:hidden" width="734">
+  </iframe>
 <p class="measure-1">{{ page.description }}</p>
+
+{{ content }}
 </div>
 
 {{ content }}
