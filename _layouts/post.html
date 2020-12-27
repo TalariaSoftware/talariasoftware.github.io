@@ -6,12 +6,9 @@ main:
 <div class="usa-section">
   <div class="grid-container">
     <div class="grid-row grid-gap flex-align-start">
-      <div class="grid-col-fill"></div>
-      <main class="usa-layout-docs usa-layout-docs__main usa-prose grid-col-auto" id="main-content">
-
-        {% if page.title %}
-          <h1>{{ page.title }}</h1>
-        {% endif %}
+      <main class="usa-layout-docs usa-layout-docs__main usa-prose" id="main-content">
+        <h1>{{ page.title }}</h1>
+        <h6>{{ page.date | date_to_string: "ordinal", "US" }}</h6>
         {{ content }}
       </main>
     </div>

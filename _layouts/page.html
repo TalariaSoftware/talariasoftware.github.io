@@ -15,8 +15,9 @@ main:
       {% endif %}
 
       <main class="usa-layout-docs usa-layout-docs__main usa-prose{% if sidenav %} desktop:grid-col-9{% endif %}" id="main-content">
-        {% if page.title %}
-          <h1>{{ page.title }}</h1>
+        {% if post.title %}
+          <h1>{{ post.title }}</h1>
+          <h6>{{ post.date }}</h6>
         {% endif %}
         {{ content }}
       </main>
