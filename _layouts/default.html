@@ -42,6 +42,8 @@ main: foo, bar, qaz
 
     {% if page.layout == 'post' %}
       {{ content }}
+    {% elsif page.layout == 'home' %}
+      {{ content }}
     {% else %}
       <main id="main-content"{% for _attr in layout.main %} {{ _attr[0] }}="{{ _attr[1] }}"{% endfor %}>
         {{ content }}
