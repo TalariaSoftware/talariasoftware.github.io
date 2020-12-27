@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+ruby '2.7.2'
 
-gem 'github-pages', group: :jekyll_plugins
+gem 'jekyll'
+gem 'jekyll-feed', group: :jekyll_plugins
