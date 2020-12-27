@@ -43,7 +43,7 @@ hero:
 
 <section class="usa-graphic-list usa-section usa-section--dark">
   <div class="grid-container">
-    <h1>Recent Posts</h1>
+    <h1>Recent Articles</h1>
     <div class="usa-graphic-list__row grid-row grid-gap-6">
 
       {% for post in site.posts limit: 4 %}
@@ -71,7 +71,7 @@ hero:
           </div>
         </a>
       {% endfor %}
-      <a class="usa-button usa-button--secondary margin-x-auto" href="/posts">See All Posts</a>
+      <a class="usa-button usa-button--secondary margin-x-auto" href="/articles">All Articles</a>
     </div>
   </div>
 </section>

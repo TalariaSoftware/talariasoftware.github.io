@@ -5,7 +5,7 @@ redirect_from: /facebook_videos
 
 <section class="usa-graphic-list usa-section usa-section--light">
   <div class="grid-container">
-    <h1>Posts</h1>
+    <h1>Articles</h1>
     <div class="usa-graphic-list__row grid-row grid-gap-6">
 
       {% for post in site.posts %}
