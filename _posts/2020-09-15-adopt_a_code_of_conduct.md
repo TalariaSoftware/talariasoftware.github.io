@@ -3,7 +3,7 @@ title: Adopt a Code of Conduct
 description: Ensure a safe and welcoming environment by adopting a code of conduct.
 published_at: September 15, 2020 7 am PT
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 This is part of [The Annotated Guide to a New Rails

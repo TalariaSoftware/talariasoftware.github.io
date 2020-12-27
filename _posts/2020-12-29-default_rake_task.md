@@ -3,7 +3,7 @@ title: Default Rake Task
 description: Run all of your automated checks with a single command.
 published_at: December 29, 2020 7am PT
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 This is part of [The Annotated Guide to a New Rails

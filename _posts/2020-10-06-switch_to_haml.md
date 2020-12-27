@@ -3,7 +3,7 @@ title: Switch to HAML
 description: Make your HTML templates easier to work with.
 published_at: October 6, 2020 7 am PT
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 This is part of [The Annotated Guide to a New Rails

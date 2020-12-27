@@ -3,7 +3,7 @@ title: Pairs File
 description: Accurately record changes made while pairing by adding multiple authors to your commits.
 published_at: September 1, 2020 7 am PT
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 This is part of [The Annotated Guide to a New Rails

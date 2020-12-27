@@ -3,7 +3,7 @@ title: Add RSpec::Its
 description: Make it easier to test object attributes.
 published_at: October 27, 2020 7am PT
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 This is part of [The Annotated Guide to a New Rails

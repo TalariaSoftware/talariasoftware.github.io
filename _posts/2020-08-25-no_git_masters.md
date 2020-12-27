@@ -3,7 +3,7 @@ title: No Git Masters
 description: Remove problematic language from your Git setup.
 published_at: August 25, 2020 7 am PT
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 This is part of [The Annotated Guide to a New Rails

@@ -3,7 +3,7 @@ title: The Annotated Guide to a New Rails Application
 description: A guide to make working with your Rails application more productive and joyful.
 published_at: July 28, 2020 7 am PT
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 ## Introduction
@@ -51,50 +51,17 @@ If you want an automated setup script, take a look at
 created by Thoughtbot with their standard defaults. They make a lot of good
 choices, some of which I will certainly draw from.
 
-<!-- ## Table of Contents -->
+## Table of Contents
 
-<%
-%w[
-  ruby_version_management
-  rails_new
-  git_init
-  no_git_masters
-  pairs_file
-  add_a_license
-  adopt_a_code_of_conduct
-  switch_to_postgresql
-  remove_gem_version_specifiers
-  switch_to_haml
-  switch_to_sass
-  switch_to_rspec
-  add_rspec_its
-  configure_generators
-  switch_to_uuids
-  use_a_ruby_linter
-  my_ruby_style
-  use_a_rails_linter
-  library_vulnerability_checks
-  code_vulnerability_checks
-  license_monitoring
-  default_rake_task
-  set_up_a_production_environment
-  create_a_deploy_script
-  create_a_gem_update_script
-  update_the_readme
-  add_authentication
-  add_an_authorization_library
-  add_a_css_framework
-]
-  .map{ |slug| Article.published.find_by(slug: slug) }
-  .compact
-  .each_with_index do |article, i|
-%>
+{% assign chapters = site.tags.joyful_rails | reverse %}
 
-### [<%= i + 1 %>. <%= article.title %>](<%= article_path(article) %>)
 
-<%= article.description %>
+{% for chapter in chapters %}
+### {% increment counter %} <a href="{{ chapter.url }}">{{ chapter.title }}</a>
 
-<% end %>
+{{ chapter.description }}
+
+{% endfor %}
 
 <!--
 Todo:

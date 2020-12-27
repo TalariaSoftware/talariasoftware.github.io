@@ -3,7 +3,7 @@ title: Remove Gem Version Specifiers
 description: Make it easy to continuously keep your libraries up to date.
 published_at: September 29, 2020 7 am PT
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 This is part of [The Annotated Guide to a New Rails

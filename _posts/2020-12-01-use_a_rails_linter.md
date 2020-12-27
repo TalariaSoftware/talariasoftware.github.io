@@ -3,7 +3,7 @@ title: Use a Rails Linter
 description: Avoid common Rails mistakes and correct them automatically.
 published_at: December 1, 2020 7 am PT
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 This is part of [The Annotated Guide to a New Rails

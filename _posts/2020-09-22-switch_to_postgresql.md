@@ -3,7 +3,7 @@ title: Switch to PostgreSQL
 description: Switch over to a production-ready database.
 published_at: September 22, 2020 7 am PT
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 This is part of [The Annotated Guide to a New Rails

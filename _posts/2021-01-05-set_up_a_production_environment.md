@@ -3,7 +3,7 @@ title: Set Up a Production Environment
 description: Deploy your Rails application.
 published_at: January 5, 2021 7 am PT
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 This is part of [The Annotated Guide to a New Rails

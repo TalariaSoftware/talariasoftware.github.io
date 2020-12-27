@@ -4,7 +4,7 @@ description: Database keys that can't be guessed, don't overflow, and don't leak
 published_at: November 10, 2020 7 am PT
 updated_at: Dec 2, 2020
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 This is part of [The Annotated Guide to a New Rails

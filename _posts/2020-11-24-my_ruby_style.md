@@ -3,7 +3,7 @@ title: My Ruby Style
 description: Make your Ruby style beautiful.
 published_at: November 24, 2020 7 am
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 This is part of [The Annotated Guide to a New Rails

@@ -3,7 +3,7 @@ title: Ruby Version Management
 description: Use the right version of Ruby for the job.
 published_at: August 4, 2020 7 am PT
 category: software
-tags: [rails]
+tags: rails joyful_rails
 ---
 
 This is part of [The Annotated Guide to a New Rails
