@@ -4,4 +4,5 @@ description: What does it mean to be rich, why programmers should be rich, why y
 published_at: May 5, 2020 1:30 pm Pacific Time
 layout: facebook_video
 facebook_video_url: https://www.facebook.com/TalariaSoftware/videos/476793873048527/
+redirect_from: /facebook_videos/youre_a_programmer_why_arent_you_rich_video
 ---

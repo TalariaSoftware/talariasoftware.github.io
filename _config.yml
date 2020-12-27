@@ -12,7 +12,7 @@ markdown: kramdown
 timezone: America/Los_Angeles
 plugins:
   - jekyll-feed
-permalink: /:title
+  - jekyll-redirect-from
 
 permalink: /articles/:title
 

@@ -1,5 +1,6 @@
 ---
 layout: default
+redirect_from: /facebook_videos
 ---
 
 <section class="usa-graphic-list usa-section usa-section--light">
