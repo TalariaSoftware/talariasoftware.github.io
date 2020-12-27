@@ -34,7 +34,7 @@ hero:
           <h2 class="usa-graphic-list__heading">Accelerate My Team</h2>
           <p>I have a product in development but making improvements and changes is slow or expensive and when I finally do get them it turns out they are not what my customers need.</p>
           <p>I am ready to make a change so I can quickly and efficiently deliver what my customers want.</p>
-          <a class="usa-button usa-button--secondary" href="https://app.talariasoftware.com/accelerate_questionnaires/new">Level Up </a>
+          <a class="usa-button usa-button--secondary" href="https://app.talariasoftware.com/accelerate_questionnaires/new">Level Up</a>
         </div>
       </div>
     </div>
@@ -71,6 +71,7 @@ hero:
           </div>
         </a>
       {% endfor %}
+      <a class="usa-button usa-button--secondary margin-x-auto" href="/posts">See All Posts</a>
     </div>
   </div>
 </section>
