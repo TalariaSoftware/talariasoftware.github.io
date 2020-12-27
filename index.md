@@ -40,3 +40,71 @@ hero:
     </div>
   </div>
 </section>
+
+<section class="usa-section usa-section--light">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col-4">
+        <img class="height-15" src="/images/foot-color.png" />
+        <h2 class="text-primary font-heading-lg margin-top-0 tablet:margin-bottom-0">
+          Build Software.
+        </h2>
+        <h2 class="text-secondary font-heading-lg text-light text-uppercase margin-top-0 tablet:margin-bottom-0">
+          Delight Customers.
+        </h2>
+      </div>
+      <div class="tablet:grid-col-8 usa-prose">
+        <p>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</p>
+        <p>In order to do that you need to your software to adapt quickly to changes in your environment and in your understanding. And you need to do that in a way that is sustainable because you are in this for the long haul.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="usa-graphic-list usa-section usa-section--dark">
+  <div class="grid-container">
+    <div class="usa-graphic-list__row grid-row grid-gap">
+      <div class="usa-media-block tablet:grid-col">
+        <i class="fas fa-clock usa-media-block__img font-sans-3xl"></i>
+        <div class="usa-media-block__body">
+          <h2 class="usa-graphic-list__heading">Build Quickly</h2>
+          <p>Develop your products rapidly in order to get to market faster and find product-market fit sooner.</p>
+        </div>
+      </div>
+      <div class="usa-media-block tablet:grid-col">
+        <i class="fas fa-money-bill usa-media-block__img font-sans-3xl"></i>
+        <div class="usa-media-block__body">
+          <h2 class="usa-graphic-list__heading">Build Efficiently</h2>
+          <p>Save time and money with sustainable practices that ensure you can keep moving forward at a steady pace.</p>
+        </div>
+      </div>
+      <div class="usa-media-block tablet:grid-col">
+        <i class="fas fa-laugh-beam usa-media-block__img font-sans-3xl"></i>
+        <div class="usa-media-block__body">
+          <h2 class="usa-graphic-list__heading">Delight Customers</h2>
+          <p>Create products that your customers will love through continual, sustainable feedback and adjustment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="usa-section usa-section--light">
+  <div class="grid-container">
+    <div class="grid-row grid-gap flex-align-center">
+      <div class="tablet:grid-col-4">
+        <h1>Get Your Free Workbook Today</h1>
+        <p class="measure-1">
+          This step-by-step workbook for entreprenuers of all experience-levels and types. At the end of these 46-pages you'll have a plan laid out and will have already taken the first steps.
+        </p>
+        <a class="usa-button usa-button--secondary width-full margin-bottom-2" href="https://app.talariasoftware.com/expertise_to_income">Download Now </a>
+      </div>
+      <div class="tablet:grid-col-8 text-center">
+        <h1>
+          <img class="height-card-lg" alt="Turn Your Expertise Into Passive
+          Income" src="/images/expertise_to_income_cover.png" />
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
