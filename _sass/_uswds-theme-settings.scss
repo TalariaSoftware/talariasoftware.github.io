@@ -1,1 +1,51 @@
 $theme-show-notifications: false;
+
+// Relative font file path
+$theme-font-path: "../fonts";
+
+// Custom typeface tokens
+$font-stack-theme: "Gill Sans", "Gill Sans Nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+$theme-typeface-tokens: (
+  "tisa-sans": (
+    display-name: "Tisa Sans",
+    cap-height: 357px,
+    stack: $font-stack-theme,
+    src: (
+      dir: 'tisa-sans',
+      roman: (
+        100: "TisaSansPro-ExtraLight",
+        200: "TisaSansPro=Light",
+        300: "TisaSansPro-Regular",
+        400: "TisaSansPro-Regular",
+        500: "TisaSansPro-Medium",
+        600: "TisaSansPro-Medium",
+        700: "TisaSansPro-Bold",
+        800: "TisaSansPro-ExtraBold",
+        900: "TisaSansPro-Black"
+      ),
+      italic: (
+        100: "TisaSansPro-ExtraLightItalic",
+        200: "TisaSansPro=LightItalic",
+        300: "TisaSansPro-Italic",
+        400: "TisaSansPro-Italic",
+        500: "TisaSansPro-MediumItalic",
+        600: "TisaSansPro-MediumItalic",
+        700: "TisaSansPro-BoldItalic",
+        000: "TisaSansPro-ExtraBoldItalic",
+        900: "TisaSansPro-BlackItalic"
+      )
+    )
+  ),
+);
+
+// Type-based font settings
+$theme-font-type-sans: "tisa-sans";
+$theme-font-type-mono: "roboto-mono";
+$theme-font-type-serif: false; // no serif fonts
+
+// Role-based font settings
+$theme-font-role-ui: "sans";
+$theme-font-role-heading: "sans";
+$theme-font-role-body: "sans";
+$theme-font-role-code: "mono";
+$theme-font-role-alt: "sans";
