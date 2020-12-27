@@ -10,7 +10,7 @@ layout: default
       {% for post in site.posts %}
         <a href="{{ post.url }}" class='usa-media-block tablet:grid-col-6 padding-3'>
 
-          {% if post.facebook_video_url != nil %}
+          {% if post.layout == 'facebook_video' %}
             <i class='fab fa-youtube usa-media-block__img font-sans-3xl'></i>
           {% else %}
             <i class='fas fa-pen-nib usa-media-block__img font-sans-3xl'></i>
