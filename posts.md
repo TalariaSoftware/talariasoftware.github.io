@@ -16,7 +16,7 @@ layout: default
             </h2>
 
             <p>{{ post.description }}</p>
-            <p>{{ post.published_at }}</p>
+            <p>{{ post.date | date_to_string: "ordinal", "US" }}</p>
           </div>
         </a>
       {% endfor %}
