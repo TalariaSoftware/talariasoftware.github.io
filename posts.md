@@ -12,7 +12,7 @@ redirect_from: /facebook_videos
         <a href="{{ post.url }}" class='usa-media-block tablet:grid-col-6 padding-3'>
 
           {% if post.layout == 'facebook_video' %}
-            <i class='fab fa-youtube usa-media-block__img font-sans-3xl'></i>
+            <i class='fas fa-play-circle usa-media-block__img font-sans-3xl'></i>
           {% elsif post.layout == 'youtube' %}
             <i class='fab fa-youtube usa-media-block__img font-sans-3xl'></i>
           {% elsif post.layout == 'fireside_fm' %}
