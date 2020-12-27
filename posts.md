@@ -9,7 +9,13 @@ layout: default
 
       {% for post in site.posts %}
         <a href="{{ post.url }}" class='usa-media-block tablet:grid-col-6 padding-3'>
-          <i class='fas fa-pen-nib usa-media-block__img font-sans-3xl'></i>
+
+          {% if post.facebook_video_url != nil %}
+            <i class='fab fa-youtube usa-media-block__img font-sans-3xl'></i>
+          {% else %}
+            <i class='fas fa-pen-nib usa-media-block__img font-sans-3xl'></i>
+          {% endif %}
+
           <div class='usa-media-block__body'>
             <h2 class='usa-graphic-list__heading'>
               {{ post.title }}
