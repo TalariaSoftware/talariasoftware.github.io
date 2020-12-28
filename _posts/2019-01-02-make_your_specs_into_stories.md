@@ -37,7 +37,7 @@ Without looking back at the example try to answer the following questions:
 a concert at seven and came home at eleven.
 
 <figure>
-  <img class='maxw-mobile-lg' src='/img/articles/woman_leaving_helicopter.jpg'>
+  <img class='maxw-mobile-lg' src='/images/articles/woman_leaving_helicopter.jpg'>
   <figcaption class='font-body-3xs'>
     Our fictional Adriana arriving at work
   </figcaption>

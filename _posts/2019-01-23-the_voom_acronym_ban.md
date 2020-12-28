@@ -5,7 +5,7 @@ published_at: Jan 23, 2019 1:30 pm Pacific Time
 ---
 
 <figure>
-  <img class='maxw-full' src='/img/articles/nathaniel-shuman-vZvNSeXzmwY-unsplash.jpg'>
+  <img class='maxw-full' src='/images/articles/nathaniel-shuman-vZvNSeXzmwY-unsplash.jpg'>
   <figcaption class='font-body-3xs'>
     Photo by <a href='https://unsplash.com/@nshuman1291'>Nathaniel Shuman</a>
   </figcaption>
