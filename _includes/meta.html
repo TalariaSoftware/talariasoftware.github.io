@@ -10,3 +10,13 @@
 {% endif %}
 
 {% include favicon.html %}
+
+<meta name='twitter:site' content='{{ site.title }}'>
+<meta name='twitter:title' content='{{ page.title | default: site.motto }}'>
+<meta name='twitter:creator' content='@{{ site.twitter_username }}'>
+
+<meta name='og:locale' content='en'>
+<meta name='og:site_name' content='{{ site.title }}'>
+<meta name='og:title' content='{{ page.title | default: site.motto }}'>
+<meta name='og:type' content='website'>
+<meta name='og:url' content='https://talriasoftware.com{{ page.url }}'>
