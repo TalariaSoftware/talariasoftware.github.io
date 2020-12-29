@@ -26,7 +26,7 @@ easy to run them after every change and before every deploy.
 
 First, create Rake tasks for automated checkers that do not have one.
 
-## Rubocop
+### Rubocop
 
 In `lib/tasks/rubocop.rake` put
 
