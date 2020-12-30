@@ -27,7 +27,7 @@ It is a simple way to embed Ruby code into text files using expression tags
 (<%= '<code>&lt;%= %&gt;</code>'.html_safe %>) and execution tags (<%=
 '<code>&lt;% %&gt;</code>'.html_safe %>).
 
-[HAML](http://haml.info) is a templating language that makes the HTML structure
+[HAML](https://haml.info) is a templating language that makes the HTML structure
 clear and easy to work with by using meaningful whitespace and eliminating
 unnecessary characters.
 
