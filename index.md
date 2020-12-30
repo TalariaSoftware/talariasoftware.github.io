@@ -80,7 +80,7 @@ hero:
   <div class="grid-container">
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col-4">
-        <img class="height-15" src="/images/foot-color.png" />
+        <img class="height-15" src="/images/foot-color.png" alt='logo' />
         <h2 class="text-primary font-heading-lg margin-top-0 tablet:margin-bottom-0">
           Build Software.
         </h2>

@@ -6,7 +6,7 @@ category: software
 tags: [rails, hotwire, SPA]
 ---
 
-[Hotwire](hotwire.dev) is a set of libraries and conventions that does for
+[Hotwire](https://hotwire.dev) is a set of libraries and conventions that does for
 single-page interactivity on web sites what Rails did for web applications.
 
 It provides all the benefits of client-side single-page application (SPA)
@@ -163,5 +163,4 @@ rewriting entire applications to take full advantage of it.
 ---
 
 If you are interested in other ways to make developing your Rails application
-awesome, take a look at my [Annotated Guide to a New Rails
-Application](articles/the_annotated_guide_to_a_new_rails_app).
+awesome, take a look at [Joyful Rails](/articles/joyful_rails).
