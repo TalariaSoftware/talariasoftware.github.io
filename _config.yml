@@ -34,6 +34,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - Rakefile
+  - tmp
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
