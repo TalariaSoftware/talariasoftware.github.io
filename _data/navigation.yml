@@ -1,8 +1,8 @@
 primary:
   - text: Articles
     href: /articles
-  - text: Annotated Rails Guide
-    href: /articles/the_annotated_guide_to_a_new_rails_app
+  - text: Joyful Rails
+    href: /articles/joyful_rails
   - text: Workbook
     href: https://app.talariasoftware.com/expertise_to_income
   - text: Coaching

@@ -1,7 +1,9 @@
 ---
-title: The Annotated Guide to a New Rails Application
+title: Joyful Rails
 description: A guide to make working with your Rails application more productive and joyful.
 published_at: July 28, 2020 7 am PT
+updated_at: December 29, 2020
+redirect_from: /articles/the_annotated_guide_to_a_new_rails_app
 category: software
 tags: rails joyful_rails
 ---
