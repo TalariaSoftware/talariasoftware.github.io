@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+test -z "$(git status --porcelain)" || (echo "Git repo not clean"; exit 1)
+
+rake test
+
+git push origin

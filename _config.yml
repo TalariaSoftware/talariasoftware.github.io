@@ -30,6 +30,7 @@ defaults:
 
 
 exclude:
+  - bin
   - Gemfile
   - Gemfile.lock
   - node_modules
