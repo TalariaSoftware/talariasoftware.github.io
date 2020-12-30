@@ -6,17 +6,17 @@
 
 {% assign description = page.description | default: site.description %}
 {% if description %}
-<meta name="description" content="{{ description }}">
+<meta name="description" content="{{ description | url_encode }}">
 {% endif %}
 
 {% include favicon.html %}
 
-<meta name='twitter:site' content='{{ site.title }}'>
-<meta name='twitter:title' content='{{ page.title | default: site.motto }}'>
+<meta name='twitter:site' content='{{ site.title | url_encode }}'>
+<meta name='twitter:title' content='{{ page.title | default: site.motto | url_encode }}'>
 <meta name='twitter:creator' content='@{{ site.twitter_username }}'>
 
 <meta name='og:locale' content='en'>
-<meta name='og:site_name' content='{{ site.title }}'>
-<meta name='og:title' content='{{ page.title | default: site.motto }}'>
+<meta name='og:site_name' content='{{ site.title | url_encode }}'>
+<meta name='og:title' content='{{ page.title | default: site.motto | url_encode }}'>
 <meta name='og:type' content='website'>
-<meta name='og:url' content='https://talriasoftware.com{{ page.url }}'>
+<meta name='og:url' content='https://talriasoftware.com{{ page.url | url_encode }}'>
