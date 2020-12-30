@@ -6,6 +6,7 @@ task :test do
     assume_extension: true,
     cache: { timeframe: '4w' },
     check_html: true,
+    check_external_hash: true,
     check_img_http: true,
     check_sri: true,
     enforce_https: true,
