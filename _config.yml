@@ -11,6 +11,8 @@ logo: /images/foot-color.png
 
 # Build settings
 markdown: kramdown
+styles:
+  - /assets/css/syntax.css
 timezone: America/Los_Angeles
 plugins:
   - jekyll-feed
