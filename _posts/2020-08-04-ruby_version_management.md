@@ -30,7 +30,7 @@ of Ruby and its libraries (called gems).
 
 ## How
 
-To [install](https://rvm.io/rvm/install#any-other-system) RVM, run this command:
+To [install](https://rvm.io/rvm/install) RVM, run this command:
 
 ```sh
 \curl -sSL https://get.rvm.io | bash -s stable
