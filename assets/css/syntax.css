@@ -1,4 +1,9 @@
 .highlight { background-color: #fdf6e3; color: #586e75; }
+/*
+ * Solarized Light tweaked to meet W3C Web Content Accessibility Guidelines
+ * https://github.com/mpchadwick/pygments-high-contrast-stylesheets
+ */
+
 .highlight .c { color: #627272; }
 .highlight .err { color: #586e75; }
 .highlight .g { color: #586e75; }
