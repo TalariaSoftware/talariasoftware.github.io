@@ -1,6 +1,7 @@
 ---
 title: Make Your Specs Into Stories
 description: Use the power of narrative to make your tests easier to understand.
+image: /images/articles/woman_leaving_helicopter.jpg
 published_at: Jan 2, 2019 1:30 pm Pacific Time
 ---
 

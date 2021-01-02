@@ -6,7 +6,7 @@
 
 {% assign description = page.description | default: site.description %}
 {% if description %}
-<meta name="description" content="{{ description | url_encode }}">
+<meta name="description" content="{{ description | escape }}">
 {% endif %}
 
 {% include favicon.html %}

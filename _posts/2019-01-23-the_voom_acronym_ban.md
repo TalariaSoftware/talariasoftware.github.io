@@ -1,6 +1,7 @@
 ---
 title: "VAB: The Voom Acronym Ban"
 description: Better communication through words.
+image: /images/articles/nathaniel-shuman-vZvNSeXzmwY-unsplash.jpg
 published_at: Jan 23, 2019 1:30 pm Pacific Time
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Small Steps Forward
 description: Improving your product and business in small incremental steps.
+image: /images/articles/mirko-blicke-RndRFUz8RS4-unsplash.jpg
 published_at: Aug 28, 2019 1:30 pm Pacific Time
 ---
 
