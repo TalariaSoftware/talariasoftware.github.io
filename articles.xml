@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-04T18:07:36+00:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Default Rake Task</title><link href="/articles/default_rake_task" rel="alternate" type="text/html" title="Default Rake Task" /><published>2020-12-29T00:00:00+00:00</published><updated>2020-12-29T00:00:00+00:00</updated><id>/articles/default_rake_task</id><content type="html" xml:base="/articles/default_rake_task">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are talking about adding to the default rake task.&lt;/p&gt;
+
+&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
+
+&lt;p&gt;I recommend adding to the default rake task every time you add a tool that
+automatically checks your codebase.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+
+&lt;p&gt;Having a single command to run all of your automated checks and specs makes it
+easy to run them after every change and before every deploy.&lt;/p&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
+
+&lt;p&gt;First, create Rake tasks for automated checkers that do not have one.&lt;/p&gt;
+
+&lt;h3 id=&quot;rubocop&quot;&gt;Rubocop&lt;/h3&gt;
+
+&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lib/tasks/rubocop.rake&lt;/code&gt; put&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Gem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Specification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;find_all_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'rubocop'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;present?&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'rubocop/rake_task'&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;RuboCop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;RakeTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake rubocop&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;bundler-audit&quot;&gt;Bundler audit&lt;/h3&gt;
+
+&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lib/tasks/bundler_audit.rake&lt;/code&gt; put&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Gem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Specification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;find_all_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'bundler-audit'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;present?&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'bundler/audit/task'&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Audit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake bundle:audit&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;license-finder&quot;&gt;License Finder&lt;/h3&gt;
+
+&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lib/tasks/license_finder.rake&lt;/code&gt; put&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;license_finder: :environment&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;sh&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'license_finder'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'--quiet'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake license_finder&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;rails-best-practices&quot;&gt;Rails Best Practices&lt;/h3&gt;
+
+&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lib/tasks/rails_best_practices.rake&lt;/code&gt; put&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;rails_best_practices: :environment&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;sh&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'rails_best_practices'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake rails_best_practices&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;brakeman&quot;&gt;Brakeman&lt;/h3&gt;
+
+&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lib/tasks/brakeman.rake&lt;/code&gt; put&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Gem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Specification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;find_all_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'brakeman'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;present?&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:brakeman&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Check your code with Brakeman&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;check: :environment&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'brakeman'&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Brakeman&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;app_path: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'.'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;print_report: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;pager: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Brakeman&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Warnings_Found_Exit_Code&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;filtered_warnings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;empty?&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake brakeman:check&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;default-rake-task&quot;&gt;Default rake task&lt;/h3&gt;
+
+&lt;p&gt;Edit your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rakefile&lt;/code&gt; define the default rake task.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;default: &lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;%i[
+  rubocop
+  spec
+  rails_best_practices
+  license_finder
+  brakeman:check
+  bundle:audit
+]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To run the default task with all of your automated checks and specs use this
+command: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake&lt;/code&gt;.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Hotwire: First Reactions</title><link href="/articles/hotwire_first_reactions" rel="alternate" type="text/html" title="Hotwire: First Reactions" /><published>2020-12-26T00:00:00+00:00</published><updated>2020-12-26T00:00:00+00:00</updated><id>/articles/hotwire_first_reactions</id><content type="html" xml:base="/articles/hotwire_first_reactions">&lt;p&gt;&lt;a href=&quot;https://hotwire.dev&quot;&gt;Hotwire&lt;/a&gt; is a set of libraries and conventions that does for
+single-page interactivity on websites what Rails did for web applications.&lt;/p&gt;
+
+&lt;p&gt;It provides all the benefits of client-side single-page application (SPA)
+frameworks with almost none of the downsides.&lt;/p&gt;
+
+&lt;p&gt;It does that by making HTML primary and providing a standard set of JavaScript
+tools to update and augment the HTML on the page.&lt;/p&gt;
+
+&lt;h2 id=&quot;benefits-of-an-spa&quot;&gt;Benefits of an SPA&lt;/h2&gt;
+
+&lt;p&gt;All the benefits of a single-page app come down to different aspects of the same
+thing: reactivity./&lt;em&gt;I find “responsiveness” better than “reactivity” in this use. Will mark other places.&lt;/em&gt;/&lt;/p&gt;
+
+&lt;p&gt;When the user performs an action, the application reacts /&lt;em&gt;responds&lt;/em&gt;/immediately, without
+the delay of an HTTP request, page download, render, and state reset.&lt;/p&gt;
+
+&lt;p&gt;When there is a change in application state that is not initiated by the user,
+the change is immediately visible to the user without needing to click, reload,
+or wait for the page to download and re-render.&lt;/p&gt;
+
+&lt;h2 id=&quot;downsides-of-an-spa&quot;&gt;Downsides of an SPA&lt;/h2&gt;
+
+&lt;p&gt;The downside of SPAs is that they are complicated. That complexity results in
+several times more work for developers, while simultaneously breaking
+functionality that is included automatically with HTML pages.&lt;/p&gt;
+
+&lt;p&gt;SPAs are not web applications. They are JavaScript applications that users
+download and run in their web browsers.&lt;/p&gt;
+
+&lt;p&gt;Users have to wait for the JS bundles to download and initialize before the
+application first begins to render. Then, while using the app, they find that the
+web browser navigation buttons (back, reload, forward, etc.) cause the app to
+break or reset. URLs cannot be used to point to specific parts of the
+application, making bookmarks useless. Worse still, keyboard navigation, screen
+readers, and other assistive technology are often broken. And if you are running
+an uncommon browser or older hardware, you may not be able to use the app at
+all.&lt;/p&gt;
+
+&lt;p&gt;All of this could be fixed or mitigated with sufficient care and effort from the
+developers, but none of that work is necessary for web applications serving HTML
+and CSS.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile, developers are also dealing with other added complications.&lt;/p&gt;
+
+&lt;p&gt;Behavior and views rendered by the server need to be duplicated by the front-end
+JavaScript code. There is a entire set of technologies to maintain for the front
+end with their own languages, libraries, compile chains, and distribution
+processes for running in a wide array of environments. And then there is the
+extra abstraction layer, usually JSON, between content on the back end and the
+HTML and CSS rendered for users.&lt;/p&gt;
+
+&lt;h2 id=&quot;introducing-hotwire&quot;&gt;Introducing Hotwire&lt;/h2&gt;
+
+&lt;p&gt;Hotwire was &lt;a href=&quot;https://twitter.com/dhh/status/1341420143239450624&quot;&gt;released&lt;/a&gt; on
+December 22, 2020 by &lt;a href=&quot;https://twitter.com/dhh/&quot;&gt;DHH&lt;/a&gt; and the rest of the team at
+&lt;a href=&quot;https://hey.com&quot;&gt;Hey&lt;/a&gt;. It was extracted from Hey in the same way that Rails was
+extracted from Basecamp.&lt;/p&gt;
+
+&lt;p&gt;There are two main libraries that make up Hotwire: Turbo and Stimulus.&lt;/p&gt;
+
+&lt;h3 id=&quot;turbo&quot;&gt;Turbo&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://turbo.hotwire.dev&quot;&gt;Turbo&lt;/a&gt; is the next evolution of
+&lt;a href=&quot;https://github.com/turbolinks/turbolinks&quot;&gt;Turbolinks&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Turbolinks uses JavaScript to replace the body of an HTML page. By avoiding a
+page reload, it makes navigating web apps faster. It does this with no custom
+JavaScript and, in most cases, is fully transparent to users and developers.&lt;/p&gt;
+
+&lt;p&gt;Turbo takes the strategy a step further and provides tools to update parts of
+the page in response to user action or live updates broadcast over a WebSocket.&lt;/p&gt;
+
+&lt;h3 id=&quot;stimulus&quot;&gt;Stimulus&lt;/h3&gt;
+
+&lt;p&gt;Stimulus is the modest JavaScript framework focused on augmenting the HTML already
+on the page. It provides a guided way to add dynamic client-side behavior
+without changing the way HTML and CSS pages are built and rendered.&lt;/p&gt;
+
+&lt;p&gt;Together, Turbo and Stimulus make it possible to have web apps that behave like
+JavaScript applications but are primarily HTML and CSS with minimal
+application-specific JavaScript. They offer all the benefits of an SPA, with almost
+none of the downsides.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-hotwire-works&quot;&gt;How Hotwire works&lt;/h2&gt;
+
+&lt;p&gt;Probably more important than the libraries that make up Hotwire are the
+conventions on how those libraries interact.&lt;/p&gt;
+
+&lt;p&gt;The most important of these conventions is the one that gives Hotwire its name:
+HTML Over-The-Wire.&lt;/p&gt;
+
+&lt;p&gt;Traditional SPAs send JSON to the client. The JavaScript app then takes that
+JSON and generates HTML that is rendered onto the page.&lt;/p&gt;
+
+&lt;p&gt;When you send HTML over-the-wire, you don’t need all the JavaScript code that
+knows how to render it to HTML. It also means that you don’t need to duplicate
+your templates or template rendering. The same server-side code generates the
+HTML that the user sees, no matter how it gets onto the page.&lt;/p&gt;
+
+&lt;h2 id=&quot;downsides-of-hotwire&quot;&gt;Downsides of Hotwire&lt;/h2&gt;
+
+&lt;p&gt;There is no silver bullet; even Hotwire has its downsides.&lt;/p&gt;
+
+&lt;h3 id=&quot;new-technology&quot;&gt;New Technology&lt;/h3&gt;
+
+&lt;p&gt;Hotwire is a new framework. It hasn’t been proven in a lot of applications and
+no one outside of Basecamp has a lot of experience with it.&lt;/p&gt;
+
+&lt;p&gt;However, Stimulus is proven technology that’s been around for years. Turbo
+evolved from Turbolinks which has been a part of Rails since 2012.&lt;/p&gt;
+
+&lt;p&gt;And all of Hotwire is in production at Hey.&lt;/p&gt;
+
+&lt;h3 id=&quot;convention-dependent&quot;&gt;Convention Dependent&lt;/h3&gt;
+
+&lt;p&gt;Hotwire with Rails is built on an extensive set of conventions that allow the
+different parts to work together. If you do not follow these conventions
+carefully, you will end up with a hairy mess of spaghetti code.&lt;/p&gt;
+
+&lt;p&gt;Once these conventions are well-understood and strongly modeled, they are easy
+to follow; but until then, there is a significant risk of making your code
+confusing and buggy.&lt;/p&gt;
+
+&lt;h3 id=&quot;complicated&quot;&gt;Complicated&lt;/h3&gt;
+
+&lt;p&gt;Hotwire is a huge improvement over SPA frameworks, but it is still complicated
+— really complicated.&lt;/p&gt;
+
+&lt;h3 id=&quot;integration-specs-require-javascript&quot;&gt;Integration Specs Require JavaScript&lt;/h3&gt;
+
+&lt;p&gt;It seems the only way to write specifications that demonstrate your Hotwire
+functionality is working as intended is to use Capybara with a
+JavaScript-capable web browser. This is orders of magnitude slower than the
+Rack-based browser used when you don’t need to test JavaScript integration.&lt;/p&gt;
+
+&lt;p&gt;Other SPA frameworks have the same problem. The best way to mitigate it is with
+strong, simple conventions that give you a lot of confidence that the
+integration works, so few integration specs are needed.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;Hotwire provides an HTML/CSS-centric way of creating live and reactive web
+applications. I believe it will revolutionize reactive web apps the same way
+Rails revolutionized web apps.&lt;/p&gt;
+
+&lt;p&gt;I highly recommend learning about it and adding it to your tool belt. Anytime
+you want to improve a portion of your web app by making it more instant and
+reactive, Hotwire is the tool to reach for.&lt;/p&gt;
+
+&lt;p&gt;The smart thing to do is add Hotwire little by little to places where it will
+have the biggest impact. But the technology is so exciting, I am considering
+rewriting entire applications to take full advantage of it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;If you are interested in other ways to make developing your Rails application
+awesome, take a look at &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="hotwire" /><category term="SPA" /><summary type="html">Hotwire is a set of libraries and conventions that does for single-page interactivity on websites what Rails did for web applications.</summary></entry><entry><title type="html">Use a License Monitor</title><link href="/articles/license_monitoring" rel="alternate" type="text/html" title="Use a License Monitor" /><published>2020-12-22T00:00:00+00:00</published><updated>2020-12-22T00:00:00+00:00</updated><id>/articles/license_monitoring</id><content type="html" xml:base="/articles/license_monitoring">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are talking about using a license monitor.&lt;/p&gt;
+
+&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
+
+&lt;p&gt;The longer you wait before adding a license monitor, the more work you will have
+to do to correct problems that have accumulated. For that reason, I recommend
+adding a license monitor early – and absolutely before you start distributing your
+application.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+
+&lt;p&gt;Rails applications often leverage an extensive network of open
+source software distributed under a variety of licenses. It is very important to
+avoid using software if you do not agree with the terms of the license.&lt;/p&gt;
+
+&lt;p&gt;A license monitor can check the licenses of your libraries and make sure they
+only use licenses you agree to abide by.&lt;/p&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
+
+&lt;p&gt;Use &lt;a href=&quot;https://github.com/pivotal/LicenseFinder&quot;&gt;License Finder&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
+
+&lt;p&gt;To install, add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem 'license_finder'&lt;/code&gt; to the development section of your
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To run, use the command: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;license_finder&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;configure&quot;&gt;Configure&lt;/h3&gt;
+
+&lt;p&gt;For License Finder to work, it needs to know which licenses are acceptable to you.
+Use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;permit&lt;/code&gt; subcommand to record those. Here is an example with
+what I think are reasonable defaults:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder permit add MIT MIT&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; ruby &lt;span class=&quot;s2&quot;&gt;&quot;Apache 2.0&quot;&lt;/span&gt; ISC BSD &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;Simplified BSD&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;New BSD&quot;&lt;/span&gt; BSD-3-Clause 0BSD BSD&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Unlicense CC0-1.0 CC-BY-3.0 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+CC-BY-4.0 WTFPL &lt;span class=&quot;s2&quot;&gt;&quot;Brakeman Public Use License&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Some packages list multiple licenses in a way that License Finder doesn’t
+understand. For those, we need to correct which licenses are available.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add amdefine MIT
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add amdefine BSD-3-Clause
+
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add atob MIT
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add atob Apache-2.0
+
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add node-forge BSD-3-Clause
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add node-forge GPL-2.0
+
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add pako MIT
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add pako Zlib
+
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add path-is-inside WTFPL
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add path-is-inside MIT
+
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add sha.js MIT
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add sha.js BSD-3-Clause
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Finally, if you followed the advice on &lt;a href=&quot;library_vulnerability_checks&quot;&gt;library vulnerability
+checks&lt;/a&gt; then you installed
+&lt;a href=&quot;https://github.com/rubysec/bundler-audit#readme&quot;&gt;bundler-audit&lt;/a&gt;. Bundler-audit
+is has a GPL license, which means we can’t incorporate it into non-GPL code. But
+it is not part of our app – it’s only a tool we use – so it’s okay.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder approvals add bundler-audit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;caveat&quot;&gt;Caveat&lt;/h2&gt;
+
+&lt;p&gt;I am not a lawyer and neither is License Finder. None of this will guarantee
+that you do not illegally incorporate other people’s software into your code.
+Nor will it guarantee that you are not creating liabilities or obligations that
+you do not want.&lt;/p&gt;
+
+&lt;p&gt;If your need legal advise, consult with an attorney licensed to practice in your
+jurisdiction.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Code Vulnerability Checks</title><link href="/articles/code_vulnerability_checks" rel="alternate" type="text/html" title="Code Vulnerability Checks" /><published>2020-12-15T00:00:00+00:00</published><updated>2020-12-15T00:00:00+00:00</updated><id>/articles/code_vulnerability_checks</id><content type="html" xml:base="/articles/code_vulnerability_checks">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are talking about checking for code vulnerabilities.&lt;/p&gt;
+
+&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
+
+&lt;p&gt;You should check for code vulnerabilities before creating a production environment.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+
+&lt;p&gt;As soon as you make your application available on the Internet, if there is a
+vulnerability in your code, it is possible that that vulnerability could be used
+to compromise your application.&lt;/p&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
+
+&lt;p&gt;Use &lt;a href=&quot;https://brakemanscanner.org&quot;&gt;Brakeman&lt;/a&gt; for code analysis to catch potential
+security vulnerabilities.&lt;/p&gt;
+
+&lt;p&gt;To install, add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem 'brakeman'&lt;/code&gt; to the development section of your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and
+run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To run use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;brakeman&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Fix any issues Brakeman finds.&lt;/p&gt;
+
+&lt;!-- link to default rake task --&gt;
+
+&lt;h2 id=&quot;gotchas&quot;&gt;Gotchas&lt;/h2&gt;
+
+&lt;p&gt;Brakeman checks for a lot of common errors that create security vulnerabilities.
+Of course, it cannot catch all security issues. Be careful out there.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Library Vulnerability Checks</title><link href="/articles/library_vulnerability_checks" rel="alternate" type="text/html" title="Library Vulnerability Checks" /><published>2020-12-08T00:00:00+00:00</published><updated>2020-12-08T00:00:00+00:00</updated><id>/articles/library_vulnerability_checks</id><content type="html" xml:base="/articles/library_vulnerability_checks">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are talking about checking for library vulnerabilities.&lt;/p&gt;
+
+&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
+
+&lt;p&gt;You should check for library vulnerability before creating a production
+environment.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+
+&lt;p&gt;As soon as you make your application available on the Internet, if there is a
+vulnerability in one of the libraries you used, it is possible that that
+vulnerability could be used to compromise your application.&lt;/p&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
+
+&lt;p&gt;Use &lt;a href=&quot;https://github.com/rubysec/bundler-audit#readme&quot;&gt;bundler-audit&lt;/a&gt; to check for
+known security vulnerabilities in your gems.&lt;/p&gt;
+
+&lt;p&gt;To install, add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem 'bundler-audit'&lt;/code&gt; to the development section of your
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To run the checks, use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle audit&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Update any gems with vulnerabilities.&lt;/p&gt;
+
+&lt;!-- link to gem update and default rake task --&gt;
+
+&lt;h2 id=&quot;alternatives&quot;&gt;Alternatives&lt;/h2&gt;
+
+&lt;p&gt;There are services that will monitor your running applications for libraries with
+known vulnerabilities. They are a much better solution for applications that are
+not under active development or that, for some other reason, go a long time
+between updates.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Use a Rails Linter</title><link href="/articles/use_a_rails_linter" rel="alternate" type="text/html" title="Use a Rails Linter" /><published>2020-12-01T00:00:00+00:00</published><updated>2020-12-01T00:00:00+00:00</updated><id>/articles/use_a_rails_linter</id><content type="html" xml:base="/articles/use_a_rails_linter">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are talking about using a Rails linter.&lt;/p&gt;
+
+&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
+
+&lt;p&gt;The longer you wait to add a linter, the more work you will have to correct
+style errors that have accumulated. For that reason, I recommend adding a Rails
+linter as early as possible.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+
+&lt;p&gt;A Rails linter like the &lt;a href=&quot;https://github.com/flyerhzm/rails_best_practices&quot;&gt;Rails Best Practices
+gem&lt;/a&gt; can catch and sometimes
+correct common mistakes and problems in Rails code.&lt;/p&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
+
+&lt;p&gt;To install, add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rails_best_practices&lt;/code&gt; to the development section of your
+Gemfile.&lt;/p&gt;
+
+&lt;p&gt;To run, use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rails_best_practices .&lt;/code&gt;&lt;/p&gt;
+
+&lt;!-- Add section with link to default rake --&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">My Ruby Style</title><link href="/articles/my_ruby_style" rel="alternate" type="text/html" title="My Ruby Style" /><published>2020-11-24T00:00:00+00:00</published><updated>2020-11-24T00:00:00+00:00</updated><id>/articles/my_ruby_style</id><content type="html" xml:base="/articles/my_ruby_style">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are going to talk about my Ruby style.&lt;/p&gt;
+
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;This is my Ruby style. It is not right or wrong. It is a collection of
+personal preferences reflecting my values and trade-offs.&lt;/p&gt;
+
+&lt;p&gt;Your Ruby style may be different. Decisions on coding style should reflect the
+environment and preferences of the people reading and writing the code.&lt;/p&gt;
+
+&lt;h2 id=&quot;about-this-article&quot;&gt;About this article&lt;/h2&gt;
+
+&lt;p&gt;I am going to be describing my Ruby style as a collection of configuration
+settings to RuboCop.&lt;/p&gt;
+
+&lt;p&gt;If you agree with me, you can add the settings below to your Rubocop configuration.&lt;/p&gt;
+
+&lt;h2 id=&quot;use-rails-cops&quot;&gt;Use Rails cops&lt;/h2&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rubocop-rails&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;enable-new-cops&quot;&gt;Enable new cops&lt;/h2&gt;
+
+&lt;p&gt;New cops are added all the time and by default are pending until the next major
+release. Enable them automatically so you can more easily stay up to date.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;AllCops&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;NewCops&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;enable&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;global-exclusion&quot;&gt;Global exclusion&lt;/h3&gt;
+
+&lt;p&gt;Exclude generated files from RuboCop enforcement. I don’t write, read, or edit
+these files so I don’t care about their style.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;AllCops&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;Exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bin/*&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;config.ru&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;db/schema.rb&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;node_modules/**/*&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;documentation&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style.html#styledocumentation&quot;&gt;Documentation&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;A combination of clear naming and RSpec specifications obviates the need for
+class documentation blocks.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Style/Documentation&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;Enabled&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;argument-alignment&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_layout#layoutargumentalignment&quot;&gt;Argument Alignment&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;The default style, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;with_first_argument&lt;/code&gt;, wastes too much space.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;method_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:first_arg&lt;/span&gt;
+            &lt;span class=&quot;ss&quot;&gt;:second_arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;with_fixed_indentation&lt;/code&gt; is great for methods with a lot of arguments.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;method_with_a_long_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:third&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;ss&quot;&gt;:forth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:fifth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:sixth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:seventh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:eigth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Layout/ArgumentAlignment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;EnforcedStyle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;with_fixed_indentation&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;first-array-element-indentation&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_layout#layoutfirstarrayelementindentation&quot;&gt;First Array Element Indentation&lt;/a&gt;&lt;/h3&gt;
+
+&lt;!-- Why --&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Layout/FirstArrayElementIndentation&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;EnforcedStyle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;consistent&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;hash-alignment&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_layout#layouthashalignment&quot;&gt;Hash Alignment&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Implicit hashes do not need to be formatted like hashes.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Layout/HashAlignment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;EnforcedLastArgumentHashStyle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ignore_implicit&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;line-length&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_layout#layoutlinelength&quot;&gt;Line Length&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Cop directives should not need to be under our line length requirements.
+This makes it much easer to apply a cop directive to a single line of code.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Layout/LineLength&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;IgnoreCopDirectives&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Allow comments to be really long. A lot of the boilerplate comments generated by
+Rails are over 80 characters. With this, you won’t need to fix them or delete
+them.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Layout/LineLength&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;IgnoredPatterns&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;^\s*#&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;parameter-alignment&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_layout#layoutparameteralignment&quot;&gt;Parameter Alignment&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Similar to argument alignment, the default setting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;with_first_parameter&lt;/code&gt; wastes
+too much space.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Layout/ParameterAlignment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;EnforcedStyle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;with_fixed_indentation&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;ambiguous-block-association&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_lint#lintambiguousblockassociation&quot;&gt;Ambiguous Block Association&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Writing idiomatic RSpec requires violating this rule, so we exclude RSpec files
+from it.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Lint/AmbiguousBlockAssociation&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;Exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;**/*_spec.rb&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;block-length&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_metrics#metricsblocklength&quot;&gt;Block Length&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Idiomatic RSpec often has very long blocks. There is no harm in configuration
+files having long blocks. So we exclude both of those.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Metrics/BlockLength&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;Exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Guardfile&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;config/environments/*&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;config/routes.rb&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;**/*_spec.rb&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;method-length&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_metrics#metricsmethodlength&quot;&gt;Method Length&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;It usually isn’t helpful to break up migration methods, so we allow them to get
+as long as they need.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Metrics/MethodLength&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;Exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;db/migrate/*.rb&quot;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;block-delimiters&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#styleblockdelimiters&quot;&gt;Block Delimiters&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;do&lt;/code&gt;…&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;end&lt;/code&gt; for a multiline block, unless you are chaining.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;flip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;flop&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Style/BlockDelimiters&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;EnforcedStyle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;braces_for_chaining&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;empty-method&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#styleemptymethod&quot;&gt;Empty Method&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Empty methods are unlikely to stay empty, so let’s make it easy to edit them.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;empty_method&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Style/EmptyMethod&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;EnforcedStyle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;expanded&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;frozen-string-literal-comment&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#stylefrozenstringliteralcomment&quot;&gt;Frozen String Literal Comment&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;The eventual transition to frozen string literals will not be difficult for a
+codebase with good specs. There is no need to clutter up our files trying to
+prepare for it.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Style/FrozenStringLiteralComment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;Enabled&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;string-literals&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#stylestringliterals&quot;&gt;String Literals&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;String literals should be double-quoted when interpolated, when they include a
+single-quote character, or when they are natural language texts.&lt;/p&gt;
+
+&lt;p&gt;Natural language strings often use single quotes as apostrophes for contractions
+and possessives. Using double quotes means being able to change the text,
+including adding or removing apostrophes, without having to alter the quote
+characters.&lt;/p&gt;
+
+&lt;p&gt;For this reason, we exclude Ruby files that are likely to contain natural
+language text strings.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Style/StringLiterals&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;Exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;lib/tasks/*.rake&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;spec/**/*_spec.rb&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;trailing-commas&quot;&gt;Trailing Commas&lt;/h3&gt;
+
+&lt;p&gt;Including trailing commas in
+&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#styletrailingcommainarguments&quot;&gt;arguments&lt;/a&gt;,
+&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#styletrailingcommainarrayliteral&quot;&gt;array
+literals&lt;/a&gt;,
+and &lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#styletrailingcommainhashliteral&quot;&gt;hash
+literals&lt;/a&gt;
+makes it easier to add, remove, and reorder items.&lt;/p&gt;
+
+&lt;p&gt;As a bonus, it makes it easier to read Git commits because changing one item
+only changes one line in the file.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Style/TrailingCommaInArguments&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;EnforcedStyleForMultiline&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;comma&lt;/span&gt;
+
+&lt;span class=&quot;s&quot;&gt;Style/TrailingCommaInArrayLiteral&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;EnforcedStyleForMultiline&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;comma&lt;/span&gt;
+
+&lt;span class=&quot;s&quot;&gt;Style/TrailingCommaInHashLiteral&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;EnforcedStyleForMultiline&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;comma&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Use a Ruby Linter</title><link href="/articles/use_a_ruby_linter" rel="alternate" type="text/html" title="Use a Ruby Linter" /><published>2020-11-17T00:00:00+00:00</published><updated>2020-11-17T00:00:00+00:00</updated><id>/articles/use_a_ruby_linter</id><content type="html" xml:base="/articles/use_a_ruby_linter">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are talking about using a Ruby linter.&lt;/p&gt;
+
+&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
+
+&lt;p&gt;The longer you wait to add a Ruby linter, the more work you will have to correct
+style errors that have accumulated. For that reason, I recommend adding a
+linter, such as RuboCop, as early as possible.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+
+&lt;p&gt;Having a consistent style makes code easier to read and maintain. Using a
+linter makes it easy to conform to a consistent style. In a lot of cases, your
+linter can make corrections automatically.&lt;/p&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Add the RuboCop gem. Add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem 'rubocop'&lt;/code&gt; to the development group
+of your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Configure RuboCop. Add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.rubocop.yml&lt;/code&gt; with the RuboCop configuration.&lt;/li&gt;
+  &lt;li&gt;Run RuboCop with auto-correct, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rubocop --auto-correct&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Correct errors that RuboCop cannot correct automatically.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- Add section with link to my Rubocop config --&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Switch to UUIDs</title><link href="/articles/switch_to_uuids" rel="alternate" type="text/html" title="Switch to UUIDs" /><published>2020-11-10T00:00:00+00:00</published><updated>2020-11-10T00:00:00+00:00</updated><id>/articles/switch_to_uuids</id><content type="html" xml:base="/articles/switch_to_uuids">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are talking about switching the database primary keys to
+UUIDs, universally unique identifiers.&lt;/p&gt;
+
+&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
+
+&lt;p&gt;On one hand, it is not trivial to change a table’s primary key from the default
+integer to UUIDs. For that reason, it is helpful to switch to UUIDs as early as
+possible.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, the benefits of using UUIDs are generally not an important
+concern for new applications, so there is little reason to do it right away.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+
+&lt;p&gt;By default, Rails uses integers as primary keys. Using UUIDs can help prevent a
+few problems.&lt;/p&gt;
+
+&lt;h3 id=&quot;integer-overflow&quot;&gt;Integer overflow&lt;/h3&gt;
+
+&lt;p&gt;Integer primary keys increase monotonically for every new row. Eventually, the
+primary key gets too large and new entries cannot be created.&lt;/p&gt;
+
+&lt;p&gt;Since Rails 5.1 the default is to use 64-bit integers, which means this will
+not be a problem until you’ve created over &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;9*10^18&lt;/code&gt; rows.&lt;/p&gt;
+
+&lt;p&gt;UUIDs are much larger (128-bits total) and chosen randomly. So even when
+you have over &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;9*10^18&lt;/code&gt; rows your primary key will not be the problem.&lt;/p&gt;
+
+&lt;h3 id=&quot;guessable-primary-keys&quot;&gt;Guessable primary keys&lt;/h3&gt;
+
+&lt;p&gt;Every new integer primary key is one more than the previous one, which means it
+is trivial to guess what IDs have been created and which ones will be created
+next.&lt;/p&gt;
+
+&lt;p&gt;Knowing what primary keys exist should not be a security issue by itself, but
+you may still want to hide as part of a defense in depth.&lt;/p&gt;
+
+&lt;h3 id=&quot;estimable-creation-rates&quot;&gt;Estimable creation rates&lt;/h3&gt;
+
+&lt;p&gt;Every new integer primary key is one more than the previous one, which means it
+is simple to find out how quickly they are being created.&lt;/p&gt;
+
+&lt;p&gt;That information may reveal how many users signed up yesterday or how many
+orders were created this week.&lt;/p&gt;
+
+&lt;p&gt;For most applications, most of the time, no one cares and this is not an issue.
+If it might be for you, using UUIDs as your primary keys can eliminate it.&lt;/p&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
+
+&lt;h3 id=&quot;enable-uuids-in-postgresql&quot;&gt;Enable UUIDs in PostgreSQL:&lt;/h3&gt;
+
+&lt;p&gt;We assume you have already made the &lt;a href=&quot;switch_to_postgresql&quot;&gt;switch to
+PostgreSQL&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Generate a migration: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rails generate migration EnableUuids&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Put this in the change method of the migration: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;enable_extension 'pgcrypto'&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Run the migration: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake db:migrate&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;configure-the-generators-to-use-uuids-as-primary-keys&quot;&gt;Configure the generators to use UUIDs as primary keys:&lt;/h3&gt;
+
+&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config/application.rb&lt;/code&gt; add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.generators.orm :active_record,
+primary_key_type: :uuid&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;test-the-change&quot;&gt;Test the change&lt;/h3&gt;
+
+&lt;p&gt;After making a commit, test that this works by running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rails generate model
+foo&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake db:migrate&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The migration and schema should both indicate that the id is a UUID.&lt;/p&gt;
+
+&lt;p&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake db:rollback&lt;/code&gt; and remove the generated files before continuing.&lt;/p&gt;
+
+&lt;h2 id=&quot;gotchas&quot;&gt;Gotchas&lt;/h2&gt;
+
+&lt;p&gt;When creating a foreign key column (using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;references&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;belongs_to&lt;/code&gt;) you must
+indicate the type if the id is a UUID.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;create_table&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;id: :uuid&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;create_table&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:comment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;id: :uuid&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;belongs_to&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;type: :uuid&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;If you do not do this, there is a risk of silent errors when the UUIDs are
+coerced into an integer to fit into a column that expects an integer.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Configure Generators</title><link href="/articles/configure_generators" rel="alternate" type="text/html" title="Configure Generators" /><published>2020-11-03T00:00:00+00:00</published><updated>2020-11-03T00:00:00+00:00</updated><id>/articles/configure_generators</id><content type="html" xml:base="/articles/configure_generators">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are talking about configuring the Rails generators.&lt;/p&gt;
+
+&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
+
+&lt;p&gt;When or if to configure the Rails generators depends on how much you like the
+default generators and how much you use or want to use the generators.&lt;/p&gt;
+
+&lt;p&gt;If you like the how the generators work (or you never use them), there is no point
+to configuring them. If you don’t like what the generators do, and you use them
+often or want to use them often, it is a good idea to configure them.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+
+&lt;p&gt;By default, Rails generators create helpers. Helpers are generally a bad idea;
+most helper functions should be part of a model or view object instead.&lt;/p&gt;
+
+&lt;p&gt;By default, Rails generators create a stylesheet for every controller.
+Stylesheets should not be tied to a controller.&lt;/p&gt;
+
+&lt;p&gt;By default, Rails generators create specs for views. Views should not be complicated enough to need specs.&lt;/p&gt;
+
+&lt;p&gt;By default, the Rails generators create request specs to test controllers.
+Request specs are probably a good idea for APIs, but for more traditional web
+apps, it makes more sense to test the controller directly by looking at
+the resource assigned and any side effects.&lt;/p&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
+
+&lt;p&gt;Add the following to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config/application.rb&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;generators&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;helper&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;generators&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;stylesheets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;generators&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;view_specs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;generators&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;request_specs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;generators&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;controller_specs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After making a commit, test that this works by running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rails generate resource foo&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;You should get a migration, a model, a controller, a route, a model spec, and
+a controller spec. You should not get a helper, stylesheet, view spec, or
+request spec.&lt;/p&gt;
+
+&lt;p&gt;Remove the files created by the generator.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>

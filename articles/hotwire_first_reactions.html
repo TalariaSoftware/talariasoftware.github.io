@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Hotwire: First Reactions | Talaria Software</title>
+
+
+
+<meta name="description" content="All the benefits of client-side SPA frameworks, with almost none of the downsides.">
+
+
+
+<link rel="icon" type="image/png"
+  href="/images/favicons/favicon.png">
+
+<link rel="icon" type="image/png"
+  sizes="192x192"
+  href="/images/favicons/favicon-192.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  href="/images/favicons/favicon-57.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="72x72"
+  href="/images/favicons/favicon-72.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="114x114"
+  href="/images/favicons/favicon-114.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="144x144"
+  href="/images/favicons/favicon-144.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name='twitter:site:id' content='@TalariaSoftware'>
+<meta name='twitter:title' content='Hotwire: First Reactions'>
+<meta name='twitter:creator:id' content='@ExMember'>
+<meta name='twitter:image' content='https://talariasoftware.com/images/foot-color.png'>
+
+<meta property='og:locale' content='en'>
+<meta property='og:site_name' content='Talaria Software'>
+<meta property='og:title' content='Hotwire: First Reactions'>
+<meta property='og:type' content='website'>
+<meta property='og:url' content='https://talariasoftware.com/articles/hotwire_first_reactions'>
+<meta property='og:description' content='All the benefits of client-side SPA frameworks, with almost none of the downsides.'>
+<meta property='og:image' content='https://talariasoftware.com/images/foot-color.png'>
+
+    
+
+
+
+<link rel="stylesheet"
+  href="/assets/css/uswds-theme.css"
+  media="screen">
+
+<link rel="stylesheet"
+  href="/assets/css/syntax.css"
+  media="screen">
+
+
+    
+    <link href="https://app.talariasoftware.com/articles.xml" rel="alternate" title="Talaria Software articles" type="application/rss+xml">
+    <link rel='stylesheet'
+          href='https://use.fontawesome.com/releases/v5.4.1/css/all.css'
+          integrity='sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz'
+          crossorigin='anonymous'>
+
+  </head>
+  <body class="  ">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    
+
+
+
+
+  <div class="usa-overlay"></div>
+
+  <header class="usa-header usa-header--extended" role="banner">
+
+
+  
+    <div class="usa-navbar">
+      <div class="usa-logo" id="header-logo">
+        <a
+          href="/"
+          title="Home">
+          
+            <img
+              class="usa-logo-img"
+              src="/images/foot-color.png"
+              alt="Talaria Software logo">
+          
+          <em class="usa-logo__text">
+            Talaria Software
+          </em>
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <nav role="navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <img src="/assets/uswds/img/close.svg" alt="close">
+        </button>
+
+        
+        
+        
+        <ul class="usa-nav__primary usa-accordion">
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/articles">
+                <span>Articles</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/articles/joyful_rails">
+                <span>Joyful Rails</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="https://app.talariasoftware.com/expertise_to_income">
+                <span>Workbook</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="https://app.talariasoftware.com/get_help">
+                <span>Coaching</span>
+              </a>
+            
+          </li>
+          
+        </ul>
+        
+
+        
+
+        
+          
+          <div class="usa-nav__secondary">
+            <ul class="usa-unstyled-list usa-nav__secondary-links">
+              
+              
+                <li class="usa-nav__secondary-item">
+                  <a href="https://app.talariasoftware.com/kickoff_questionnaires/new"
+                  >
+                    Kickoff
+                  </a>
+                </li>
+              
+                <li class="usa-nav__secondary-item">
+                  <a href="https://app.talariasoftware.com/accelerate_questionnaires/new"
+                  >
+                    Accelerate
+                  </a>
+                </li>
+              
+            </ul>
+            
+          </div>
+          
+
+
+        </div>
+      </div>
+    </nav>
+  
+  </header>
+
+
+
+
+    
+    
+
+
+    
+
+    
+
+    
+      
+      
+
+
+
+
+    
+    
+
+    
+      <div class="usa-section">
+  <div class="grid-container">
+    <div class="grid-row grid-gap flex-align-start">
+      <main class="usa-layout-docs usa-layout-docs__main usa-prose" id="main-content">
+        <h1>Hotwire: First Reactions</h1>
+        <h6>Published: Dec 26th, 2020</h6>
+        
+          <h6>Updated: Dec 30th, 2020</h6>
+        
+        <p><a href="https://hotwire.dev">Hotwire</a> is a set of libraries and conventions that does for
+single-page interactivity on websites what Rails did for web applications.</p>
+
+<p>It provides all the benefits of client-side single-page application (SPA)
+frameworks with almost none of the downsides.</p>
+
+<p>It does that by making HTML primary and providing a standard set of JavaScript
+tools to update and augment the HTML on the page.</p>
+
+<h2 id="benefits-of-an-spa">Benefits of an SPA</h2>
+
+<p>All the benefits of a single-page app come down to different aspects of the same
+thing: reactivity./<em>I find “responsiveness” better than “reactivity” in this use. Will mark other places.</em>/</p>
+
+<p>When the user performs an action, the application reacts /<em>responds</em>/immediately, without
+the delay of an HTTP request, page download, render, and state reset.</p>
+
+<p>When there is a change in application state that is not initiated by the user,
+the change is immediately visible to the user without needing to click, reload,
+or wait for the page to download and re-render.</p>
+
+<h2 id="downsides-of-an-spa">Downsides of an SPA</h2>
+
+<p>The downside of SPAs is that they are complicated. That complexity results in
+several times more work for developers, while simultaneously breaking
+functionality that is included automatically with HTML pages.</p>
+
+<p>SPAs are not web applications. They are JavaScript applications that users
+download and run in their web browsers.</p>
+
+<p>Users have to wait for the JS bundles to download and initialize before the
+application first begins to render. Then, while using the app, they find that the
+web browser navigation buttons (back, reload, forward, etc.) cause the app to
+break or reset. URLs cannot be used to point to specific parts of the
+application, making bookmarks useless. Worse still, keyboard navigation, screen
+readers, and other assistive technology are often broken. And if you are running
+an uncommon browser or older hardware, you may not be able to use the app at
+all.</p>
+
+<p>All of this could be fixed or mitigated with sufficient care and effort from the
+developers, but none of that work is necessary for web applications serving HTML
+and CSS.</p>
+
+<p>Meanwhile, developers are also dealing with other added complications.</p>
+
+<p>Behavior and views rendered by the server need to be duplicated by the front-end
+JavaScript code. There is a entire set of technologies to maintain for the front
+end with their own languages, libraries, compile chains, and distribution
+processes for running in a wide array of environments. And then there is the
+extra abstraction layer, usually JSON, between content on the back end and the
+HTML and CSS rendered for users.</p>
+
+<h2 id="introducing-hotwire">Introducing Hotwire</h2>
+
+<p>Hotwire was <a href="https://twitter.com/dhh/status/1341420143239450624">released</a> on
+December 22, 2020 by <a href="https://twitter.com/dhh/">DHH</a> and the rest of the team at
+<a href="https://hey.com">Hey</a>. It was extracted from Hey in the same way that Rails was
+extracted from Basecamp.</p>
+
+<p>There are two main libraries that make up Hotwire: Turbo and Stimulus.</p>
+
+<h3 id="turbo">Turbo</h3>
+
+<p><a href="https://turbo.hotwire.dev">Turbo</a> is the next evolution of
+<a href="https://github.com/turbolinks/turbolinks">Turbolinks</a>.</p>
+
+<p>Turbolinks uses JavaScript to replace the body of an HTML page. By avoiding a
+page reload, it makes navigating web apps faster. It does this with no custom
+JavaScript and, in most cases, is fully transparent to users and developers.</p>
+
+<p>Turbo takes the strategy a step further and provides tools to update parts of
+the page in response to user action or live updates broadcast over a WebSocket.</p>
+
+<h3 id="stimulus">Stimulus</h3>
+
+<p>Stimulus is the modest JavaScript framework focused on augmenting the HTML already
+on the page. It provides a guided way to add dynamic client-side behavior
+without changing the way HTML and CSS pages are built and rendered.</p>
+
+<p>Together, Turbo and Stimulus make it possible to have web apps that behave like
+JavaScript applications but are primarily HTML and CSS with minimal
+application-specific JavaScript. They offer all the benefits of an SPA, with almost
+none of the downsides.</p>
+
+<h2 id="how-hotwire-works">How Hotwire works</h2>
+
+<p>Probably more important than the libraries that make up Hotwire are the
+conventions on how those libraries interact.</p>
+
+<p>The most important of these conventions is the one that gives Hotwire its name:
+HTML Over-The-Wire.</p>
+
+<p>Traditional SPAs send JSON to the client. The JavaScript app then takes that
+JSON and generates HTML that is rendered onto the page.</p>
+
+<p>When you send HTML over-the-wire, you don’t need all the JavaScript code that
+knows how to render it to HTML. It also means that you don’t need to duplicate
+your templates or template rendering. The same server-side code generates the
+HTML that the user sees, no matter how it gets onto the page.</p>
+
+<h2 id="downsides-of-hotwire">Downsides of Hotwire</h2>
+
+<p>There is no silver bullet; even Hotwire has its downsides.</p>
+
+<h3 id="new-technology">New Technology</h3>
+
+<p>Hotwire is a new framework. It hasn’t been proven in a lot of applications and
+no one outside of Basecamp has a lot of experience with it.</p>
+
+<p>However, Stimulus is proven technology that’s been around for years. Turbo
+evolved from Turbolinks which has been a part of Rails since 2012.</p>
+
+<p>And all of Hotwire is in production at Hey.</p>
+
+<h3 id="convention-dependent">Convention Dependent</h3>
+
+<p>Hotwire with Rails is built on an extensive set of conventions that allow the
+different parts to work together. If you do not follow these conventions
+carefully, you will end up with a hairy mess of spaghetti code.</p>
+
+<p>Once these conventions are well-understood and strongly modeled, they are easy
+to follow; but until then, there is a significant risk of making your code
+confusing and buggy.</p>
+
+<h3 id="complicated">Complicated</h3>
+
+<p>Hotwire is a huge improvement over SPA frameworks, but it is still complicated
+— really complicated.</p>
+
+<h3 id="integration-specs-require-javascript">Integration Specs Require JavaScript</h3>
+
+<p>It seems the only way to write specifications that demonstrate your Hotwire
+functionality is working as intended is to use Capybara with a
+JavaScript-capable web browser. This is orders of magnitude slower than the
+Rack-based browser used when you don’t need to test JavaScript integration.</p>
+
+<p>Other SPA frameworks have the same problem. The best way to mitigate it is with
+strong, simple conventions that give you a lot of confidence that the
+integration works, so few integration specs are needed.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>Hotwire provides an HTML/CSS-centric way of creating live and reactive web
+applications. I believe it will revolutionize reactive web apps the same way
+Rails revolutionized web apps.</p>
+
+<p>I highly recommend learning about it and adding it to your tool belt. Anytime
+you want to improve a portion of your web app by making it more instant and
+reactive, Hotwire is the tool to reach for.</p>
+
+<p>The smart thing to do is add Hotwire little by little to places where it will
+have the biggest impact. But the technology is so exciting, I am considering
+rewriting entire applications to take full advantage of it.</p>
+
+<hr />
+
+<p>If you are interested in other ways to make developing your Rails application
+awesome, take a look at <a href="/articles/joyful_rails">Joyful Rails</a>.</p>
+
+      </main>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+
+    
+
+
+  
+<footer class="usa-footer">
+
+  
+
+  
+    
+    
+    
+    
+  <div class="usa-footer__primary-section">
+    <nav class="usa-footer__nav" aria-label="Footer navigation">
+      <ul class="grid-row grid-gap">
+        
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="/articles">
+            Articles
+          </a>
+        </li>
+        
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="/articles/joyful_rails">
+            Joyful Rails
+          </a>
+        </li>
+        
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="https://app.talariasoftware.com/expertise_to_income">
+            Workbook
+          </a>
+        </li>
+        
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="https://app.talariasoftware.com/get_help">
+            Coaching
+          </a>
+        </li>
+        
+      </ul>
+    </nav>
+  </div>
+  
+
+  
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+          
+            <div class="mobile-lg:grid-col-auto">
+                
+                  <img class="usa-footer__logo-img" src="/images/foot-color.png" alt="Talaria Software logo">
+                
+              </div>
+            
+          
+
+          
+          <div class="mobile-lg:grid-col-auto">
+            <h3 class="usa-footer__logo-heading">Talaria Software</h3>
+          </div>
+          
+        </div>
+
+        
+        <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+          
+          
+            <div class="usa-footer__social-links grid-row grid-gap-1">
+              <div class="grid-col-auto">
+                
+                  <a class="usa-social-link usa-social-link--twitter" href="https://twitter.com/talariasoftware">
+                    <span>Twitter</span>
+                  </a>
+                
+                  <a class="usa-social-link usa-social-link--github" href="https://github.com/talariasoftware">
+                    <span>GitHub</span>
+                  </a>
+                
+              </div>
+            </div>
+          
+          
+            <h3 class="usa-footer__contact-heading">Contact</h3>
+            
+            
+              <address class="usa-footer__address">
+                
+                <div class="usa-footer__contact-info grid-row grid-gap">
+                
+                    <div class="grid-col-auto">
+                      <a href="mailto:help@talariasoftware.com">
+                        help@talariasoftware.com
+                      </a>
+                    </div>
+                
+                </div>
+              </address>
+
+              
+                <div class="usa-footer__contact-info grid-row grid-gap">
+                  <ul class="policy-list usa-list usa-list--unstyled text-right">
+                    
+                        <li class="display-inline">
+                          <a href="/privacy_policy">
+                            Privacy Policy
+                          </a>
+                        </li>
+                    
+                        <li class="display-inline">
+                          <a href="/terms_of_service">
+                            Terms of Service
+                          </a>
+                        </li>
+                    
+                  </ul>
+                </div>
+              
+
+              <div>
+                &copy; 2015&mdash;2021 Talaria Research LLC
+              </div>
+          
+        
+      </div>
+      
+      </div>
+    </div>
+  </div>
+  
+
+</footer>
+
+
+
+
+
+    
+
+
+
+
+
+  
+    
+      <script src="/assets/uswds/js/uswds.min.js" async></script>
+    
+
+  
+    
+
+
+
+
+
+
+  </body>
+</html>

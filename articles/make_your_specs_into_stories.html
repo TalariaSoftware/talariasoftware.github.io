@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Make Your Specs Into Stories | Talaria Software</title>
+
+
+
+<meta name="description" content="Use the power of narrative to make your tests easier to understand.">
+
+
+
+<link rel="icon" type="image/png"
+  href="/images/favicons/favicon.png">
+
+<link rel="icon" type="image/png"
+  sizes="192x192"
+  href="/images/favicons/favicon-192.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  href="/images/favicons/favicon-57.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="72x72"
+  href="/images/favicons/favicon-72.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="114x114"
+  href="/images/favicons/favicon-114.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="144x144"
+  href="/images/favicons/favicon-144.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name='twitter:site:id' content='@TalariaSoftware'>
+<meta name='twitter:title' content='Make Your Specs Into Stories'>
+<meta name='twitter:creator:id' content='@ExMember'>
+<meta name='twitter:image' content='https://talariasoftware.com/images/articles/woman_leaving_helicopter.jpg'>
+
+<meta property='og:locale' content='en'>
+<meta property='og:site_name' content='Talaria Software'>
+<meta property='og:title' content='Make Your Specs Into Stories'>
+<meta property='og:type' content='website'>
+<meta property='og:url' content='https://talariasoftware.com/articles/make_your_specs_into_stories'>
+<meta property='og:description' content='Use the power of narrative to make your tests easier to understand.'>
+<meta property='og:image' content='https://talariasoftware.com/images/articles/woman_leaving_helicopter.jpg'>
+
+    
+
+
+
+<link rel="stylesheet"
+  href="/assets/css/uswds-theme.css"
+  media="screen">
+
+<link rel="stylesheet"
+  href="/assets/css/syntax.css"
+  media="screen">
+
+
+    
+    <link href="https://app.talariasoftware.com/articles.xml" rel="alternate" title="Talaria Software articles" type="application/rss+xml">
+    <link rel='stylesheet'
+          href='https://use.fontawesome.com/releases/v5.4.1/css/all.css'
+          integrity='sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz'
+          crossorigin='anonymous'>
+
+  </head>
+  <body class="  ">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    
+
+
+
+
+  <div class="usa-overlay"></div>
+
+  <header class="usa-header usa-header--extended" role="banner">
+
+
+  
+    <div class="usa-navbar">
+      <div class="usa-logo" id="header-logo">
+        <a
+          href="/"
+          title="Home">
+          
+            <img
+              class="usa-logo-img"
+              src="/images/foot-color.png"
+              alt="Talaria Software logo">
+          
+          <em class="usa-logo__text">
+            Talaria Software
+          </em>
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <nav role="navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <img src="/assets/uswds/img/close.svg" alt="close">
+        </button>
+
+        
+        
+        
+        <ul class="usa-nav__primary usa-accordion">
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/articles">
+                <span>Articles</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/articles/joyful_rails">
+                <span>Joyful Rails</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="https://app.talariasoftware.com/expertise_to_income">
+                <span>Workbook</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="https://app.talariasoftware.com/get_help">
+                <span>Coaching</span>
+              </a>
+            
+          </li>
+          
+        </ul>
+        
+
+        
+
+        
+          
+          <div class="usa-nav__secondary">
+            <ul class="usa-unstyled-list usa-nav__secondary-links">
+              
+              
+                <li class="usa-nav__secondary-item">
+                  <a href="https://app.talariasoftware.com/kickoff_questionnaires/new"
+                  >
+                    Kickoff
+                  </a>
+                </li>
+              
+                <li class="usa-nav__secondary-item">
+                  <a href="https://app.talariasoftware.com/accelerate_questionnaires/new"
+                  >
+                    Accelerate
+                  </a>
+                </li>
+              
+            </ul>
+            
+          </div>
+          
+
+
+        </div>
+      </div>
+    </nav>
+  
+  </header>
+
+
+
+
+    
+    
+
+
+    
+
+    
+
+    
+      
+      
+
+
+
+
+    
+    
+
+    
+      <div class="usa-section">
+  <div class="grid-container">
+    <div class="grid-row grid-gap flex-align-start">
+      <main class="usa-layout-docs usa-layout-docs__main usa-prose" id="main-content">
+        <h1>Make Your Specs Into Stories</h1>
+        <h6>Published: Jan 2nd, 2019</h6>
+        
+        <p>There are a lot of moving parts at Voom; riders, helicopters, and helipads
+interact in complex ways to ensure the effective operations. As a result, we
+often need a lot of setup when running our tests.</p>
+
+<p>A large test setup can look like a random collection of unrelated facts. They
+are difficult to read, difficult to understand, and difficult to remember.
+Because humans are hard-wired to think in narrative, crafting test setup as
+stories makes them easier to read, easier to understand, and easier to
+remember.</p>
+
+<p>Using stories, instead of mere collections of facts can make your
+specifications easier to read and understand.</p>
+
+<h2 id="an-example-set-of-facts">An example set of facts</h2>
+
+<blockquote>
+  <p>Individual one traveled from location one to location two at time zero.
+Individual one traveled from location two to location one at time one.
+Individual one traveled from location one to location three at time two.
+Individual one traveled from location three to location one at time three.</p>
+</blockquote>
+
+<p>Without looking back at the example try to answer the following questions:</p>
+
+<ul>
+  <li>How many times did individual one arrive at location one?</li>
+  <li>Which location did individual one go to first - location three or location two?</li>
+  <li>Where did individual one end up?</li>
+  <li>Did you have to think a little bit to answer any of the questions? Were you unsure about the answer to any of the questions?</li>
+</ul>
+
+<h2 id="an-example-story">An example story</h2>
+
+<blockquote>
+  <p>Adriana went to work at nine and came home at five. Then she went to
+a concert at seven and came home at eleven.</p>
+</blockquote>
+
+<figure>
+  <img class="maxw-mobile-lg" src="/images/articles/woman_leaving_helicopter.jpg" alt="woman leaving helicopter" />
+  <figcaption class="font-body-3xs">
+    Our fictional Adriana arriving at work
+  </figcaption>
+</figure>
+
+<p>It’s not exactly Hemingway, but notice how much easier and more enjoyable it is
+was to read.</p>
+
+<p>Without looking back at the story, answer these questions:</p>
+
+<ul>
+  <li>How many times did Adriana go home?</li>
+  <li>Did Adriana go to the concert first or to work first?</li>
+  <li>Where did Adriana end up?</li>
+</ul>
+
+<p>Did you get all of the questions right? Did the answers come to you easily and effortlessly?</p>
+
+<h2 id="rspec-facts">RSpec facts</h2>
+
+<p>We can create a similar effect in RSpec. Here is a test setup that is a collection of facts:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">let</span><span class="p">(</span><span class="ss">:rider1</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:rider</span><span class="p">)</span> <span class="p">}</span>
+<span class="n">let</span><span class="p">(</span><span class="ss">:location1</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:location</span><span class="p">)</span> <span class="p">}</span>
+<span class="n">let</span><span class="p">(</span><span class="ss">:location2</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:location</span><span class="p">)</span> <span class="p">}</span>
+<span class="n">let</span><span class="p">(</span><span class="ss">:location3</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:location</span><span class="p">)</span> <span class="p">}</span>
+<span class="n">let!</span><span class="p">(</span><span class="ss">:journey1</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:journey</span><span class="p">,</span> <span class="ss">rider: </span><span class="n">rider1</span><span class="p">,</span> <span class="ss">origin: </span><span class="n">location1</span><span class="p">,</span> <span class="ss">destination: </span><span class="n">location2</span><span class="p">,</span> <span class="ss">time: </span><span class="no">Time</span><span class="p">.</span><span class="nf">at</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="p">}</span>
+<span class="n">let!</span><span class="p">(</span><span class="ss">:journey2</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:journey</span><span class="p">,</span> <span class="ss">rider: </span><span class="n">rider1</span><span class="p">,</span> <span class="ss">origin: </span><span class="n">location2</span><span class="p">,</span> <span class="ss">destination: </span><span class="n">location1</span><span class="p">,</span> <span class="ss">time: </span><span class="no">Time</span><span class="p">.</span><span class="nf">at</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="p">}</span>
+<span class="n">let!</span><span class="p">(</span><span class="ss">:journey3</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:journey</span><span class="p">,</span> <span class="ss">rider: </span><span class="n">rider1</span><span class="p">,</span> <span class="ss">origin: </span><span class="n">location1</span><span class="p">,</span> <span class="ss">destination: </span><span class="n">location3</span><span class="p">,</span> <span class="ss">time: </span><span class="no">Time</span><span class="p">.</span><span class="nf">at</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="p">}</span>
+<span class="n">let!</span><span class="p">(</span><span class="ss">:journey4</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:journey</span><span class="p">,</span> <span class="ss">rider: </span><span class="n">rider1</span><span class="p">,</span> <span class="ss">origin: </span><span class="n">location3</span><span class="p">,</span> <span class="ss">destination: </span><span class="n">location1</span><span class="p">,</span> <span class="ss">time: </span><span class="no">Time</span><span class="p">.</span><span class="nf">at</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Can you tell if these expectations are correct without looking back at the setup?</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">specify</span> <span class="p">{</span> <span class="n">expect</span><span class="p">(</span><span class="n">location1</span><span class="p">.</span><span class="nf">arrivals</span><span class="p">.</span><span class="nf">count</span><span class="p">).</span><span class="nf">to</span> <span class="n">eq</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">}</span>
+<span class="n">specify</span> <span class="p">(</span> <span class="n">expect</span><span class="p">(</span><span class="n">journey3</span><span class="p">).</span><span class="nf">to</span> <span class="n">be_later_than</span><span class="p">(</span><span class="n">journey1</span><span class="p">)</span> <span class="p">}</span>
+<span class="n">specify</span> <span class="p">{</span> <span class="n">expect</span><span class="p">(</span><span class="n">rider1</span><span class="p">.</span><span class="nf">current_location</span><span class="p">).</span><span class="nf">to</span> <span class="n">eq</span><span class="p">(</span><span class="n">location1</span><span class="p">)</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="rspec-story">RSpec story</h2>
+
+<p>Here is an analogous setup that is crafted into a story.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">let</span><span class="p">(</span><span class="ss">:adriana</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:rider</span><span class="p">)</span> <span class="p">}</span>
+<span class="n">let</span><span class="p">(</span><span class="ss">:home</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:location</span><span class="p">)</span> <span class="p">}</span>
+<span class="n">let</span><span class="p">(</span><span class="ss">:work</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:location</span><span class="p">)</span> <span class="p">}</span>
+<span class="n">let</span><span class="p">(</span><span class="ss">:concert</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:location</span><span class="p">)</span> <span class="p">}</span>
+<span class="n">let!</span><span class="p">(</span><span class="ss">:to_work</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:journey</span><span class="p">,</span> <span class="ss">rider: </span><span class="n">adriana</span><span class="p">,</span> <span class="ss">origin: </span><span class="n">home</span><span class="p">,</span> <span class="ss">destination: </span><span class="n">work</span><span class="p">,</span> <span class="ss">time: </span><span class="no">Time</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="s1">'9am'</span><span class="p">))</span> <span class="p">}</span>
+<span class="n">let!</span><span class="p">(</span><span class="ss">:from_work</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:journey</span><span class="p">,</span> <span class="ss">rider: </span><span class="n">adriana</span><span class="p">,</span> <span class="ss">origin: </span><span class="n">work</span><span class="p">,</span> <span class="ss">destination: </span><span class="n">home</span><span class="p">,</span> <span class="ss">time: </span><span class="no">Time</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="s1">'5pm'</span><span class="p">))</span> <span class="p">}</span>
+<span class="n">let!</span><span class="p">(</span><span class="ss">:to_concert</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:journey</span><span class="p">,</span> <span class="ss">rider: </span><span class="n">adriana</span><span class="p">,</span> <span class="ss">origin: </span><span class="n">home</span><span class="p">,</span> <span class="ss">destination: </span><span class="n">concert</span><span class="p">,</span> <span class="ss">time: </span><span class="no">Time</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="s1">'7pm'</span><span class="p">))</span> <span class="p">}</span>
+<span class="n">let!</span><span class="p">(</span><span class="ss">:from_concert</span><span class="p">)</span> <span class="p">{</span> <span class="no">FactoryBot</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="ss">:journey</span><span class="p">,</span> <span class="ss">rider: </span><span class="n">adriana</span><span class="p">,</span> <span class="ss">origin: </span><span class="n">concert</span><span class="p">,</span> <span class="ss">destination: </span><span class="n">home</span><span class="p">,</span> <span class="ss">time: </span><span class="no">Time</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="s1">'11pm'</span><span class="p">))</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Can you easily tell that these expectations are correct?</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">specify</span> <span class="p">{</span> <span class="n">expect</span><span class="p">(</span><span class="n">home</span><span class="p">.</span><span class="nf">arrivals</span><span class="p">.</span><span class="nf">count</span><span class="p">).</span><span class="nf">to</span> <span class="n">eq</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">}</span>
+<span class="n">specify</span> <span class="p">(</span> <span class="n">expect</span><span class="p">(</span><span class="n">to_concert</span><span class="p">).</span><span class="nf">to</span> <span class="n">be_later_than</span><span class="p">(</span><span class="n">to_work</span><span class="p">)</span> <span class="p">}</span>
+<span class="n">specify</span> <span class="p">{</span> <span class="n">expect</span><span class="p">(</span><span class="n">adriana</span><span class="p">.</span><span class="nf">current_location</span><span class="p">).</span><span class="nf">to</span> <span class="n">eq</span><span class="p">(</span><span class="n">home</span><span class="p">)</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="how-this-works">How this works</h2>
+
+<p>Stories are facts and occurrences fleshed out with characters, causality and
+emotional response. An indistinct person traveling from one indistinct location
+to another indistinct location is very different from Adriana returning home
+from the awesome concert she went to after a long day at work.</p>
+
+<p>Our minds are hard wired to think in about these things (characters, causality,
+and emotions). By writing our specs to take advantage of this, we can enlist
+much more powerful and primal parts of our mind to help others understand what
+we have written.</p>
+
+<h2 id="caveats">Caveats</h2>
+
+<p>Don’t overdo it. Adding a lot of information in order to turn your test into
+a narrative will actually make the tests more complicated and more difficult to
+read. It doesn’t take a lot of information to create a narrative.</p>
+
+<p>Don’t do this instead of making things simpler. A better solution to
+complicated test setup is to refactor the code. Often that means simplifying
+the business rules and domain model. Adding a more explicit narrative should be
+done in addition to that when it helps.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Sprinkling our specifications with narratives is one way to make your codebase
+clear, easy to read, easy to maintain, and enjoyable to work with.</p>
+
+      </main>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+
+    
+
+
+  
+<footer class="usa-footer">
+
+  
+
+  
+    
+    
+    
+    
+  <div class="usa-footer__primary-section">
+    <nav class="usa-footer__nav" aria-label="Footer navigation">
+      <ul class="grid-row grid-gap">
+        
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="/articles">
+            Articles
+          </a>
+        </li>
+        
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="/articles/joyful_rails">
+            Joyful Rails
+          </a>
+        </li>
+        
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="https://app.talariasoftware.com/expertise_to_income">
+            Workbook
+          </a>
+        </li>
+        
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="https://app.talariasoftware.com/get_help">
+            Coaching
+          </a>
+        </li>
+        
+      </ul>
+    </nav>
+  </div>
+  
+
+  
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+          
+            <div class="mobile-lg:grid-col-auto">
+                
+                  <img class="usa-footer__logo-img" src="/images/foot-color.png" alt="Talaria Software logo">
+                
+              </div>
+            
+          
+
+          
+          <div class="mobile-lg:grid-col-auto">
+            <h3 class="usa-footer__logo-heading">Talaria Software</h3>
+          </div>
+          
+        </div>
+
+        
+        <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+          
+          
+            <div class="usa-footer__social-links grid-row grid-gap-1">
+              <div class="grid-col-auto">
+                
+                  <a class="usa-social-link usa-social-link--twitter" href="https://twitter.com/talariasoftware">
+                    <span>Twitter</span>
+                  </a>
+                
+                  <a class="usa-social-link usa-social-link--github" href="https://github.com/talariasoftware">
+                    <span>GitHub</span>
+                  </a>
+                
+              </div>
+            </div>
+          
+          
+            <h3 class="usa-footer__contact-heading">Contact</h3>
+            
+            
+              <address class="usa-footer__address">
+                
+                <div class="usa-footer__contact-info grid-row grid-gap">
+                
+                    <div class="grid-col-auto">
+                      <a href="mailto:help@talariasoftware.com">
+                        help@talariasoftware.com
+                      </a>
+                    </div>
+                
+                </div>
+              </address>
+
+              
+                <div class="usa-footer__contact-info grid-row grid-gap">
+                  <ul class="policy-list usa-list usa-list--unstyled text-right">
+                    
+                        <li class="display-inline">
+                          <a href="/privacy_policy">
+                            Privacy Policy
+                          </a>
+                        </li>
+                    
+                        <li class="display-inline">
+                          <a href="/terms_of_service">
+                            Terms of Service
+                          </a>
+                        </li>
+                    
+                  </ul>
+                </div>
+              
+
+              <div>
+                &copy; 2015&mdash;2021 Talaria Research LLC
+              </div>
+          
+        
+      </div>
+      
+      </div>
+    </div>
+  </div>
+  
+
+</footer>
+
+
+
+
+
+    
+
+
+
+
+
+  
+    
+      <script src="/assets/uswds/js/uswds.min.js" async></script>
+    
+
+  
+    
+
+
+
+
+
+
+  </body>
+</html>

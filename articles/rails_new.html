@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>The Rails New Command | Talaria Software</title>
+
+
+
+<meta name="description" content="Creating a brand new Rails application.">
+
+
+
+<link rel="icon" type="image/png"
+  href="/images/favicons/favicon.png">
+
+<link rel="icon" type="image/png"
+  sizes="192x192"
+  href="/images/favicons/favicon-192.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  href="/images/favicons/favicon-57.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="72x72"
+  href="/images/favicons/favicon-72.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="114x114"
+  href="/images/favicons/favicon-114.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="144x144"
+  href="/images/favicons/favicon-144.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name='twitter:site:id' content='@TalariaSoftware'>
+<meta name='twitter:title' content='The Rails New Command'>
+<meta name='twitter:creator:id' content='@ExMember'>
+<meta name='twitter:image' content='https://talariasoftware.com/images/foot-color.png'>
+
+<meta property='og:locale' content='en'>
+<meta property='og:site_name' content='Talaria Software'>
+<meta property='og:title' content='The Rails New Command'>
+<meta property='og:type' content='website'>
+<meta property='og:url' content='https://talariasoftware.com/articles/rails_new'>
+<meta property='og:description' content='Creating a brand new Rails application.'>
+<meta property='og:image' content='https://talariasoftware.com/images/foot-color.png'>
+
+    
+
+
+
+<link rel="stylesheet"
+  href="/assets/css/uswds-theme.css"
+  media="screen">
+
+<link rel="stylesheet"
+  href="/assets/css/syntax.css"
+  media="screen">
+
+
+    
+    <link href="https://app.talariasoftware.com/articles.xml" rel="alternate" title="Talaria Software articles" type="application/rss+xml">
+    <link rel='stylesheet'
+          href='https://use.fontawesome.com/releases/v5.4.1/css/all.css'
+          integrity='sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz'
+          crossorigin='anonymous'>
+
+  </head>
+  <body class="  ">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    
+
+
+
+
+  <div class="usa-overlay"></div>
+
+  <header class="usa-header usa-header--extended" role="banner">
+
+
+  
+    <div class="usa-navbar">
+      <div class="usa-logo" id="header-logo">
+        <a
+          href="/"
+          title="Home">
+          
+            <img
+              class="usa-logo-img"
+              src="/images/foot-color.png"
+              alt="Talaria Software logo">
+          
+          <em class="usa-logo__text">
+            Talaria Software
+          </em>
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <nav role="navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <img src="/assets/uswds/img/close.svg" alt="close">
+        </button>
+
+        
+        
+        
+        <ul class="usa-nav__primary usa-accordion">
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/articles">
+                <span>Articles</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/articles/joyful_rails">
+                <span>Joyful Rails</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="https://app.talariasoftware.com/expertise_to_income">
+                <span>Workbook</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="https://app.talariasoftware.com/get_help">
+                <span>Coaching</span>
+              </a>
+            
+          </li>
+          
+        </ul>
+        
+
+        
+
+        
+          
+          <div class="usa-nav__secondary">
+            <ul class="usa-unstyled-list usa-nav__secondary-links">
+              
+              
+                <li class="usa-nav__secondary-item">
+                  <a href="https://app.talariasoftware.com/kickoff_questionnaires/new"
+                  >
+                    Kickoff
+                  </a>
+                </li>
+              
+                <li class="usa-nav__secondary-item">
+                  <a href="https://app.talariasoftware.com/accelerate_questionnaires/new"
+                  >
+                    Accelerate
+                  </a>
+                </li>
+              
+            </ul>
+            
+          </div>
+          
+
+
+        </div>
+      </div>
+    </nav>
+  
+  </header>
+
+
+
+
+    
+    
+
+
+    
+
+    
+
+    
+      
+      
+
+
+
+
+    
+    
+
+    
+      <div class="usa-section">
+  <div class="grid-container">
+    <div class="grid-row grid-gap flex-align-start">
+      <main class="usa-layout-docs usa-layout-docs__main usa-prose" id="main-content">
+        <h1>The Rails New Command</h1>
+        <h6>Published: Aug 11th, 2020</h6>
+        
+        <p>This is part of <a href="/articles/joyful_rails">Joyful Rails</a>, a list of
+recommendations to make developing your Rails app more productive and joyful.</p>
+
+<p>In this article, we are talking about the Rails “new” command.</p>
+
+<h2 id="when">When</h2>
+
+<p>The Rails “new” command is used to create a brand new Rails application. It
+creates a directory with the framework and all the boilerplate code installed.</p>
+
+<h2 id="why">Why</h2>
+
+<p>It takes a lot of files with a lot of code to have a working Rails project.
+Rather than make you create and write them all yourself, Rails has a command-line
+interface that will create them for you.</p>
+
+<h2 id="how">How</h2>
+
+<p>If you do not have the Rails gem already, install it with <code class="language-plaintext highlighter-rouge">gem install rails</code>.</p>
+
+<p>If you already have the Rails gem, you can update it with <code class="language-plaintext highlighter-rouge">gem update rails</code>.</p>
+
+<p>Make sure you are using the version of Rails you want to be using with <code class="language-plaintext highlighter-rouge">rails
+--version</code>. You can see the latest version of Rails on the
+<a href="https://rubyonrails.org">website</a>.</p>
+
+<p>To create a new Rails project run: <code class="language-plaintext highlighter-rouge">rails new projectname</code>.</p>
+
+<p>The Rails gem will create a new directory named <code class="language-plaintext highlighter-rouge">projectname</code> and create a new
+Rails project in that directory.</p>
+
+<h2 id="alternatives">Alternatives</h2>
+
+<p>The Rails “new” command accepts a lot of options to change the default behavior.
+Many of them make a lot of my later recommendations unnecessary. I haven’t
+included them here for a couple of reasons.</p>
+
+<p>First, I don’t know what they are.</p>
+
+<p>But more importantly, I advocate for putting off decisions whenever possible.
+It’s easy to get caught in the trap of trying to figure out the exact right set
+of options to use to create your new application. I’d rather create my Rails app with the default settings and change things easily in the future when (and if!) the need arises.</p>
+
+      </main>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+
+    
+
+
+  
+<footer class="usa-footer">
+
+  
+
+  
+    
+    
+    
+    
+  <div class="usa-footer__primary-section">
+    <nav class="usa-footer__nav" aria-label="Footer navigation">
+      <ul class="grid-row grid-gap">
+        
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="/articles">
+            Articles
+          </a>
+        </li>
+        
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="/articles/joyful_rails">
+            Joyful Rails
+          </a>
+        </li>
+        
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="https://app.talariasoftware.com/expertise_to_income">
+            Workbook
+          </a>
+        </li>
+        
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="https://app.talariasoftware.com/get_help">
+            Coaching
+          </a>
+        </li>
+        
+      </ul>
+    </nav>
+  </div>
+  
+
+  
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+          
+            <div class="mobile-lg:grid-col-auto">
+                
+                  <img class="usa-footer__logo-img" src="/images/foot-color.png" alt="Talaria Software logo">
+                
+              </div>
+            
+          
+
+          
+          <div class="mobile-lg:grid-col-auto">
+            <h3 class="usa-footer__logo-heading">Talaria Software</h3>
+          </div>
+          
+        </div>
+
+        
+        <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+          
+          
+            <div class="usa-footer__social-links grid-row grid-gap-1">
+              <div class="grid-col-auto">
+                
+                  <a class="usa-social-link usa-social-link--twitter" href="https://twitter.com/talariasoftware">
+                    <span>Twitter</span>
+                  </a>
+                
+                  <a class="usa-social-link usa-social-link--github" href="https://github.com/talariasoftware">
+                    <span>GitHub</span>
+                  </a>
+                
+              </div>
+            </div>
+          
+          
+            <h3 class="usa-footer__contact-heading">Contact</h3>
+            
+            
+              <address class="usa-footer__address">
+                
+                <div class="usa-footer__contact-info grid-row grid-gap">
+                
+                    <div class="grid-col-auto">
+                      <a href="mailto:help@talariasoftware.com">
+                        help@talariasoftware.com
+                      </a>
+                    </div>
+                
+                </div>
+              </address>
+
+              
+                <div class="usa-footer__contact-info grid-row grid-gap">
+                  <ul class="policy-list usa-list usa-list--unstyled text-right">
+                    
+                        <li class="display-inline">
+                          <a href="/privacy_policy">
+                            Privacy Policy
+                          </a>
+                        </li>
+                    
+                        <li class="display-inline">
+                          <a href="/terms_of_service">
+                            Terms of Service
+                          </a>
+                        </li>
+                    
+                  </ul>
+                </div>
+              
+
+              <div>
+                &copy; 2015&mdash;2021 Talaria Research LLC
+              </div>
+          
+        
+      </div>
+      
+      </div>
+    </div>
+  </div>
+  
+
+</footer>
+
+
+
+
+
+    
+
+
+
+
+
+  
+    
+      <script src="/assets/uswds/js/uswds.min.js" async></script>
+    
+
+  
+    
+
+
+
+
+
+
+  </body>
+</html>
