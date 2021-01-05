@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-04T23:37:41-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Default Rake Task</title><link href="/articles/default_rake_task" rel="alternate" type="text/html" title="Default Rake Task" /><published>2020-12-29T00:00:00-08:00</published><updated>2020-12-29T00:00:00-08:00</updated><id>/articles/default_rake_task</id><content type="html" xml:base="/articles/default_rake_task">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-05T00:37:17-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Set Up a Production Environment</title><link href="/articles/set_up_a_production_environment" rel="alternate" type="text/html" title="Set Up a Production Environment" /><published>2021-01-05T00:00:00-08:00</published><updated>2021-01-05T00:00:00-08:00</updated><id>/articles/set_up_a_production_environment</id><content type="html" xml:base="/articles/set_up_a_production_environment">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are talking about setting up a production environment.&lt;/p&gt;
+
+&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
+
+&lt;p&gt;In the interest of rapid user feedback and iteration, I recommend doing this as
+soon as possible.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+
+&lt;p&gt;A production environment makes your app available to people who aren’t using
+your development machine.&lt;/p&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dashboard.heroku.com/new-app&quot;&gt;Create a Heroku app&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;alternatives&quot;&gt;Alternatives&lt;/h2&gt;
+
+&lt;p&gt;Almost every web hosting company can deploy Rails apps. Some can be cheaper than
+Heroku in certain scenarios. None that I know of are easier to start with.&lt;/p&gt;
+
+&lt;p&gt;Heroku is incredibly easy to use and can be used for free to start. I recommend
+starting with it.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Default Rake Task</title><link href="/articles/default_rake_task" rel="alternate" type="text/html" title="Default Rake Task" /><published>2020-12-29T00:00:00-08:00</published><updated>2020-12-29T00:00:00-08:00</updated><id>/articles/default_rake_task</id><content type="html" xml:base="/articles/default_rake_task">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
 recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
 
 &lt;p&gt;In this article, we are talking about adding to the default rake task.&lt;/p&gt;
@@ -775,50 +800,4 @@ indicate the type if the id is a UUID.&lt;/p&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;If you do not do this, there is a risk of silent errors when the UUIDs are
-coerced into an integer to fit into a column that expects an integer.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Configure Generators</title><link href="/articles/configure_generators" rel="alternate" type="text/html" title="Configure Generators" /><published>2020-11-03T00:00:00-08:00</published><updated>2020-11-03T00:00:00-08:00</updated><id>/articles/configure_generators</id><content type="html" xml:base="/articles/configure_generators">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
-recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
-
-&lt;p&gt;In this article, we are talking about configuring the Rails generators.&lt;/p&gt;
-
-&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
-
-&lt;p&gt;When or if to configure the Rails generators depends on how much you like the
-default generators and how much you use or want to use the generators.&lt;/p&gt;
-
-&lt;p&gt;If you like the how the generators work (or you never use them), there is no point
-to configuring them. If you don’t like what the generators do, and you use them
-often or want to use them often, it is a good idea to configure them.&lt;/p&gt;
-
-&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
-
-&lt;p&gt;By default, Rails generators create helpers. Helpers are generally a bad idea;
-most helper functions should be part of a model or view object instead.&lt;/p&gt;
-
-&lt;p&gt;By default, Rails generators create a stylesheet for every controller.
-Stylesheets should not be tied to a controller.&lt;/p&gt;
-
-&lt;p&gt;By default, Rails generators create specs for views. Views should not be complicated enough to need specs.&lt;/p&gt;
-
-&lt;p&gt;By default, the Rails generators create request specs to test controllers.
-Request specs are probably a good idea for APIs, but for more traditional web
-apps, it makes more sense to test the controller directly by looking at
-the resource assigned and any side effects.&lt;/p&gt;
-
-&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
-
-&lt;p&gt;Add the following to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config/application.rb&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;generators&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;helper&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;generators&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;stylesheets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;generators&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;view_specs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;generators&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;request_specs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;generators&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;controller_specs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;After making a commit, test that this works by running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rails generate resource foo&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;You should get a migration, a model, a controller, a route, a model spec, and
-a controller spec. You should not get a helper, stylesheet, view spec, or
-request spec.&lt;/p&gt;
-
-&lt;p&gt;Remove the files created by the generator.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
+coerced into an integer to fit into a column that expects an integer.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
