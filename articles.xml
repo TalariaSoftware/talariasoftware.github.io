@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-06T23:39:16-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Set Up a Production Environment</title><link href="/articles/set_up_a_production_environment" rel="alternate" type="text/html" title="Set Up a Production Environment" /><published>2021-01-05T00:00:00-08:00</published><updated>2021-01-05T00:00:00-08:00</updated><id>/articles/set_up_a_production_environment</id><content type="html" xml:base="/articles/set_up_a_production_environment">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-07T00:37:34-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Investigation and Influence with Chelsea Troy</title><link href="/articles/investigation_and_influence_with_chelsea_troy" rel="alternate" type="text/html" title="Investigation and Influence with Chelsea Troy" /><published>2021-01-07T00:00:00-08:00</published><updated>2021-01-07T00:00:00-08:00</updated><id>/articles/investigation_and_influence_with_chelsea_troy</id><content type="html" xml:base="/articles/investigation_and_influence_with_chelsea_troy">&lt;p&gt;I was one of the hosts lucky enough to welcome the amazing Chelsea Troy to the
+Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/investigation-and-influence&quot;&gt;episode 207&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We talked about software detective work and then went deep into practical
+considerations for living our values and making an impact as technologists and
+engineers. There are even a few tidbits on fallibility and Lucifer (the TV
+series).&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.fireside.fm/v2/nERs6yQ-+qbEU9b2g&quot; width=&quot;740&quot; height=&quot;200&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;You can find more about Chelsea from her &lt;a href=&quot;https://chelseatroy.com&quot;&gt;website&lt;/a&gt; or
+listen to &lt;a href=&quot;https://www.greaterthancode.com/guests/chelsea-troy&quot;&gt;all of her
+appearances&lt;/a&gt; on Greater
+than Code.&lt;/p&gt;</content><author><name></name></author><category term="greater_than_code" /><summary type="html">I was one of the hosts lucky enough to welcome the amazing Chelsea Troy to the Greater than Code podcast episode 207.</summary></entry><entry><title type="html">Set Up a Production Environment</title><link href="/articles/set_up_a_production_environment" rel="alternate" type="text/html" title="Set Up a Production Environment" /><published>2021-01-05T00:00:00-08:00</published><updated>2021-01-05T00:00:00-08:00</updated><id>/articles/set_up_a_production_environment</id><content type="html" xml:base="/articles/set_up_a_production_environment">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
 recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
 
 &lt;p&gt;In this article, we are talking about setting up a production environment.&lt;/p&gt;
@@ -707,97 +720,4 @@ of your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfi
   &lt;li&gt;Correct errors that RuboCop cannot correct automatically.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;!-- Add section with link to my Rubocop config --&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Switch to UUIDs</title><link href="/articles/switch_to_uuids" rel="alternate" type="text/html" title="Switch to UUIDs" /><published>2020-11-10T00:00:00-08:00</published><updated>2020-11-10T00:00:00-08:00</updated><id>/articles/switch_to_uuids</id><content type="html" xml:base="/articles/switch_to_uuids">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
-recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
-
-&lt;p&gt;In this article, we are talking about switching the database primary keys to
-UUIDs, universally unique identifiers.&lt;/p&gt;
-
-&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
-
-&lt;p&gt;On one hand, it is not trivial to change a table’s primary key from the default
-integer to UUIDs. For that reason, it is helpful to switch to UUIDs as early as
-possible.&lt;/p&gt;
-
-&lt;p&gt;On the other hand, the benefits of using UUIDs are generally not an important
-concern for new applications, so there is little reason to do it right away.&lt;/p&gt;
-
-&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
-
-&lt;p&gt;By default, Rails uses integers as primary keys. Using UUIDs can help prevent a
-few problems.&lt;/p&gt;
-
-&lt;h3 id=&quot;integer-overflow&quot;&gt;Integer overflow&lt;/h3&gt;
-
-&lt;p&gt;Integer primary keys increase monotonically for every new row. Eventually, the
-primary key gets too large and new entries cannot be created.&lt;/p&gt;
-
-&lt;p&gt;Since Rails 5.1 the default is to use 64-bit integers, which means this will
-not be a problem until you’ve created over &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;9*10^18&lt;/code&gt; rows.&lt;/p&gt;
-
-&lt;p&gt;UUIDs are much larger (128-bits total) and chosen randomly. So even when
-you have over &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;9*10^18&lt;/code&gt; rows your primary key will not be the problem.&lt;/p&gt;
-
-&lt;h3 id=&quot;guessable-primary-keys&quot;&gt;Guessable primary keys&lt;/h3&gt;
-
-&lt;p&gt;Every new integer primary key is one more than the previous one, which means it
-is trivial to guess what IDs have been created and which ones will be created
-next.&lt;/p&gt;
-
-&lt;p&gt;Knowing what primary keys exist should not be a security issue by itself, but
-you may still want to hide as part of a defense in depth.&lt;/p&gt;
-
-&lt;h3 id=&quot;estimable-creation-rates&quot;&gt;Estimable creation rates&lt;/h3&gt;
-
-&lt;p&gt;Every new integer primary key is one more than the previous one, which means it
-is simple to find out how quickly they are being created.&lt;/p&gt;
-
-&lt;p&gt;That information may reveal how many users signed up yesterday or how many
-orders were created this week.&lt;/p&gt;
-
-&lt;p&gt;For most applications, most of the time, no one cares and this is not an issue.
-If it might be for you, using UUIDs as your primary keys can eliminate it.&lt;/p&gt;
-
-&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
-
-&lt;h3 id=&quot;enable-uuids-in-postgresql&quot;&gt;Enable UUIDs in PostgreSQL:&lt;/h3&gt;
-
-&lt;p&gt;We assume you have already made the &lt;a href=&quot;switch_to_postgresql&quot;&gt;switch to
-PostgreSQL&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Generate a migration: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rails generate migration EnableUuids&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Put this in the change method of the migration: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;enable_extension 'pgcrypto'&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Run the migration: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake db:migrate&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;configure-the-generators-to-use-uuids-as-primary-keys&quot;&gt;Configure the generators to use UUIDs as primary keys:&lt;/h3&gt;
-
-&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config/application.rb&lt;/code&gt; add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.generators.orm :active_record,
-primary_key_type: :uuid&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;test-the-change&quot;&gt;Test the change&lt;/h3&gt;
-
-&lt;p&gt;After making a commit, test that this works by running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rails generate model
-foo&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake db:migrate&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The migration and schema should both indicate that the id is a UUID.&lt;/p&gt;
-
-&lt;p&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake db:rollback&lt;/code&gt; and remove the generated files before continuing.&lt;/p&gt;
-
-&lt;h2 id=&quot;gotchas&quot;&gt;Gotchas&lt;/h2&gt;
-
-&lt;p&gt;When creating a foreign key column (using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;references&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;belongs_to&lt;/code&gt;) you must
-indicate the type if the id is a UUID.&lt;/p&gt;
-
-&lt;p&gt;For example:&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;create_table&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;id: :uuid&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;create_table&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:comment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;id: :uuid&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;belongs_to&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;type: :uuid&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;If you do not do this, there is a risk of silent errors when the UUIDs are
-coerced into an integer to fit into a column that expects an integer.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
+&lt;!-- Add section with link to my Rubocop config --&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
