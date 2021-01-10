@@ -5,7 +5,7 @@ published_at: 2021-01-14 07:00 -0800
 tags: greater_than_code
 ---
 
-I was one of the hosts lucky enough to welcom the lovely Ryan Bowers to the
+I was one of the hosts lucky enough to welcome the lovely Ryan Bowers to the
 Greater than Code podcast [episode 214](https://www.greaterthancode.com/the-righteous-mind).
 
 We discussed ["The Righteous Mind"](https://righteousmind.com) by Jonathan Haidt
