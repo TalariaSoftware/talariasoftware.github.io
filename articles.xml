@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-13T23:56:27-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Investigation and Influence with Chelsea Troy</title><link href="/articles/investigation_and_influence_with_chelsea_troy" rel="alternate" type="text/html" title="Investigation and Influence with Chelsea Troy" /><published>2021-01-07T00:00:00-08:00</published><updated>2021-01-07T00:00:00-08:00</updated><id>/articles/investigation_and_influence_with_chelsea_troy</id><content type="html" xml:base="/articles/investigation_and_influence_with_chelsea_troy">&lt;p&gt;I was one of the hosts lucky enough to welcome the amazing Chelsea Troy to the
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-14T00:56:34-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">The Righteous Mind with Rylan Bowers</title><link href="/articles/the_righteous_mind_with_rylan_bowers" rel="alternate" type="text/html" title="The Righteous Mind with Rylan Bowers" /><published>2021-01-14T00:00:00-08:00</published><updated>2021-01-14T00:00:00-08:00</updated><id>/articles/the_righteous_mind_with_rylan_bowers</id><content type="html" xml:base="/articles/the_righteous_mind_with_rylan_bowers">&lt;p&gt;I was one of the hosts lucky enough to welcome the lovely Ryan Bowers to the
+Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/the-righteous-mind&quot;&gt;episode 214&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We discussed &lt;a href=&quot;https://righteousmind.com&quot;&gt;“The Righteous Mind”&lt;/a&gt; by Jonathan Haidt
+and dug into the nature and origin of morality and moral decision making. This
+was my first introduction to the individual-on-an-elephant metaphor which I am
+sure I will be using extensively.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.fireside.fm/v2/nERs6yQ-+IC-GEYVh?theme=dark&quot; width=&quot;740&quot; height=&quot;200&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;You can find out more about Rylan from his &lt;a href=&quot;https://rylanbowers.com&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="greater_than_code" /><summary type="html">I was one of the hosts lucky enough to welcome the lovely Ryan Bowers to the Greater than Code podcast episode 214.</summary></entry><entry><title type="html">Investigation and Influence with Chelsea Troy</title><link href="/articles/investigation_and_influence_with_chelsea_troy" rel="alternate" type="text/html" title="Investigation and Influence with Chelsea Troy" /><published>2021-01-07T00:00:00-08:00</published><updated>2021-01-07T00:00:00-08:00</updated><id>/articles/investigation_and_influence_with_chelsea_troy</id><content type="html" xml:base="/articles/investigation_and_influence_with_chelsea_troy">&lt;p&gt;I was one of the hosts lucky enough to welcome the amazing Chelsea Troy to the
 Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/investigation-and-influence&quot;&gt;episode 207&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;We talked about software detective work and then went deep into practical
@@ -693,31 +703,4 @@ only changes one line in the file.&lt;/p&gt;
 
 &lt;span class=&quot;s&quot;&gt;Style/TrailingCommaInHashLiteral&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;EnforcedStyleForMultiline&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;comma&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Use a Ruby Linter</title><link href="/articles/use_a_ruby_linter" rel="alternate" type="text/html" title="Use a Ruby Linter" /><published>2020-11-17T00:00:00-08:00</published><updated>2020-11-17T00:00:00-08:00</updated><id>/articles/use_a_ruby_linter</id><content type="html" xml:base="/articles/use_a_ruby_linter">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
-recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
-
-&lt;p&gt;In this article, we are talking about using a Ruby linter.&lt;/p&gt;
-
-&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
-
-&lt;p&gt;The longer you wait to add a Ruby linter, the more work you will have to correct
-style errors that have accumulated. For that reason, I recommend adding a
-linter, such as RuboCop, as early as possible.&lt;/p&gt;
-
-&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
-
-&lt;p&gt;Having a consistent style makes code easier to read and maintain. Using a
-linter makes it easy to conform to a consistent style. In a lot of cases, your
-linter can make corrections automatically.&lt;/p&gt;
-
-&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Add the RuboCop gem. Add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem 'rubocop'&lt;/code&gt; to the development group
-of your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Configure RuboCop. Add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.rubocop.yml&lt;/code&gt; with the RuboCop configuration.&lt;/li&gt;
-  &lt;li&gt;Run RuboCop with auto-correct, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rubocop --auto-correct&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Correct errors that RuboCop cannot correct automatically.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;!-- Add section with link to my Rubocop config --&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
