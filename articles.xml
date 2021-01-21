@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-20T23:57:21-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">The Righteous Mind with Rylan Bowers</title><link href="/articles/the_righteous_mind_with_rylan_bowers" rel="alternate" type="text/html" title="The Righteous Mind with Rylan Bowers" /><published>2021-01-14T00:00:00-08:00</published><updated>2021-01-14T00:00:00-08:00</updated><id>/articles/the_righteous_mind_with_rylan_bowers</id><content type="html" xml:base="/articles/the_righteous_mind_with_rylan_bowers">&lt;p&gt;I was one of the hosts lucky enough to welcome the lovely Ryan Bowers to the
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-21T00:59:48-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Robot and Human Collaboration with Julie Shah</title><link href="/articles/robot_and_human_collaboration_with_julie_shah" rel="alternate" type="text/html" title="Robot and Human Collaboration with Julie Shah" /><published>2021-01-21T00:00:00-08:00</published><updated>2021-01-21T00:00:00-08:00</updated><id>/articles/robot_and_human_collaboration_with_julie_shah</id><content type="html" xml:base="/articles/robot_and_human_collaboration_with_julie_shah">&lt;p&gt;I was one of the hosts lucky enough to welcome the insightful Julie Shah to the
+Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/robot-and-human-collaboration&quot;&gt;episode 216&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Prof. Shah directs the Interactive Robotics Group in the Schwarzman College of
+Computing at MIT and is an associate dean of social implications and
+responsibilities of computing.&lt;/p&gt;
+
+&lt;p&gt;We discussed some of the subjects in her new book &lt;a href=&quot;https://www.amazon.com/What-Expect-Youre-Expecting-Robots/dp/1541699114&quot;&gt;“What To Expect When You’re
+Expecting
+Robots”&lt;/a&gt;
+including how and when to structure the world for machines and the interactions
+between humans and machines in public spaces.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.fireside.fm/v2/nERs6yQ-+cbykvRtV?theme=dark&quot; width=&quot;740&quot; height=&quot;200&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;You can find out more about Prof. Shah from her &lt;a href=&quot;https://interactive.mit.edu&quot;&gt;lab’s
+website&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="greater_than_code" /><summary type="html">I was one of the hosts lucky enough to welcome the insightful Julie Shah to the Greater than Code podcast episode 216.</summary></entry><entry><title type="html">The Righteous Mind with Rylan Bowers</title><link href="/articles/the_righteous_mind_with_rylan_bowers" rel="alternate" type="text/html" title="The Righteous Mind with Rylan Bowers" /><published>2021-01-14T00:00:00-08:00</published><updated>2021-01-14T00:00:00-08:00</updated><id>/articles/the_righteous_mind_with_rylan_bowers</id><content type="html" xml:base="/articles/the_righteous_mind_with_rylan_bowers">&lt;p&gt;I was one of the hosts lucky enough to welcome the lovely Ryan Bowers to the
 Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/the-righteous-mind&quot;&gt;episode 214&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;We discussed &lt;a href=&quot;https://righteousmind.com&quot;&gt;“The Righteous Mind”&lt;/a&gt; by Jonathan Haidt
@@ -474,233 +490,4 @@ Gemfile.&lt;/p&gt;
 
 &lt;p&gt;To run, use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rails_best_practices .&lt;/code&gt;&lt;/p&gt;
 
-&lt;!-- Add section with link to default rake --&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">My Ruby Style</title><link href="/articles/my_ruby_style" rel="alternate" type="text/html" title="My Ruby Style" /><published>2020-11-24T00:00:00-08:00</published><updated>2020-11-24T00:00:00-08:00</updated><id>/articles/my_ruby_style</id><content type="html" xml:base="/articles/my_ruby_style">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
-recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
-
-&lt;p&gt;In this article, we are going to talk about my Ruby style.&lt;/p&gt;
-
-&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
-
-&lt;p&gt;This is my Ruby style. It is not right or wrong. It is a collection of
-personal preferences reflecting my values and trade-offs.&lt;/p&gt;
-
-&lt;p&gt;Your Ruby style may be different. Decisions on coding style should reflect the
-environment and preferences of the people reading and writing the code.&lt;/p&gt;
-
-&lt;h2 id=&quot;about-this-article&quot;&gt;About this article&lt;/h2&gt;
-
-&lt;p&gt;I am going to be describing my Ruby style as a collection of configuration
-settings to RuboCop.&lt;/p&gt;
-
-&lt;p&gt;If you agree with me, you can add the settings below to your Rubocop configuration.&lt;/p&gt;
-
-&lt;h2 id=&quot;use-rails-cops&quot;&gt;Use Rails cops&lt;/h2&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rubocop-rails&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;enable-new-cops&quot;&gt;Enable new cops&lt;/h2&gt;
-
-&lt;p&gt;New cops are added all the time and by default are pending until the next major
-release. Enable them automatically so you can more easily stay up to date.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;AllCops&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;NewCops&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;enable&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;global-exclusion&quot;&gt;Global exclusion&lt;/h3&gt;
-
-&lt;p&gt;Exclude generated files from RuboCop enforcement. I don’t write, read, or edit
-these files so I don’t care about their style.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;AllCops&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bin/*&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;config.ru&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;db/schema.rb&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;node_modules/**/*&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;documentation&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style.html#styledocumentation&quot;&gt;Documentation&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;A combination of clear naming and RSpec specifications obviates the need for
-class documentation blocks.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Style/Documentation&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Enabled&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;argument-alignment&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_layout#layoutargumentalignment&quot;&gt;Argument Alignment&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;The default style, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;with_first_argument&lt;/code&gt;, wastes too much space.&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;method_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:first_arg&lt;/span&gt;
-            &lt;span class=&quot;ss&quot;&gt;:second_arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;with_fixed_indentation&lt;/code&gt; is great for methods with a lot of arguments.&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;method_with_a_long_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:third&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;ss&quot;&gt;:forth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:fifth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:sixth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:seventh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:eigth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Layout/ArgumentAlignment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;EnforcedStyle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;with_fixed_indentation&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;first-array-element-indentation&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_layout#layoutfirstarrayelementindentation&quot;&gt;First Array Element Indentation&lt;/a&gt;&lt;/h3&gt;
-
-&lt;!-- Why --&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Layout/FirstArrayElementIndentation&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;EnforcedStyle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;consistent&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;hash-alignment&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_layout#layouthashalignment&quot;&gt;Hash Alignment&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Implicit hashes do not need to be formatted like hashes.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Layout/HashAlignment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;EnforcedLastArgumentHashStyle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ignore_implicit&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;line-length&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_layout#layoutlinelength&quot;&gt;Line Length&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Cop directives should not need to be under our line length requirements.
-This makes it much easer to apply a cop directive to a single line of code.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Layout/LineLength&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;IgnoreCopDirectives&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Allow comments to be really long. A lot of the boilerplate comments generated by
-Rails are over 80 characters. With this, you won’t need to fix them or delete
-them.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Layout/LineLength&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;IgnoredPatterns&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;^\s*#&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;parameter-alignment&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_layout#layoutparameteralignment&quot;&gt;Parameter Alignment&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Similar to argument alignment, the default setting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;with_first_parameter&lt;/code&gt; wastes
-too much space.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Layout/ParameterAlignment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;EnforcedStyle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;with_fixed_indentation&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;ambiguous-block-association&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_lint#lintambiguousblockassociation&quot;&gt;Ambiguous Block Association&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Writing idiomatic RSpec requires violating this rule, so we exclude RSpec files
-from it.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Lint/AmbiguousBlockAssociation&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;**/*_spec.rb&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;block-length&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_metrics#metricsblocklength&quot;&gt;Block Length&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Idiomatic RSpec often has very long blocks. There is no harm in configuration
-files having long blocks. So we exclude both of those.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Metrics/BlockLength&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Guardfile&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;config/environments/*&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;config/routes.rb&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;**/*_spec.rb&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;method-length&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_metrics#metricsmethodlength&quot;&gt;Method Length&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;It usually isn’t helpful to break up migration methods, so we allow them to get
-as long as they need.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Metrics/MethodLength&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;db/migrate/*.rb&quot;&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;block-delimiters&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#styleblockdelimiters&quot;&gt;Block Delimiters&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;do&lt;/code&gt;…&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;end&lt;/code&gt; for a multiline block, unless you are chaining.&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-
-&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;flip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;flop&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Style/BlockDelimiters&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;EnforcedStyle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;braces_for_chaining&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;empty-method&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#styleemptymethod&quot;&gt;Empty Method&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Empty methods are unlikely to stay empty, so let’s make it easy to edit them.&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;empty_method&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Style/EmptyMethod&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;EnforcedStyle&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;expanded&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;frozen-string-literal-comment&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#stylefrozenstringliteralcomment&quot;&gt;Frozen String Literal Comment&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;The eventual transition to frozen string literals will not be difficult for a
-codebase with good specs. There is no need to clutter up our files trying to
-prepare for it.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Style/FrozenStringLiteralComment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Enabled&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;string-literals&quot;&gt;&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#stylestringliterals&quot;&gt;String Literals&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;String literals should be double-quoted when interpolated, when they include a
-single-quote character, or when they are natural language texts.&lt;/p&gt;
-
-&lt;p&gt;Natural language strings often use single quotes as apostrophes for contractions
-and possessives. Using double quotes means being able to change the text,
-including adding or removing apostrophes, without having to alter the quote
-characters.&lt;/p&gt;
-
-&lt;p&gt;For this reason, we exclude Ruby files that are likely to contain natural
-language text strings.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Style/StringLiterals&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;Exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;lib/tasks/*.rake&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;spec/**/*_spec.rb&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;trailing-commas&quot;&gt;Trailing Commas&lt;/h3&gt;
-
-&lt;p&gt;Including trailing commas in
-&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#styletrailingcommainarguments&quot;&gt;arguments&lt;/a&gt;,
-&lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#styletrailingcommainarrayliteral&quot;&gt;array
-literals&lt;/a&gt;,
-and &lt;a href=&quot;https://docs.rubocop.org/rubocop/cops_style#styletrailingcommainhashliteral&quot;&gt;hash
-literals&lt;/a&gt;
-makes it easier to add, remove, and reorder items.&lt;/p&gt;
-
-&lt;p&gt;As a bonus, it makes it easier to read Git commits because changing one item
-only changes one line in the file.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;Style/TrailingCommaInArguments&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;EnforcedStyleForMultiline&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;comma&lt;/span&gt;
-
-&lt;span class=&quot;s&quot;&gt;Style/TrailingCommaInArrayLiteral&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;EnforcedStyleForMultiline&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;comma&lt;/span&gt;
-
-&lt;span class=&quot;s&quot;&gt;Style/TrailingCommaInHashLiteral&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;EnforcedStyleForMultiline&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;comma&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
+&lt;!-- Add section with link to default rake --&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
