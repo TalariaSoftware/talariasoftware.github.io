@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-25T23:25:34-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Robot and Human Collaboration with Julie Shah</title><link href="/articles/robot_and_human_collaboration_with_julie_shah" rel="alternate" type="text/html" title="Robot and Human Collaboration with Julie Shah" /><published>2021-01-21T00:00:00-08:00</published><updated>2021-01-21T00:00:00-08:00</updated><id>/articles/robot_and_human_collaboration_with_julie_shah</id><content type="html" xml:base="/articles/robot_and_human_collaboration_with_julie_shah">&lt;p&gt;I was one of the hosts lucky enough to welcome the insightful Julie Shah to the
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-26T00:29:52-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Update the Readme</title><link href="/articles/update_the_readme" rel="alternate" type="text/html" title="Update the Readme" /><published>2021-01-26T00:00:00-08:00</published><updated>2021-01-26T00:00:00-08:00</updated><id>/articles/update_the_readme</id><content type="html" xml:base="/articles/update_the_readme">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are talking about updating the readme file.&lt;/p&gt;
+
+&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
+
+&lt;p&gt;Every time there is some new piece of information that every developer will
+need, or that is not obvious or easy to find, add that to the “readme” file.&lt;/p&gt;
+
+&lt;p&gt;Setting up a new development machine or onboarding a new developer is a great
+time to overhaul your readme file. Change anything that is incorrect, unclear,
+or missing.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+
+&lt;p&gt;Opening an unfamiliar codebase can be very intimidating. A readme file gives
+future developers a way to get their bearings. It can’t tell you where
+everything is, but it can let you know where to start looking – and that is huge.&lt;/p&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
+
+&lt;p&gt;Your readme file should probably include the name of the app, what it does, how
+to set up your development environment, how to run the tests, how to deploy, and any other information a new developer is likely to need.&lt;/p&gt;
+
+&lt;p&gt;This should go into a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README.md&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is an example readme file:&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gh&quot;&gt;# Hello World&lt;/span&gt;
+
+Universal greeter for all human and non-human entities
+
+&lt;span class=&quot;gu&quot;&gt;## Development&lt;/span&gt;
+
+Instructions on how to develop go here
+
+&lt;span class=&quot;gu&quot;&gt;### Specs&lt;/span&gt;
+
+&lt;span class=&quot;sb&quot;&gt;`rake`&lt;/span&gt;
+
+&lt;span class=&quot;gu&quot;&gt;### Deployment&lt;/span&gt;
+
+&lt;span class=&quot;sb&quot;&gt;`bin/deploy`&lt;/span&gt;
+
+&lt;span class=&quot;gu&quot;&gt;### Updating libraries&lt;/span&gt;
+
+&lt;span class=&quot;sb&quot;&gt;`bin/gem_update`&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;alternatives&quot;&gt;Alternatives&lt;/h2&gt;
+
+&lt;p&gt;In the long ago time, readme files were named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README.txt&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README&lt;/code&gt; or
+occasionally &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Readme&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The all caps version of the file name makes it very easy to notice in a file
+listing.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt; extension indicates that the file is Markdown so it gets rendered
+nicely in GitHub and elsewhere.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Robot and Human Collaboration with Julie Shah</title><link href="/articles/robot_and_human_collaboration_with_julie_shah" rel="alternate" type="text/html" title="Robot and Human Collaboration with Julie Shah" /><published>2021-01-21T00:00:00-08:00</published><updated>2021-01-21T00:00:00-08:00</updated><id>/articles/robot_and_human_collaboration_with_julie_shah</id><content type="html" xml:base="/articles/robot_and_human_collaboration_with_julie_shah">&lt;p&gt;I was one of the hosts lucky enough to welcome the insightful Julie Shah to the
 Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/robot-and-human-collaboration&quot;&gt;episode 216&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Prof. Shah directs the Interactive Robotics Group in the Schwarzman College of
@@ -466,28 +525,4 @@ known security vulnerabilities in your gems.&lt;/p&gt;
 &lt;p&gt;There are services that will monitor your running applications for libraries with
 known vulnerabilities. They are a much better solution for applications that are
 not under active development or that, for some other reason, go a long time
-between updates.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Use a Rails Linter</title><link href="/articles/use_a_rails_linter" rel="alternate" type="text/html" title="Use a Rails Linter" /><published>2020-12-01T00:00:00-08:00</published><updated>2020-12-01T00:00:00-08:00</updated><id>/articles/use_a_rails_linter</id><content type="html" xml:base="/articles/use_a_rails_linter">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
-recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
-
-&lt;p&gt;In this article, we are talking about using a Rails linter.&lt;/p&gt;
-
-&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
-
-&lt;p&gt;The longer you wait to add a linter, the more work you will have to correct
-style errors that have accumulated. For that reason, I recommend adding a Rails
-linter as early as possible.&lt;/p&gt;
-
-&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
-
-&lt;p&gt;A Rails linter like the &lt;a href=&quot;https://github.com/flyerhzm/rails_best_practices&quot;&gt;Rails Best Practices
-gem&lt;/a&gt; can catch and sometimes
-correct common mistakes and problems in Rails code.&lt;/p&gt;
-
-&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
-
-&lt;p&gt;To install, add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rails_best_practices&lt;/code&gt; to the development section of your
-Gemfile.&lt;/p&gt;
-
-&lt;p&gt;To run, use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rails_best_practices .&lt;/code&gt;&lt;/p&gt;
-
-&lt;!-- Add section with link to default rake --&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
+between updates.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
