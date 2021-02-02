@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-01T23:26:44-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Update the Readme</title><link href="/articles/update_the_readme" rel="alternate" type="text/html" title="Update the Readme" /><published>2021-01-26T00:00:00-08:00</published><updated>2021-01-26T00:00:00-08:00</updated><id>/articles/update_the_readme</id><content type="html" xml:base="/articles/update_the_readme">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-02T00:31:01-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Add Authentication</title><link href="/articles/add_authentication" rel="alternate" type="text/html" title="Add Authentication" /><published>2021-02-02T00:00:00-08:00</published><updated>2021-02-02T00:00:00-08:00</updated><id>/articles/add_authentication</id><content type="html" xml:base="/articles/add_authentication">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are talking about adding authentication.&lt;/p&gt;
+
+&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
+
+&lt;p&gt;Authentication is the process of identifying who your user is. You should add it
+as soon as your app needs to know who its users are.&lt;/p&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
+
+&lt;p&gt;Use &lt;a href=&quot;https://github.com/heartcombo/devise#getting-started&quot;&gt;Devise&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;gotchas&quot;&gt;Gotchas&lt;/h2&gt;
+
+&lt;p&gt;Authentication is separate from authorization. We’ll talk about authorization in
+a separate article.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Update the Readme</title><link href="/articles/update_the_readme" rel="alternate" type="text/html" title="Update the Readme" /><published>2021-01-26T00:00:00-08:00</published><updated>2021-01-26T00:00:00-08:00</updated><id>/articles/update_the_readme</id><content type="html" xml:base="/articles/update_the_readme">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
 recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
 
 &lt;p&gt;In this article, we are talking about updating the readme file.&lt;/p&gt;
@@ -490,39 +507,4 @@ run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle&lt
 &lt;h2 id=&quot;gotchas&quot;&gt;Gotchas&lt;/h2&gt;
 
 &lt;p&gt;Brakeman checks for a lot of common errors that create security vulnerabilities.
-Of course, it cannot catch all security issues. Be careful out there.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Library Vulnerability Checks</title><link href="/articles/library_vulnerability_checks" rel="alternate" type="text/html" title="Library Vulnerability Checks" /><published>2020-12-08T00:00:00-08:00</published><updated>2020-12-08T00:00:00-08:00</updated><id>/articles/library_vulnerability_checks</id><content type="html" xml:base="/articles/library_vulnerability_checks">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
-recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
-
-&lt;p&gt;In this article, we are talking about checking for library vulnerabilities.&lt;/p&gt;
-
-&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
-
-&lt;p&gt;You should check for library vulnerability before creating a production
-environment.&lt;/p&gt;
-
-&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
-
-&lt;p&gt;As soon as you make your application available on the Internet, if there is a
-vulnerability in one of the libraries you used, it is possible that that
-vulnerability could be used to compromise your application.&lt;/p&gt;
-
-&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
-
-&lt;p&gt;Use &lt;a href=&quot;https://github.com/rubysec/bundler-audit#readme&quot;&gt;bundler-audit&lt;/a&gt; to check for
-known security vulnerabilities in your gems.&lt;/p&gt;
-
-&lt;p&gt;To install, add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem 'bundler-audit'&lt;/code&gt; to the development section of your
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;To run the checks, use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle audit&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Update any gems with vulnerabilities.&lt;/p&gt;
-
-&lt;!-- link to gem update and default rake task --&gt;
-
-&lt;h2 id=&quot;alternatives&quot;&gt;Alternatives&lt;/h2&gt;
-
-&lt;p&gt;There are services that will monitor your running applications for libraries with
-known vulnerabilities. They are a much better solution for applications that are
-not under active development or that, for some other reason, go a long time
-between updates.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
+Of course, it cannot catch all security issues. Be careful out there.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
