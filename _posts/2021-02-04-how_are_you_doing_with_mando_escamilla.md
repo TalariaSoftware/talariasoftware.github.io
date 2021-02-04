@@ -5,7 +5,7 @@ published_at: 2021-02-04 07:00 -0800
 tags: greater_than_code
 ---
 
-I was one of the hosts lucky enough to welcome the lovely Julie Shah to the
+I was one of the hosts lucky enough to welcome the lovely Mando Escamilla to the
 Greater than Code podcast [episode 219](https://www.greaterthancode.com/how-are-you-doing).
 
 Mando's superpower is the ability to talk about anything personal with other
