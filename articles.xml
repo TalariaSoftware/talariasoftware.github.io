@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-03T23:20:18-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Add Authentication</title><link href="/articles/add_authentication" rel="alternate" type="text/html" title="Add Authentication" /><published>2021-02-02T00:00:00-08:00</published><updated>2021-02-02T00:00:00-08:00</updated><id>/articles/add_authentication</id><content type="html" xml:base="/articles/add_authentication">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-04T00:25:13-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">How are you doing? with Mando Escamilla</title><link href="/articles/how_are_you_doing_with_mando_escamilla" rel="alternate" type="text/html" title="How are you doing? with Mando Escamilla" /><published>2021-02-04T00:00:00-08:00</published><updated>2021-02-04T00:00:00-08:00</updated><id>/articles/how_are_you_doing_with_mando_escamilla</id><content type="html" xml:base="/articles/how_are_you_doing_with_mando_escamilla">&lt;p&gt;I was one of the hosts lucky enough to welcome the lovely Julie Shah to the
+Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/how-are-you-doing&quot;&gt;episode 219&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mando’s superpower is the ability to talk about anything personal with other
+people. He got it during a difficult time in his life when he suddenly could no
+longer bottle up his feelings.&lt;/p&gt;
+
+&lt;p&gt;We discussed how we are all managing the difficult and traumatic time we are
+going through as a society, how we feel about it, and what to do about it.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.fireside.fm/v2/nERs6yQ-+0NcwU7Ey?theme=dark&quot; width=&quot;740&quot; height=&quot;200&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;You can hear more from Mando by &lt;a href=&quot;https://twitter.com/mandoescamilla&quot;&gt;finding him on Twitter.&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="greater_than_code" /><summary type="html">I was one of the hosts lucky enough to welcome the lovely Julie Shah to the Greater than Code podcast episode 219.</summary></entry><entry><title type="html">Add Authentication</title><link href="/articles/add_authentication" rel="alternate" type="text/html" title="Add Authentication" /><published>2021-02-02T00:00:00-08:00</published><updated>2021-02-02T00:00:00-08:00</updated><id>/articles/add_authentication</id><content type="html" xml:base="/articles/add_authentication">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
 recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
 
 &lt;p&gt;In this article, we are talking about adding authentication.&lt;/p&gt;
@@ -475,36 +487,4 @@ Nor will it guarantee that you are not creating liabilities or obligations that
 you do not want.&lt;/p&gt;
 
 &lt;p&gt;If your need legal advise, consult with an attorney licensed to practice in your
-jurisdiction.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Code Vulnerability Checks</title><link href="/articles/code_vulnerability_checks" rel="alternate" type="text/html" title="Code Vulnerability Checks" /><published>2020-12-15T00:00:00-08:00</published><updated>2020-12-15T00:00:00-08:00</updated><id>/articles/code_vulnerability_checks</id><content type="html" xml:base="/articles/code_vulnerability_checks">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
-recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
-
-&lt;p&gt;In this article, we are talking about checking for code vulnerabilities.&lt;/p&gt;
-
-&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
-
-&lt;p&gt;You should check for code vulnerabilities before creating a production environment.&lt;/p&gt;
-
-&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
-
-&lt;p&gt;As soon as you make your application available on the Internet, if there is a
-vulnerability in your code, it is possible that that vulnerability could be used
-to compromise your application.&lt;/p&gt;
-
-&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
-
-&lt;p&gt;Use &lt;a href=&quot;https://brakemanscanner.org&quot;&gt;Brakeman&lt;/a&gt; for code analysis to catch potential
-security vulnerabilities.&lt;/p&gt;
-
-&lt;p&gt;To install, add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem 'brakeman'&lt;/code&gt; to the development section of your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and
-run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;To run use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;brakeman&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Fix any issues Brakeman finds.&lt;/p&gt;
-
-&lt;!-- link to default rake task --&gt;
-
-&lt;h2 id=&quot;gotchas&quot;&gt;Gotchas&lt;/h2&gt;
-
-&lt;p&gt;Brakeman checks for a lot of common errors that create security vulnerabilities.
-Of course, it cannot catch all security issues. Be careful out there.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
+jurisdiction.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
