@@ -1,5 +1,5 @@
 ---
-title: How are you doing? with Mando Escamilla
+title: '"How are you doing?" with Mando Escamilla'
 description: Mando Escamilla was our guest on Greater than Code
 published_at: 2021-02-04 07:00 -0800
 tags: greater_than_code
