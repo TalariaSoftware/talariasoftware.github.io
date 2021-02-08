@@ -5,10 +5,10 @@ permalink: /about/
 
 # About
 
-Talaria Software builds software products and
-provides coaching and consulting
-to help others
-build software products.
+Talaria Software delivers software
+that delights customers
+and we can help you
+do the same.
 
 ## People
 
@@ -82,8 +82,8 @@ the artist within them.
 
 Together,
 Rob and Damien
-built designed, implemented, and deployed
-a complete web-based comsumer product
+built, designed, implemented, and deployed
+a complete web-based consumer product
 that makes people
 more creative
 every day.
@@ -97,15 +97,16 @@ of the City of Los Angeles.
 
 The neighborhood council system is
 the smallest unit of government
-in Los Angeles,
-created in 1999
+in Los Angeles.
+It was created 
+in 1999
 to promote more citizen participation
 in government
 and make government
 more responsive
 to local needs.
-It is driven by
-unpaid, part-time volunteers
+Neighborhood councils are is driven
+by unpaid, part-time volunteers
 elected and appointed
 to represent their communities.
 
@@ -131,12 +132,11 @@ NCMS incorporates
 years of experience
 in the neighborhood council system
 to help neighborhood leaders
-create agendas, minutes, and other forms
+create agendas, minutes, and other documents
 in compliance with law and regulation
-and guides them
-through meetings
-in accordance
-with parliamentary procedures.
+It also provides guidance
+on parliamentary procedures.
+during meetings
 
 ### Neverbust
 
@@ -153,12 +153,12 @@ and track their bankroll.
 The most innovative aspect
 of Neverbust is its ability
 to determine
-a player's risk of ruin,
-the most crucial thing
-to know
-for anyone
-who plays poker professionally
-or wants to.
+a player's risk of ruin.
+For the first time in history,
+professional poker players can use
+to use accurate mathematical measures
+to manage the risk
+of their careers.
 
 ### CDC FAQ API
 
