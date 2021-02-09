@@ -16,7 +16,7 @@ After you add [authentication](add_authentication) to your application, you will
 probably start writing code that does different things depending on who the user
 is.
 
-That is a good time to add an authentication library to make creating, testing,
+That is a good time to add an authorization library to make creating, testing,
 and maintaining that code much easier.
 
 ## Why
