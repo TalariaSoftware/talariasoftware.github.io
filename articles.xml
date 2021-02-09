@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-08T23:20:38-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">“How are you doing?” with Mando Escamilla</title><link href="/articles/how_are_you_doing_with_mando_escamilla" rel="alternate" type="text/html" title="“How are you doing?” with Mando Escamilla" /><published>2021-02-04T00:00:00-08:00</published><updated>2021-02-04T00:00:00-08:00</updated><id>/articles/how_are_you_doing_with_mando_escamilla</id><content type="html" xml:base="/articles/how_are_you_doing_with_mando_escamilla">&lt;p&gt;I was one of the hosts lucky enough to welcome the lovely Mando Escamilla to the
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-09T00:25:32-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Add an Authorization Library</title><link href="/articles/add_an_authorization_library" rel="alternate" type="text/html" title="Add an Authorization Library" /><published>2021-02-09T00:00:00-08:00</published><updated>2021-02-09T00:00:00-08:00</updated><id>/articles/add_an_authorization_library</id><content type="html" xml:base="/articles/add_an_authorization_library">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are talking about adding an authorization library.&lt;/p&gt;
+
+&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
+
+&lt;p&gt;After you add &lt;a href=&quot;add_authentication&quot;&gt;authentication&lt;/a&gt; to your application, you will
+probably start writing code that does different things depending on who the user
+is.&lt;/p&gt;
+
+&lt;p&gt;That is a good time to add an authentication library to make creating, testing,
+and maintaining that code much easier.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+
+&lt;p&gt;If have user authentication, your app knows who its users are. That’s great!&lt;/p&gt;
+
+&lt;p&gt;But you probably wanted to know who the users are so that you can allow them to
+do different things.&lt;/p&gt;
+
+&lt;p&gt;Determining what a user can do is the process of authorization.&lt;/p&gt;
+
+&lt;p&gt;What usually happens is you end up with code that looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;present?&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;body: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_body&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is tricky to write, tricky to test, and ends up spread all over your app.&lt;/p&gt;
+
+&lt;p&gt;An authentication library helps you put that code all in one place, making it
+easy to understand, test, and maintain.&lt;/p&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
+
+&lt;p&gt;Use &lt;a href=&quot;https://github.com/varvet/pundit#readme&quot;&gt;Pundit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;alternatives&quot;&gt;Alternatives&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ryanb/cancan#readme&quot;&gt;Cancan&lt;/a&gt; is another option and I am sure
+there are many more. I like Pundit enough that I haven’t explored any
+others.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">“How are you doing?” with Mando Escamilla</title><link href="/articles/how_are_you_doing_with_mando_escamilla" rel="alternate" type="text/html" title="“How are you doing?” with Mando Escamilla" /><published>2021-02-04T00:00:00-08:00</published><updated>2021-02-04T00:00:00-08:00</updated><id>/articles/how_are_you_doing_with_mando_escamilla</id><content type="html" xml:base="/articles/how_are_you_doing_with_mando_escamilla">&lt;p&gt;I was one of the hosts lucky enough to welcome the lovely Mando Escamilla to the
 Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/how-are-you-doing&quot;&gt;episode 219&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Mando’s superpower is the ability to talk about anything personal with other
@@ -405,86 +448,4 @@ rewriting entire applications to take full advantage of it.&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;If you are interested in other ways to make developing your Rails application
-awesome, take a look at &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="hotwire" /><category term="SPA" /><summary type="html">Hotwire is a set of libraries and conventions that does for single-page interactivity on websites what Rails did for web applications.</summary></entry><entry><title type="html">Use a License Monitor</title><link href="/articles/license_monitoring" rel="alternate" type="text/html" title="Use a License Monitor" /><published>2020-12-22T00:00:00-08:00</published><updated>2020-12-22T00:00:00-08:00</updated><id>/articles/license_monitoring</id><content type="html" xml:base="/articles/license_monitoring">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
-recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
-
-&lt;p&gt;In this article, we are talking about using a license monitor.&lt;/p&gt;
-
-&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
-
-&lt;p&gt;The longer you wait before adding a license monitor, the more work you will have
-to do to correct problems that have accumulated. For that reason, I recommend
-adding a license monitor early – and absolutely before you start distributing your
-application.&lt;/p&gt;
-
-&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
-
-&lt;p&gt;Rails applications often leverage an extensive network of open
-source software distributed under a variety of licenses. It is very important to
-avoid using software if you do not agree with the terms of the license.&lt;/p&gt;
-
-&lt;p&gt;A license monitor can check the licenses of your libraries and make sure they
-only use licenses you agree to abide by.&lt;/p&gt;
-
-&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
-
-&lt;p&gt;Use &lt;a href=&quot;https://github.com/pivotal/LicenseFinder&quot;&gt;License Finder&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
-
-&lt;p&gt;To install, add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem 'license_finder'&lt;/code&gt; to the development section of your
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;To run, use the command: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;license_finder&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;configure&quot;&gt;Configure&lt;/h3&gt;
-
-&lt;p&gt;For License Finder to work, it needs to know which licenses are acceptable to you.
-Use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;permit&lt;/code&gt; subcommand to record those. Here is an example with
-what I think are reasonable defaults:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder permit add MIT MIT&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; ruby &lt;span class=&quot;s2&quot;&gt;&quot;Apache 2.0&quot;&lt;/span&gt; ISC BSD &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;s2&quot;&gt;&quot;Simplified BSD&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;New BSD&quot;&lt;/span&gt; BSD-3-Clause 0BSD BSD&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Unlicense CC0-1.0 CC-BY-3.0 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-CC-BY-4.0 WTFPL &lt;span class=&quot;s2&quot;&gt;&quot;Brakeman Public Use License&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Some packages list multiple licenses in a way that License Finder doesn’t
-understand. For those, we need to correct which licenses are available.&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add amdefine MIT
-bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add amdefine BSD-3-Clause
-
-bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add atob MIT
-bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add atob Apache-2.0
-
-bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add node-forge BSD-3-Clause
-bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add node-forge GPL-2.0
-
-bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add pako MIT
-bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add pako Zlib
-
-bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add path-is-inside WTFPL
-bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add path-is-inside MIT
-
-bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add sha.js MIT
-bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder licenses add sha.js BSD-3-Clause
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Finally, if you followed the advice on &lt;a href=&quot;library_vulnerability_checks&quot;&gt;library vulnerability
-checks&lt;/a&gt; then you installed
-&lt;a href=&quot;https://github.com/rubysec/bundler-audit#readme&quot;&gt;bundler-audit&lt;/a&gt;. Bundler-audit
-is has a GPL license, which means we can’t incorporate it into non-GPL code. But
-it is not part of our app – it’s only a tool we use – so it’s okay.&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;license_finder approvals add bundler-audit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;caveat&quot;&gt;Caveat&lt;/h2&gt;
-
-&lt;p&gt;I am not a lawyer and neither is License Finder. None of this will guarantee
-that you do not illegally incorporate other people’s software into your code.
-Nor will it guarantee that you are not creating liabilities or obligations that
-you do not want.&lt;/p&gt;
-
-&lt;p&gt;If your need legal advise, consult with an attorney licensed to practice in your
-jurisdiction.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
+awesome, take a look at &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="hotwire" /><category term="SPA" /><summary type="html">Hotwire is a set of libraries and conventions that does for single-page interactivity on websites what Rails did for web applications.</summary></entry></feed>

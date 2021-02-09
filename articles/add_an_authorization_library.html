@@ -5,11 +5,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Joyful Rails | Talaria Software</title>
+<title>Add an Authorization Library | Talaria Software</title>
 
 
 
-<meta name="description" content="A guide to make working with your Rails application more productive and joyful.">
+<meta name="description" content="Identify what users can do.">
 
 
 
@@ -39,16 +39,16 @@
 
 <meta name="twitter:card" content="summary" />
 <meta name='twitter:site:id' content='@TalariaSoftware'>
-<meta name='twitter:title' content='Joyful Rails'>
+<meta name='twitter:title' content='Add an Authorization Library'>
 <meta name='twitter:creator:id' content='@ExMember'>
 <meta name='twitter:image' content='https://talariasoftware.com/images/foot-color.png'>
 
 <meta property='og:locale' content='en'>
 <meta property='og:site_name' content='Talaria Software'>
-<meta property='og:title' content='Joyful Rails'>
+<meta property='og:title' content='Add an Authorization Library'>
 <meta property='og:type' content='website'>
-<meta property='og:url' content='https://talariasoftware.com/articles/joyful_rails'>
-<meta property='og:description' content='A guide to make working with your Rails application more productive and joyful.'>
+<meta property='og:url' content='https://talariasoftware.com/articles/add_an_authorization_library'>
+<meta property='og:description' content='Identify what users can do.'>
 <meta property='og:image' content='https://talariasoftware.com/images/foot-color.png'>
 
     
@@ -212,171 +212,53 @@
   <div class="grid-container">
     <div class="grid-row grid-gap flex-align-start">
       <main class="usa-layout-docs usa-layout-docs__main usa-prose" id="main-content">
-        <h1>Joyful Rails</h1>
-        <h6>Published: Jul 28th, 2020</h6>
+        <h1>Add an Authorization Library</h1>
+        <h6>Published: Feb 9th, 2021</h6>
         
-          <h6>Updated: Dec 29th, 2020</h6>
-        
-        <h2 id="introduction">Introduction</h2>
+        <p>This is part of <a href="/articles/joyful_rails">Joyful Rails</a>, a list of
+recommendations to make developing your Rails app more productive and joyful.</p>
 
-<p>I love <a href="https://rubyonrails.org">Ruby on Rails</a>. I think it’s a fantastic
-framework for web applications. I highly recommend it and I thoroughly enjoy
-working with it.</p>
+<p>In this article, we are talking about adding an authorization library.</p>
 
-<p>I’ve been lucky enough to work extensively with Rails on many different projects
-over many different years. Most Rails development, like most software
-development, happens on long-lived projects. A well-established and
-well-configured project is an absolute joy to work in and collaborate on.</p>
+<h2 id="when">When</h2>
 
-<p>But a new Rails project doesn’t have many of the little tweaks and additions
-that make things so nice for me. I end up spending a lot of time and frustration
-repeating the same steps in every application.</p>
+<p>After you add <a href="add_authentication">authentication</a> to your application, you will
+probably start writing code that does different things depending on who the user
+is.</p>
 
-<p>This guide is an effort to make those steps faster and easier. The goal is to
-create a smooth and rapid path from zero to a codebase I love working in.</p>
+<p>That is a good time to add an authentication library to make creating, testing,
+and maintaining that code much easier.</p>
 
-<h3 id="what-this-is-not">What This Is Not</h3>
+<h2 id="why">Why</h2>
 
-<h4 id="this-is-not-a-beginners-guide">This is not a beginner’s guide</h4>
+<p>If have user authentication, your app knows who its users are. That’s great!</p>
 
-<p>I will explain things as simply as I can, but there will likely be some
-important information left out. If you do not understand a recommendation, you
-might not understand the consequences.</p>
+<p>But you probably wanted to know who the users are so that you can allow them to
+do different things.</p>
 
-<h4 id="this-is-not-something-to-apply-blindly">This is not something to apply blindly</h4>
+<p>Determining what a user can do is the process of authorization.</p>
 
-<p>Examine every bit of the advice herein to see if it is right for you, your
-project, and your team before applying it. That’s what the annotations are for.</p>
+<p>What usually happens is you end up with code that looks like this:</p>
 
-<h4 id="this-is-not-static">This is not static</h4>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">user</span><span class="p">.</span><span class="nf">present?</span> <span class="o">&amp;&amp;</span> <span class="n">post</span><span class="p">.</span><span class="nf">author</span> <span class="o">==</span> <span class="n">user</span>
+  <span class="n">post</span><span class="p">.</span><span class="nf">update</span> <span class="ss">body: </span><span class="n">new_body</span>
+<span class="k">end</span>
+</code></pre></div></div>
 
-<p>The world changes and I change with it. My preferences and recommendations are
-in constant flux. This guide will change with them.</p>
+<p>This is tricky to write, tricky to test, and ends up spread all over your app.</p>
 
-<h4 id="this-is-not-an-automated-setup-script">This is not an automated setup script</h4>
+<p>An authentication library helps you put that code all in one place, making it
+easy to understand, test, and maintain.</p>
 
-<p>There is no point in automating something that will change every time you do it.</p>
+<h2 id="how">How</h2>
 
-<p>If you want an automated setup script, take a look at
-<a href="https://github.com/thoughtbot/suspenders">Suspenders</a>. It is a Rails template
-created by Thoughtbot with their standard defaults. They make a lot of good
-choices, some of which I will certainly draw from.</p>
+<p>Use <a href="https://github.com/varvet/pundit#readme">Pundit</a>.</p>
 
-<h2 id="table-of-contents">Table of Contents</h2>
+<h2 id="alternatives">Alternatives</h2>
 
-<h3 id="0-joyful-rails">0 <a href="/articles/joyful_rails">Joyful Rails</a></h3>
-
-<p>A guide to make working with your Rails application more productive and joyful.</p>
-
-<h3 id="1-ruby-version-management">1 <a href="/articles/ruby_version_management">Ruby Version Management</a></h3>
-
-<p>Use the right version of Ruby for the job.</p>
-
-<h3 id="2-the-rails-new-command">2 <a href="/articles/rails_new">The Rails New Command</a></h3>
-
-<p>Creating a brand new Rails application.</p>
-
-<h3 id="3-git-initialization">3 <a href="/articles/git_init">Git Initialization</a></h3>
-
-<p>Use version control to make changes with confidence.</p>
-
-<h3 id="4-no-git-masters">4 <a href="/articles/no_git_masters">No Git Masters</a></h3>
-
-<p>Remove problematic language from your Git setup.</p>
-
-<h3 id="5-pairs-file">5 <a href="/articles/pairs_file">Pairs File</a></h3>
-
-<p>Accurately record changes made while pairing by adding multiple authors to your commits.</p>
-
-<h3 id="6-add-a-license">6 <a href="/articles/add_a_license">Add a License</a></h3>
-
-<p>If your code is open source, make sure people know.</p>
-
-<h3 id="7-adopt-a-code-of-conduct">7 <a href="/articles/adopt_a_code_of_conduct">Adopt a Code of Conduct</a></h3>
-
-<p>Ensure a safe and welcoming environment by adopting a code of conduct.</p>
-
-<h3 id="8-switch-to-postgresql">8 <a href="/articles/switch_to_postgresql">Switch to PostgreSQL</a></h3>
-
-<p>Switch over to a production-ready database.</p>
-
-<h3 id="9-remove-gem-version-specifiers">9 <a href="/articles/remove_gem_version_specifiers">Remove Gem Version Specifiers</a></h3>
-
-<p>Make it easy to continuously keep your libraries up to date.</p>
-
-<h3 id="10-switch-to-haml">10 <a href="/articles/switch_to_haml">Switch to HAML</a></h3>
-
-<p>Make your HTML templates easier to work with.</p>
-
-<h3 id="11-switch-to-sass">11 <a href="/articles/switch_to_sass">Switch to Sass</a></h3>
-
-<p>Make your cascading style sheets easier to work with.</p>
-
-<h3 id="12-switch-to-rspec">12 <a href="/articles/switch_to_rspec">Switch to RSpec</a></h3>
-
-<p>Use a clear and expressive testing framework.</p>
-
-<h3 id="13-add-rspecits">13 <a href="/articles/add_rspec_its">Add RSpec::Its</a></h3>
-
-<p>Make it easier to test object attributes.</p>
-
-<h3 id="14-configure-generators">14 <a href="/articles/configure_generators">Configure Generators</a></h3>
-
-<p>Make the Rails generators generate the code you want. No more, no less.</p>
-
-<h3 id="15-switch-to-uuids">15 <a href="/articles/switch_to_uuids">Switch to UUIDs</a></h3>
-
-<p>Database keys that can’t be guessed, don’t overflow, and don’t leak information.</p>
-
-<h3 id="16-use-a-ruby-linter">16 <a href="/articles/use_a_ruby_linter">Use a Ruby Linter</a></h3>
-
-<p>Make your Ruby style consistent.</p>
-
-<h3 id="17-my-ruby-style">17 <a href="/articles/my_ruby_style">My Ruby Style</a></h3>
-
-<p>Make your Ruby style beautiful.</p>
-
-<h3 id="18-use-a-rails-linter">18 <a href="/articles/use_a_rails_linter">Use a Rails Linter</a></h3>
-
-<p>Avoid common Rails mistakes and correct them automatically.</p>
-
-<h3 id="19-library-vulnerability-checks">19 <a href="/articles/library_vulnerability_checks">Library Vulnerability Checks</a></h3>
-
-<p>Find security issues in your libraries before the bad guys do.</p>
-
-<h3 id="20-code-vulnerability-checks">20 <a href="/articles/code_vulnerability_checks">Code Vulnerability Checks</a></h3>
-
-<p>Find security issues in your code before the bad guys do.</p>
-
-<h3 id="21-use-a-license-monitor">21 <a href="/articles/license_monitoring">Use a License Monitor</a></h3>
-
-<p>Avoid using libraries with licenses you do not want to agree to.</p>
-
-<h3 id="22-default-rake-task">22 <a href="/articles/default_rake_task">Default Rake Task</a></h3>
-
-<p>Run all of your automated checks with a single command.</p>
-
-<h3 id="23-set-up-a-production-environment">23 <a href="/articles/set_up_a_production_environment">Set Up a Production Environment</a></h3>
-
-<p>Deploy your Rails application.</p>
-
-<h3 id="24-update-the-readme">24 <a href="/articles/update_the_readme">Update the Readme</a></h3>
-
-<p>What do future developers need to know? What do you need to tell them?</p>
-
-<h3 id="25-add-authentication">25 <a href="/articles/add_authentication">Add Authentication</a></h3>
-
-<p>Identify your users.</p>
-
-<h3 id="26-add-an-authorization-library">26 <a href="/articles/add_an_authorization_library">Add an Authorization Library</a></h3>
-
-<p>Identify what users can do.</p>
-
-<!--
-Todo:
-- Footer at the bottom
-- StimulusJS Hello world
--->
+<p><a href="https://github.com/ryanb/cancan#readme">Cancan</a> is another option and I am sure
+there are many more. I like Pundit enough that I haven’t explored any
+others.</p>
 
       </main>
     </div>
