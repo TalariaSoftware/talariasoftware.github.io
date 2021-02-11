@@ -35,16 +35,15 @@ Outside of tech,
 Damien is certified
 in ontological coaching, hypnosis, and neuro-linguistic programming.
 He spent several years
-as a professional poker player,
-has performed as an actor
-in theatre, commercials, network television, and film,
+as a professional poker player;
+performs in theatre, commercials, network television, and film;
 and currently serves
 on the board
 of his local neighborhood council.
 
 Damien is a frequent guest
 on tech podcasts
-and a co-host
+and is a co-host
 on [Greater than Code](https://www.greaterthancode.com/hosts/damien-burke).
 
 ### Rob Head
@@ -52,6 +51,12 @@ on [Greater than Code](https://www.greaterthancode.com/hosts/damien-burke).
 Rob Head has been
 building web technology
 for over twenty years.
+He is a veteran
+of Amazon and Pivotal Labs,
+startup founder,
+and founding partner
+of Zeal,
+a development studio.
 
 Rob is also a graduate student
 in music and interactive media,
@@ -123,7 +128,7 @@ regulations created by
 the Department of Neighborhood Empowerment (DONE),
 the Board of Neighborhood Commissioners (BONC),
 and the City Clerk,
-their individual bylaws
+their individual bylaws,
 and parliamentary procedure
 such as
 _Robert's Rules of Order_.
@@ -133,7 +138,7 @@ years of experience
 in the neighborhood council system
 to help neighborhood leaders
 create agendas, minutes, and other documents
-in compliance with law and regulation
+in compliance with law and regulation.
 It also provides guidance
 on parliamentary procedures.
 during meetings
@@ -157,8 +162,8 @@ a player's risk of ruin.
 For the first time in history,
 professional poker players can use
 to use accurate mathematical measures
-to manage the risk
-of their careers.
+to manage the primary risk
+to their careers.
 
 ### CDC FAQ API
 
