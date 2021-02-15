@@ -103,7 +103,7 @@ of the City of Los Angeles.
 The neighborhood council system is
 the smallest unit of government
 in Los Angeles.
-It was created 
+It was created
 in 1999
 to promote more citizen participation
 in government

@@ -7,6 +7,8 @@ primary:
     href: https://app.talariasoftware.com/expertise_to_income
   - text: Coaching
     href: https://app.talariasoftware.com/get_help
+  - text: About
+    href: /about
 
 secondary:
   - text: Kickoff
