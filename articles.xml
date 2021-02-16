@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-15T23:23:51-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Add an Authorization Library</title><link href="/articles/add_an_authorization_library" rel="alternate" type="text/html" title="Add an Authorization Library" /><published>2021-02-09T00:00:00-08:00</published><updated>2021-02-09T00:00:00-08:00</updated><id>/articles/add_an_authorization_library</id><content type="html" xml:base="/articles/add_an_authorization_library">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-16T00:25:11-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Add a CSS Framework</title><link href="/articles/add_a_css_framework" rel="alternate" type="text/html" title="Add a CSS Framework" /><published>2021-02-16T00:00:00-08:00</published><updated>2021-02-16T00:00:00-08:00</updated><id>/articles/add_a_css_framework</id><content type="html" xml:base="/articles/add_a_css_framework">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
+
+&lt;p&gt;In this article, we are talking about adding a CSS framework.&lt;/p&gt;
+
+&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
+
+&lt;p&gt;When it comes time to make things pretty, use a good CSS framework to make that
+easier.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+
+&lt;p&gt;CSS frameworks exist for the same reasons Rails does. They make a lot of the
+decisions for you and give you pre-built components that you can combine and
+customize to make your app.&lt;/p&gt;
+
+&lt;h2 id=&quot;options&quot;&gt;Options&lt;/h2&gt;
+
+&lt;h3 id=&quot;bulma&quot;&gt;Bulma&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bulma.io&quot;&gt;Bulma&lt;/a&gt; is good and doesn’t require any JavaScript.&lt;/p&gt;
+
+&lt;p&gt;Many CSS frameworks depend on JavaScript for basic functionality so they make
+your application completely unusable when the user does not have Javascript,
+when there is an issue downloading the JavaScript, or when there is a bug in the
+Javascript. Bulma has no JavaScript so it does not have that problem.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&quot;https://bulma.io/documentation/overview/start/&quot;&gt;install&lt;/a&gt; it as an NPM
+package, load it remotely, download and use the compiled CSS, or download and
+use the source Sass. (That last option is unsupported.)&lt;/p&gt;
+
+&lt;h2 id=&quot;us-web-design-system&quot;&gt;US Web Design System&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://designsystem.digital.gov&quot;&gt;The US Web Design System&lt;/a&gt; is beautiful,
+authoritative, completely accessible, and works with or without Javascript.&lt;/p&gt;
+
+&lt;p&gt;Because USWDS was built for Federal agencies, it has extremely high standards for
+accessibility. It is highly themeable but still tends towards a very formal,
+authoritative look.&lt;/p&gt;
+
+&lt;p&gt;It can be
+&lt;a href=&quot;https://designsystem.digital.gov/documentation/developers/&quot;&gt;installed&lt;/a&gt; as an
+NPM package or as a source code download. There are several third party
+distributions but none suitable for a Rails application. I advise using the NPM
+package with Yarn.&lt;/p&gt;
+
+&lt;h2 id=&quot;zurb-foundation&quot;&gt;Zurb Foundation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://get.foundation&quot;&gt;Foundation&lt;/a&gt; is very nice.&lt;/p&gt;
+
+&lt;p&gt;It can be &lt;a href=&quot;https://get.foundation/sites/docs/installation.html&quot;&gt;installed&lt;/a&gt; in
+many different ways. However, currently the Rails gem
+&lt;a href=&quot;https://github.com/foundation/foundation-rails&quot;&gt;foundation-rails&lt;/a&gt; has an &lt;a href=&quot;https://github.com/foundation/foundation-rails/issues/281&quot;&gt;issue with Rails 6&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The workaround appears to include:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;installing Coffeescript for the duration of the install process.&lt;/li&gt;
+  &lt;li&gt;commenting out &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@include foundation-button-group;&lt;/code&gt; in
+  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app/assets/stylesheets/foundation_and_overrides.scss&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Add an Authorization Library</title><link href="/articles/add_an_authorization_library" rel="alternate" type="text/html" title="Add an Authorization Library" /><published>2021-02-09T00:00:00-08:00</published><updated>2021-02-09T00:00:00-08:00</updated><id>/articles/add_an_authorization_library</id><content type="html" xml:base="/articles/add_an_authorization_library">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
 recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
 
 &lt;p&gt;In this article, we are talking about adding an authorization library.&lt;/p&gt;
@@ -291,161 +350,4 @@ easy to run them after every change and before every deploy.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;To run the default task with all of your automated checks and specs use this
-command: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake&lt;/code&gt;.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Hotwire: First Reactions</title><link href="/articles/hotwire_first_reactions" rel="alternate" type="text/html" title="Hotwire: First Reactions" /><published>2020-12-26T00:00:00-08:00</published><updated>2020-12-26T00:00:00-08:00</updated><id>/articles/hotwire_first_reactions</id><content type="html" xml:base="/articles/hotwire_first_reactions">&lt;p&gt;&lt;a href=&quot;https://hotwire.dev&quot;&gt;Hotwire&lt;/a&gt; is a set of libraries and conventions that does for
-single-page interactivity on websites what Rails did for web applications.&lt;/p&gt;
-
-&lt;p&gt;It provides all the benefits of client-side single-page application (SPA)
-frameworks with almost none of the downsides.&lt;/p&gt;
-
-&lt;p&gt;It does that by making HTML primary and providing a standard set of JavaScript
-tools to update and augment the HTML on the page.&lt;/p&gt;
-
-&lt;h2 id=&quot;benefits-of-an-spa&quot;&gt;Benefits of an SPA&lt;/h2&gt;
-
-&lt;p&gt;All the benefits of a single-page app come down to different aspects of the same
-thing: reactivity./&lt;em&gt;I find “responsiveness” better than “reactivity” in this use. Will mark other places.&lt;/em&gt;/&lt;/p&gt;
-
-&lt;p&gt;When the user performs an action, the application reacts /&lt;em&gt;responds&lt;/em&gt;/immediately, without
-the delay of an HTTP request, page download, render, and state reset.&lt;/p&gt;
-
-&lt;p&gt;When there is a change in application state that is not initiated by the user,
-the change is immediately visible to the user without needing to click, reload,
-or wait for the page to download and re-render.&lt;/p&gt;
-
-&lt;h2 id=&quot;downsides-of-an-spa&quot;&gt;Downsides of an SPA&lt;/h2&gt;
-
-&lt;p&gt;The downside of SPAs is that they are complicated. That complexity results in
-several times more work for developers, while simultaneously breaking
-functionality that is included automatically with HTML pages.&lt;/p&gt;
-
-&lt;p&gt;SPAs are not web applications. They are JavaScript applications that users
-download and run in their web browsers.&lt;/p&gt;
-
-&lt;p&gt;Users have to wait for the JS bundles to download and initialize before the
-application first begins to render. Then, while using the app, they find that the
-web browser navigation buttons (back, reload, forward, etc.) cause the app to
-break or reset. URLs cannot be used to point to specific parts of the
-application, making bookmarks useless. Worse still, keyboard navigation, screen
-readers, and other assistive technology are often broken. And if you are running
-an uncommon browser or older hardware, you may not be able to use the app at
-all.&lt;/p&gt;
-
-&lt;p&gt;All of this could be fixed or mitigated with sufficient care and effort from the
-developers, but none of that work is necessary for web applications serving HTML
-and CSS.&lt;/p&gt;
-
-&lt;p&gt;Meanwhile, developers are also dealing with other added complications.&lt;/p&gt;
-
-&lt;p&gt;Behavior and views rendered by the server need to be duplicated by the front-end
-JavaScript code. There is a entire set of technologies to maintain for the front
-end with their own languages, libraries, compile chains, and distribution
-processes for running in a wide array of environments. And then there is the
-extra abstraction layer, usually JSON, between content on the back end and the
-HTML and CSS rendered for users.&lt;/p&gt;
-
-&lt;h2 id=&quot;introducing-hotwire&quot;&gt;Introducing Hotwire&lt;/h2&gt;
-
-&lt;p&gt;Hotwire was &lt;a href=&quot;https://twitter.com/dhh/status/1341420143239450624&quot;&gt;released&lt;/a&gt; on
-December 22, 2020 by &lt;a href=&quot;https://twitter.com/dhh/&quot;&gt;DHH&lt;/a&gt; and the rest of the team at
-&lt;a href=&quot;https://hey.com&quot;&gt;Hey&lt;/a&gt;. It was extracted from Hey in the same way that Rails was
-extracted from Basecamp.&lt;/p&gt;
-
-&lt;p&gt;There are two main libraries that make up Hotwire: Turbo and Stimulus.&lt;/p&gt;
-
-&lt;h3 id=&quot;turbo&quot;&gt;Turbo&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://turbo.hotwire.dev&quot;&gt;Turbo&lt;/a&gt; is the next evolution of
-&lt;a href=&quot;https://github.com/turbolinks/turbolinks&quot;&gt;Turbolinks&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Turbolinks uses JavaScript to replace the body of an HTML page. By avoiding a
-page reload, it makes navigating web apps faster. It does this with no custom
-JavaScript and, in most cases, is fully transparent to users and developers.&lt;/p&gt;
-
-&lt;p&gt;Turbo takes the strategy a step further and provides tools to update parts of
-the page in response to user action or live updates broadcast over a WebSocket.&lt;/p&gt;
-
-&lt;h3 id=&quot;stimulus&quot;&gt;Stimulus&lt;/h3&gt;
-
-&lt;p&gt;Stimulus is the modest JavaScript framework focused on augmenting the HTML already
-on the page. It provides a guided way to add dynamic client-side behavior
-without changing the way HTML and CSS pages are built and rendered.&lt;/p&gt;
-
-&lt;p&gt;Together, Turbo and Stimulus make it possible to have web apps that behave like
-JavaScript applications but are primarily HTML and CSS with minimal
-application-specific JavaScript. They offer all the benefits of an SPA, with almost
-none of the downsides.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-hotwire-works&quot;&gt;How Hotwire works&lt;/h2&gt;
-
-&lt;p&gt;Probably more important than the libraries that make up Hotwire are the
-conventions on how those libraries interact.&lt;/p&gt;
-
-&lt;p&gt;The most important of these conventions is the one that gives Hotwire its name:
-HTML Over-The-Wire.&lt;/p&gt;
-
-&lt;p&gt;Traditional SPAs send JSON to the client. The JavaScript app then takes that
-JSON and generates HTML that is rendered onto the page.&lt;/p&gt;
-
-&lt;p&gt;When you send HTML over-the-wire, you don’t need all the JavaScript code that
-knows how to render it to HTML. It also means that you don’t need to duplicate
-your templates or template rendering. The same server-side code generates the
-HTML that the user sees, no matter how it gets onto the page.&lt;/p&gt;
-
-&lt;h2 id=&quot;downsides-of-hotwire&quot;&gt;Downsides of Hotwire&lt;/h2&gt;
-
-&lt;p&gt;There is no silver bullet; even Hotwire has its downsides.&lt;/p&gt;
-
-&lt;h3 id=&quot;new-technology&quot;&gt;New Technology&lt;/h3&gt;
-
-&lt;p&gt;Hotwire is a new framework. It hasn’t been proven in a lot of applications and
-no one outside of Basecamp has a lot of experience with it.&lt;/p&gt;
-
-&lt;p&gt;However, Stimulus is proven technology that’s been around for years. Turbo
-evolved from Turbolinks which has been a part of Rails since 2012.&lt;/p&gt;
-
-&lt;p&gt;And all of Hotwire is in production at Hey.&lt;/p&gt;
-
-&lt;h3 id=&quot;convention-dependent&quot;&gt;Convention Dependent&lt;/h3&gt;
-
-&lt;p&gt;Hotwire with Rails is built on an extensive set of conventions that allow the
-different parts to work together. If you do not follow these conventions
-carefully, you will end up with a hairy mess of spaghetti code.&lt;/p&gt;
-
-&lt;p&gt;Once these conventions are well-understood and strongly modeled, they are easy
-to follow; but until then, there is a significant risk of making your code
-confusing and buggy.&lt;/p&gt;
-
-&lt;h3 id=&quot;complicated&quot;&gt;Complicated&lt;/h3&gt;
-
-&lt;p&gt;Hotwire is a huge improvement over SPA frameworks, but it is still complicated
-— really complicated.&lt;/p&gt;
-
-&lt;h3 id=&quot;integration-specs-require-javascript&quot;&gt;Integration Specs Require JavaScript&lt;/h3&gt;
-
-&lt;p&gt;It seems the only way to write specifications that demonstrate your Hotwire
-functionality is working as intended is to use Capybara with a
-JavaScript-capable web browser. This is orders of magnitude slower than the
-Rack-based browser used when you don’t need to test JavaScript integration.&lt;/p&gt;
-
-&lt;p&gt;Other SPA frameworks have the same problem. The best way to mitigate it is with
-strong, simple conventions that give you a lot of confidence that the
-integration works, so few integration specs are needed.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
-
-&lt;p&gt;Hotwire provides an HTML/CSS-centric way of creating live and reactive web
-applications. I believe it will revolutionize reactive web apps the same way
-Rails revolutionized web apps.&lt;/p&gt;
-
-&lt;p&gt;I highly recommend learning about it and adding it to your tool belt. Anytime
-you want to improve a portion of your web app by making it more instant and
-reactive, Hotwire is the tool to reach for.&lt;/p&gt;
-
-&lt;p&gt;The smart thing to do is add Hotwire little by little to places where it will
-have the biggest impact. But the technology is so exciting, I am considering
-rewriting entire applications to take full advantage of it.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;If you are interested in other ways to make developing your Rails application
-awesome, take a look at &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="hotwire" /><category term="SPA" /><summary type="html">Hotwire is a set of libraries and conventions that does for single-page interactivity on websites what Rails did for web applications.</summary></entry></feed>
+command: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake&lt;/code&gt;.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>

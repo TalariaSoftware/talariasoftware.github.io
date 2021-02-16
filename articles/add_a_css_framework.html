@@ -5,11 +5,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Talaria Software</title>
+<title>Add a CSS Framework | Talaria Software</title>
 
 
 
-<meta name="description" content="Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people&#39;s lives better. Building software is only valuable when it helps you do those things.">
+<meta name="description" content="Make it easy to make your interface beautiful.">
 
 
 
@@ -39,16 +39,16 @@
 
 <meta name="twitter:card" content="summary" />
 <meta name='twitter:site:id' content='@TalariaSoftware'>
-<meta name='twitter:title' content='Build Software. Delight Customers.'>
+<meta name='twitter:title' content='Add a CSS Framework'>
 <meta name='twitter:creator:id' content='@ExMember'>
 <meta name='twitter:image' content='https://talariasoftware.com/images/foot-color.png'>
 
 <meta property='og:locale' content='en'>
 <meta property='og:site_name' content='Talaria Software'>
-<meta property='og:title' content='Build Software. Delight Customers.'>
+<meta property='og:title' content='Add a CSS Framework'>
 <meta property='og:type' content='website'>
-<meta property='og:url' content='https://talariasoftware.com/'>
-<meta property='og:description' content=''>
+<meta property='og:url' content='https://talariasoftware.com/articles/add_a_css_framework'>
+<meta property='og:description' content='Make it easy to make your interface beautiful.'>
 <meta property='og:image' content='https://talariasoftware.com/images/foot-color.png'>
 
     
@@ -199,220 +199,96 @@
 
     
     
-<section class="usa-hero" style="background-image: url(/images/hero.png)" aria-label="Introduction">
-  <div class="grid-container">
-    <div class="usa-hero__callout">
+
+
+    
+
+    
+
+    
       
-      <h1 class="usa-hero__heading">
+      
+
+
+
+
+    
+    
+
+    
+      <div class="usa-section">
+  <div class="grid-container">
+    <div class="grid-row grid-gap flex-align-start">
+      <main class="usa-layout-docs usa-layout-docs__main usa-prose" id="main-content">
+        <h1>Add a CSS Framework</h1>
+        <h6>Published: Feb 16th, 2021</h6>
         
-        Start for Free
-      </h1>
-      
+        <p>This is part of <a href="/articles/joyful_rails">Joyful Rails</a>, a list of
+recommendations to make developing your Rails app more productive and joyful.</p>
 
-      <p>Software businesses generate wealth and passive income.</p>
+<p>In this article, we are talking about adding a CSS framework.</p>
 
-<p>This FREE workbook will help you get started on yours today.</p>
+<h2 id="when">When</h2>
 
+<p>When it comes time to make things pretty, use a good CSS framework to make that
+easier.</p>
 
-      
-      <a class="usa-button"
-        href="https://app.talariasoftware.com/expertise_to_income">
-        Get the FREE Workbook
-      </a>
-      
-    </div>
-  </div>
-</section>
+<h2 id="why">Why</h2>
 
+<p>CSS frameworks exist for the same reasons Rails does. They make a lot of the
+decisions for you and give you pre-built components that you can combine and
+customize to make your app.</p>
 
+<h2 id="options">Options</h2>
 
-    
+<h3 id="bulma">Bulma</h3>
 
-    
+<p><a href="https://bulma.io">Bulma</a> is good and doesn’t require any JavaScript.</p>
 
-    
-      
-      
+<p>Many CSS frameworks depend on JavaScript for basic functionality so they make
+your application completely unusable when the user does not have Javascript,
+when there is an issue downloading the JavaScript, or when there is a bug in the
+Javascript. Bulma has no JavaScript so it does not have that problem.</p>
 
+<p>You can <a href="https://bulma.io/documentation/overview/start/">install</a> it as an NPM
+package, load it remotely, download and use the compiled CSS, or download and
+use the source Sass. (That last option is unsupported.)</p>
 
+<h2 id="us-web-design-system">US Web Design System</h2>
 
+<p><a href="https://designsystem.digital.gov">The US Web Design System</a> is beautiful,
+authoritative, completely accessible, and works with or without Javascript.</p>
 
-    
-    
+<p>Because USWDS was built for Federal agencies, it has extremely high standards for
+accessibility. It is highly themeable but still tends towards a very formal,
+authoritative look.</p>
 
-    
-      <main id="main-content">
-        
-        <section class="usa-graphic-list usa-section usa-section--light">
-  <div class="grid-container">
-    <h1>I want to …</h1>
-    <div class="usa-graphic-list__row grid-row grid-gap">
-      <div class="usa-media-block tablet:grid-col">
-        <i class="far fa-lightbulb usa-media-block__img font-sans-3xl"></i>
-        <div class="usa-media-block__body">
-          <h2 class="usa-graphic-list__heading">Kickstart My Idea</h2>
-          <p>I have an idea and a dream to turn that idea into a product and business.</p>
-          <p>I am ready to make that dream into a reality, to build my product, build my business, and build my new life.</p>
-          <a class="usa-button usa-button--secondary" href="https://app.talariasoftware.com/kickoff_questionnaires/new">Get Started </a>
-        </div>
-      </div>
-      <div class="usa-media-block tablet:grid-col">
-        <i class="fas fa-chart-line usa-media-block__img font-sans-3xl"></i>
-        <div class="usa-media-block__body">
-          <h2 class="usa-graphic-list__heading">Accelerate My Team</h2>
-          <p>I have a product in development but making improvements and changes is slow or expensive and when I finally do get them it turns out they are not what my customers need.</p>
-          <p>I am ready to make a change so I can quickly and efficiently deliver what my customers want.</p>
-          <a class="usa-button usa-button--secondary" href="https://app.talariasoftware.com/accelerate_questionnaires/new">Level Up</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<p>It can be
+<a href="https://designsystem.digital.gov/documentation/developers/">installed</a> as an
+NPM package or as a source code download. There are several third party
+distributions but none suitable for a Rails application. I advise using the NPM
+package with Yarn.</p>
 
-<section class="usa-graphic-list usa-section usa-section--dark">
-  <div class="grid-container">
-    <h1>Recent Articles</h1>
-    <div class="usa-graphic-list__row grid-row grid-gap-6">
+<h2 id="zurb-foundation">Zurb Foundation</h2>
 
-      
-        <a href="/articles/add_a_css_framework" class="usa-media-block tablet:grid-col-6 padding-3">
+<p><a href="https://get.foundation">Foundation</a> is very nice.</p>
 
-          
-            <i class="fas fa-pen-nib usa-media-block__img font-sans-3xl"></i>
-          
+<p>It can be <a href="https://get.foundation/sites/docs/installation.html">installed</a> in
+many different ways. However, currently the Rails gem
+<a href="https://github.com/foundation/foundation-rails">foundation-rails</a> has an <a href="https://github.com/foundation/foundation-rails/issues/281">issue with Rails 6</a></p>
 
-          <div class="usa-media-block__body">
-            <h2 class="usa-graphic-list__heading">
-              Add a CSS Framework
-            </h2>
-
-            <p>Make it easy to make your interface beautiful.</p>
-            <p>Feb 16th, 2021</p>
-          </div>
-        </a>
-      
-        <a href="/articles/add_an_authorization_library" class="usa-media-block tablet:grid-col-6 padding-3">
-
-          
-            <i class="fas fa-pen-nib usa-media-block__img font-sans-3xl"></i>
-          
-
-          <div class="usa-media-block__body">
-            <h2 class="usa-graphic-list__heading">
-              Add an Authorization Library
-            </h2>
-
-            <p>Identify what users can do.</p>
-            <p>Feb 9th, 2021</p>
-          </div>
-        </a>
-      
-        <a href="/articles/how_are_you_doing_with_mando_escamilla" class="usa-media-block tablet:grid-col-6 padding-3">
-
-          
-            <i class="fas fa-pen-nib usa-media-block__img font-sans-3xl"></i>
-          
-
-          <div class="usa-media-block__body">
-            <h2 class="usa-graphic-list__heading">
-              "How are you doing?" with Mando Escamilla
-            </h2>
-
-            <p>Mando Escamilla was our guest on Greater than Code</p>
-            <p>Feb 4th, 2021</p>
-          </div>
-        </a>
-      
-        <a href="/articles/add_authentication" class="usa-media-block tablet:grid-col-6 padding-3">
-
-          
-            <i class="fas fa-pen-nib usa-media-block__img font-sans-3xl"></i>
-          
-
-          <div class="usa-media-block__body">
-            <h2 class="usa-graphic-list__heading">
-              Add Authentication
-            </h2>
-
-            <p>Identify your users.</p>
-            <p>Feb 2nd, 2021</p>
-          </div>
-        </a>
-      
-      <a class="usa-button usa-button--secondary margin-x-auto" href="/articles">All Articles</a>
-    </div>
-  </div>
-</section>
-
-<section class="usa-section usa-section--light">
-  <div class="grid-container">
-    <div class="grid-row grid-gap">
-      <div class="tablet:grid-col-4">
-        <img class="height-15" src="/images/foot-color.png" alt="logo" />
-        <h2 class="text-primary font-heading-lg margin-top-0 tablet:margin-bottom-0">
-          Build Software.
-        </h2>
-        <h2 class="text-secondary font-heading-lg text-light text-uppercase margin-top-0 tablet:margin-bottom-0">
-          Delight Customers.
-        </h2>
-      </div>
-      <div class="tablet:grid-col-8 usa-prose">
-        <p>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</p>
-        <p>In order to do that you need to your software to adapt quickly to changes in your environment and in your understanding. And you need to do that in a way that is sustainable because you are in this for the long haul.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="usa-graphic-list usa-section usa-section--dark">
-  <div class="grid-container">
-    <div class="usa-graphic-list__row grid-row grid-gap">
-      <div class="usa-media-block tablet:grid-col">
-        <i class="fas fa-clock usa-media-block__img font-sans-3xl"></i>
-        <div class="usa-media-block__body">
-          <h2 class="usa-graphic-list__heading">Build Quickly</h2>
-          <p>Develop your products rapidly in order to get to market faster and find product-market fit sooner.</p>
-        </div>
-      </div>
-      <div class="usa-media-block tablet:grid-col">
-        <i class="fas fa-money-bill usa-media-block__img font-sans-3xl"></i>
-        <div class="usa-media-block__body">
-          <h2 class="usa-graphic-list__heading">Build Efficiently</h2>
-          <p>Save time and money with sustainable practices that ensure you can keep moving forward at a steady pace.</p>
-        </div>
-      </div>
-      <div class="usa-media-block tablet:grid-col">
-        <i class="fas fa-laugh-beam usa-media-block__img font-sans-3xl"></i>
-        <div class="usa-media-block__body">
-          <h2 class="usa-graphic-list__heading">Delight Customers</h2>
-          <p>Create products that your customers will love through continual, sustainable feedback and adjustment.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="usa-section usa-section--light">
-  <div class="grid-container">
-    <div class="grid-row grid-gap flex-align-center">
-      <div class="tablet:grid-col-4">
-        <h1>Get Your Free Workbook Today</h1>
-        <p class="measure-1">
-          This step-by-step workbook for entreprenuers of all experience-levels and types. At the end of these 46-pages you'll have a plan laid out and will have already taken the first steps.
-        </p>
-        <a class="usa-button usa-button--secondary width-full margin-bottom-2" href="https://app.talariasoftware.com/expertise_to_income">Download Now </a>
-      </div>
-      <div class="tablet:grid-col-8 text-center">
-        <h1>
-          <img class="height-card-lg" alt="Turn Your Expertise Into Passive
-          Income" src="/images/expertise_to_income_cover.png" />
-        </h1>
-      </div>
-    </div>
-  </div>
-</section>
-
+<p>The workaround appears to include:</p>
+<ol>
+  <li>installing Coffeescript for the duration of the install process.</li>
+  <li>commenting out <code class="language-plaintext highlighter-rouge">@include foundation-button-group;</code> in
+  <code class="language-plaintext highlighter-rouge">app/assets/stylesheets/foundation_and_overrides.scss</code>.</li>
+</ol>
 
       </main>
+    </div>
+  </div>
+</div>
+
     
 
     
