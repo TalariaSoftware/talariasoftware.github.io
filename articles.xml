@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-17T23:20:32-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Add a CSS Framework</title><link href="/articles/add_a_css_framework" rel="alternate" type="text/html" title="Add a CSS Framework" /><published>2021-02-16T00:00:00-08:00</published><updated>2021-02-16T00:00:00-08:00</updated><id>/articles/add_a_css_framework</id><content type="html" xml:base="/articles/add_a_css_framework">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-18T00:25:09-08:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Making Code Better with Damien Burke</title><link href="/articles/making_code_better_with_damien_burke" rel="alternate" type="text/html" title="Making Code Better with Damien Burke" /><published>2021-02-18T00:00:00-08:00</published><updated>2021-02-18T00:00:00-08:00</updated><id>/articles/making_code_better_with_damien_burke</id><content type="html" xml:base="/articles/making_code_better_with_damien_burke">&lt;p&gt;I was honored to be a guest on NewRelic’s &lt;a href=&quot;https://dev.to/polyglot/making-code-better-with-damien-burke&quot;&gt;Polyglot
+podcast&lt;/a&gt; with host
+&lt;a href=&quot;https://twitter.com/endingwithali&quot;&gt;Ali Finkelstein&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I talked about user experience, in a broad sense that also includes developers,
+and about god objects, what they are, where they come from, and what to do about
+them.&lt;/p&gt;
+
+&lt;p&gt;Then I told everyone listening to write ugly code.&lt;/p&gt;
+
+&lt;p&gt;Listen for yourself on &lt;a href=&quot;https://dev.to/polyglot/making-code-better-with-damien-burke&quot;&gt;Polyglot’s
+website&lt;/a&gt; or
+wherever you get your podcasts.&lt;/p&gt;</content><author><name></name></author><summary type="html">I was honored to be a guest on NewRelic’s Polyglot podcast with host Ali Finkelstein.</summary></entry><entry><title type="html">Add a CSS Framework</title><link href="/articles/add_a_css_framework" rel="alternate" type="text/html" title="Add a CSS Framework" /><published>2021-02-16T00:00:00-08:00</published><updated>2021-02-16T00:00:00-08:00</updated><id>/articles/add_a_css_framework</id><content type="html" xml:base="/articles/add_a_css_framework">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
 recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
 
 &lt;p&gt;In this article, we are talking about adding a CSS framework.&lt;/p&gt;
@@ -252,102 +264,4 @@ your development machine.&lt;/p&gt;
 Heroku in certain scenarios. None that I know of are easier to start with.&lt;/p&gt;
 
 &lt;p&gt;Heroku is incredibly easy to use and can be used for free to start. I recommend
-starting with it.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Default Rake Task</title><link href="/articles/default_rake_task" rel="alternate" type="text/html" title="Default Rake Task" /><published>2020-12-29T00:00:00-08:00</published><updated>2020-12-29T00:00:00-08:00</updated><id>/articles/default_rake_task</id><content type="html" xml:base="/articles/default_rake_task">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
-recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
-
-&lt;p&gt;In this article, we are talking about adding to the default rake task.&lt;/p&gt;
-
-&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
-
-&lt;p&gt;I recommend adding to the default rake task every time you add a tool that
-automatically checks your codebase.&lt;/p&gt;
-
-&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
-
-&lt;p&gt;Having a single command to run all of your automated checks and specs makes it
-easy to run them after every change and before every deploy.&lt;/p&gt;
-
-&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
-
-&lt;p&gt;First, create Rake tasks for automated checkers that do not have one.&lt;/p&gt;
-
-&lt;h3 id=&quot;rubocop&quot;&gt;Rubocop&lt;/h3&gt;
-
-&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lib/tasks/rubocop.rake&lt;/code&gt; put&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Gem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Specification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;find_all_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'rubocop'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;present?&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'rubocop/rake_task'&lt;/span&gt;
-  &lt;span class=&quot;no&quot;&gt;RuboCop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;RakeTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now you can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake rubocop&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;bundler-audit&quot;&gt;Bundler audit&lt;/h3&gt;
-
-&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lib/tasks/bundler_audit.rake&lt;/code&gt; put&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Gem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Specification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;find_all_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'bundler-audit'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;present?&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'bundler/audit/task'&lt;/span&gt;
-  &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Audit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now you can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake bundle:audit&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;license-finder&quot;&gt;License Finder&lt;/h3&gt;
-
-&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lib/tasks/license_finder.rake&lt;/code&gt; put&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;license_finder: :environment&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;sh&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'license_finder'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'--quiet'&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now you can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake license_finder&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;rails-best-practices&quot;&gt;Rails Best Practices&lt;/h3&gt;
-
-&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lib/tasks/rails_best_practices.rake&lt;/code&gt; put&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;rails_best_practices: :environment&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;sh&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'rails_best_practices'&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now you can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake rails_best_practices&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;brakeman&quot;&gt;Brakeman&lt;/h3&gt;
-
-&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lib/tasks/brakeman.rake&lt;/code&gt; put&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Gem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Specification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;find_all_by_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'brakeman'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;present?&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:brakeman&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Check your code with Brakeman&quot;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;check: :environment&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-      &lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'brakeman'&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Brakeman&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;app_path: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'.'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;print_report: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;pager: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
-      &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Brakeman&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Warnings_Found_Exit_Code&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;filtered_warnings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;empty?&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now you can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake brakeman:check&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;default-rake-task&quot;&gt;Default rake task&lt;/h3&gt;
-
-&lt;p&gt;Edit your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rakefile&lt;/code&gt; define the default rake task.&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;default: &lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;%i[
-  rubocop
-  spec
-  rails_best_practices
-  license_finder
-  brakeman:check
-  bundle:audit
-]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To run the default task with all of your automated checks and specs use this
-command: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rake&lt;/code&gt;.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
+starting with it.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
