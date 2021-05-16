@@ -9,8 +9,12 @@ on:
 
 jobs:
   github-pages:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     steps:
+      # Get Ubuntu version, we need it for the bundler cache
+      # see https://github.com/actions/cache/issues/543
+      - run: |
+          echo "OS_VERSION=`lsb_release -sr`" >> $GITHUB_ENV
       - name: 📂 setup
         uses: actions/checkout@v2
         # for jekyll-last-modified-at, may be very slow for large repositories!
@@ -26,6 +30,8 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
+          key: ${{ runner.os }}${{ env.OS_VERSION }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: ${{ runner.os }}${{ env.OS_VERSION }}-gems-
 
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
