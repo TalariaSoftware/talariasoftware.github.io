@@ -1,7 +1,9 @@
 require 'html-proofer'
 
-task :test do
-  sh "bundle exec jekyll build --future"
+task test: %i[test_workflows html_proofer]
+
+task :html_proofer do
+  sh 'bundle exec jekyll build --future'
   options = {
     assume_extension: true,
     cache: { timeframe: '4w' },
@@ -12,7 +14,7 @@ task :test do
     enforce_https: true,
     parallel: { in_processes: 3 },
   }
-  proofer = HTMLProofer.check_directory("./_site", options)
+  proofer = HTMLProofer.check_directory('./_site', options)
 
   proofer.before_request do |request|
     if request.base_url.start_with?('https://twitter.com')
@@ -22,4 +24,11 @@ task :test do
   end
 
   proofer.run
+end
+
+task :test_workflows do
+  Dir['.github/workflows/*.yml'].each do |file|
+    puts "Checking #{file}"
+    YAML.load_file file
+  end
 end
