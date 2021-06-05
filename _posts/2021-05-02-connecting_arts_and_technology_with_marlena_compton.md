@@ -9,7 +9,7 @@ I was one of the hosts lucky enough to welcome the brilliant and insightful
 Marlena Compton to the Greater than Code podcast [episode
 236](https://www.greaterthancode.com/connecting-arts-and-technology).
 
-Marlena's superpower is an bringing the arts to tech.
+Marlena's superpower is bringing the arts to tech.
 
 Marlena discussed the application of sketching, drawing, crafting, zines, other
 forms of art to our work as technologists. We made some important connections
