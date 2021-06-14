@@ -17,6 +17,8 @@ despite the massive talent shortage.
 
 <iframe src="https://player.fireside.fm/v2/nERs6yQ-+s4fRD7zY?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
 
+<!-- Site is broken, returning 502 or 0
 You can hear more from Elyse on her
 [podcast](https://elyserobinson.com/podcast-youtube/) and
 [blog](https://elyserobinson.com).
+-->
