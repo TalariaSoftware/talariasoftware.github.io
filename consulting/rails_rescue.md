@@ -26,13 +26,13 @@ difficult to maintain,
 slow,
 or crashing?
 Did you fail a security audit
-and don't havee
+and don't have
 the capacity
 to fix the problems?
 Do you need
 to migrate
 to a different hosting platform,
-to upgrade gems,
+upgrade gems,
 or upgrade Rails itself?
 Or do you need
 preventative maintenance
