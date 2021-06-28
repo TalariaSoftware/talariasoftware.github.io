@@ -41,7 +41,7 @@ of these issues
 before they are
 a problem?
 
-## How it Works
+## How It Works
 
 We start by meeting
 your team,
@@ -55,7 +55,7 @@ to fix.
 
 Then we get to work.
 Working from
-our list of priorities
+our list of priorities,
 we apply decades
 of experience
 to mitigate your problems
@@ -64,7 +64,7 @@ one by one.
 In most cases,
 you will get tangible improvements
 in your codebase,
-on an approximately daily basis
+on an approximately daily basis,
 for as long
 as we are working together.
 
