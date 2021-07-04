@@ -42,13 +42,13 @@ I was the senior product manager
 at Voom,
 an on-demand helicopter startup
 from Airbus.
-But now
+Now
 I'm spending
 more and more time
 with independent founders.
 
 If you've ever dreamed
-of having a successful webapp,
+of having a successful web app,
 I'd like
 to help
 you make
@@ -61,7 +61,7 @@ a reality.
         <i class="far fa-hammer usa-media-block__img font-sans-3xl"></i>
         <div class="usa-media-block__body">
           <h2 class="usa-graphic-list__heading">Build Your App</h2>
-          <p>Twelve-week program to turn your idea into a functioning application</p>
+          <p>Twelve-week program to turn your idea into a functioning application.</p>
           <p>$80k per month for three months</p>
           <a class="usa-button usa-button--secondary" href="/consulting/build_your_app">Learn More</a>
         </div>
