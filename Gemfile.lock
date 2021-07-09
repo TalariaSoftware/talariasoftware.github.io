@@ -92,8 +92,5 @@ DEPENDENCIES
   jekyll-feed
   jekyll-redirect-from
 
-RUBY VERSION
-   ruby 2.7.3p183
-
 BUNDLED WITH
    2.2.15
