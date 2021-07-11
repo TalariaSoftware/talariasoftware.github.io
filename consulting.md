@@ -52,7 +52,6 @@ a reality.
         </div>
       </div>
     </div>
-
     <div class="usa-media-block grid-col margin-y-2">
       <div class="border padding-3 height-full">
         <i class="far fa-notes-medical usa-media-block__img font-sans-3xl"></i>
@@ -66,7 +65,6 @@ a reality.
         </div>
       </div>
     </div>
-
     <div class="usa-media-block grid-col margin-y-2">
       <div class="border padding-3 height-full">
         <i class="far fa-handshake usa-media-block__img font-sans-3xl"></i>

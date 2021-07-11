@@ -2,39 +2,55 @@
 layout: default
 hero:
   image: /images/hero.png
-  callout: Start for Free
+  callout: Joyful Rails
   button:
-    href: https://app.talariasoftware.com/expertise_to_income
-    text: Get the FREE Workbook
+    href: /articles/joyful_rails
+    text: Read for FREE
   link:
     text: Link to more about that priority
     href: /link/
   content: |
-    Software businesses generate wealth and passive income.
+    A guide to make working with your Rails application more productive and
+    joyful.
 
-    This FREE workbook will help you get started on yours today.
+    Step-by-step instructions on dozens of ways to make developing in Rails
+    faster and easier.
 ---
 
 <section class="usa-graphic-list usa-section usa-section--light">
   <div class="grid-container">
-    <h1>I want to …</h1>
     <div class="usa-graphic-list__row grid-row grid-gap">
       <div class="usa-media-block tablet:grid-col">
-        <i class="far fa-lightbulb usa-media-block__img font-sans-3xl"></i>
+        <i class="far fa-hammer usa-media-block__img font-sans-3xl"></i>
         <div class="usa-media-block__body">
-          <h2 class="usa-graphic-list__heading">Kickstart My Idea</h2>
-          <p>I have an idea and a dream to turn that idea into a product and business.</p>
-          <p>I am ready to make that dream into a reality, to build my product, build my business, and build my new life.</p>
-          <a class="usa-button usa-button--secondary" href="https://app.talariasoftware.com/kickoff_questionnaires/new">Get Started </a>
+          <h2 class="usa-graphic-list__heading">Build Your App</h2>
+          <p>You have a vision for an application.</p>
+          <p>You are ready to invest to make that dream into a reality, to build
+          your product and your business.</p>
+          <a class="usa-button usa-button--secondary"
+          href="consulting/build_your_app">Get Started </a>
         </div>
       </div>
       <div class="usa-media-block tablet:grid-col">
-        <i class="fas fa-chart-line usa-media-block__img font-sans-3xl"></i>
+        <i class="far fa-handshake usa-media-block__img font-sans-3xl"></i>
         <div class="usa-media-block__body">
-          <h2 class="usa-graphic-list__heading">Accelerate My Team</h2>
-          <p>I have a product in development but making improvements and changes is slow or expensive and when I finally do get them it turns out they are not what my customers need.</p>
-          <p>I am ready to make a change so I can quickly and efficiently deliver what my customers want.</p>
-          <a class="usa-button usa-button--secondary" href="https://app.talariasoftware.com/accelerate_questionnaires/new">Level Up</a>
+          <h2 class="usa-graphic-list__heading">Partnerships</h2>
+          <p>You have a production application generating revenue.</p>
+          <p>You need a technical partner who can make sure that is stays
+          up-to-date, secure, and reliable for your paying customers.</p>
+          <a class="usa-button usa-button--secondary"
+          href="/consulting/partnerships">Team Up</a>
+        </div>
+      </div>
+      <div class="usa-media-block tablet:grid-col">
+        <i class="far fa-notes-medical usa-media-block__img font-sans-3xl"></i>
+        <div class="usa-media-block__body">
+          <h2 class="usa-graphic-list__heading">Rails Rescue</h2>
+          <p>You have a Rails codebase.</p>
+          <p>You need experts to help make your application to be more reliable,
+          more maintainable, or more secure.</p>
+          <a class="usa-button usa-button--secondary"
+          href="/consulting/rails_rescue">Get Help</a>
         </div>
       </div>
     </div>
@@ -122,24 +138,3 @@ hero:
     </div>
   </div>
 </section>
-
-<section class="usa-section usa-section--light">
-  <div class="grid-container">
-    <div class="grid-row grid-gap flex-align-center">
-      <div class="tablet:grid-col-4">
-        <h1>Get Your Free Workbook Today</h1>
-        <p class="measure-1">
-          This step-by-step workbook for entreprenuers of all experience-levels and types. At the end of these 46-pages you'll have a plan laid out and will have already taken the first steps.
-        </p>
-        <a class="usa-button usa-button--secondary width-full margin-bottom-2" href="https://app.talariasoftware.com/expertise_to_income">Download Now </a>
-      </div>
-      <div class="tablet:grid-col-8 text-center">
-        <h1>
-          <img class="height-card-lg" alt="Turn Your Expertise Into Passive
-          Income" src="/images/expertise_to_income_cover.png" />
-        </h1>
-      </div>
-    </div>
-  </div>
-</section>
-
