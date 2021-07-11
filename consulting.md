@@ -4,34 +4,20 @@ permalink: /consulting/
 ---
 # Consulting
 
+You have a vision:
+an online application
+that serves specific clients
+in a niche
+you know well.
 Technological advancements have made it
 easier than ever
-to create a software application
-and make it available
-on the web
-all day,
-every day,
-to everyone in the world.
-That means
-it's easier than ever
-to create something
-that fills a niche
-and generates
-ongoing passive income.
-And there are
-millions of niches
-to fill.
+to make that happen.
 
-But if you don't
-already know how
-to make software,
-you need someone
-you can trust
-to bring
-your vision
-into reality
-and support it
-along the way.
+But you still need
+people you trust
+with the specific skills
+to turn your vision
+into reality.
 
 I've been building
 web startups
@@ -40,11 +26,10 @@ I've been an engineer, founder, VP, CTO, and product manager.
 Before the pandemic,
 I was the senior product manager
 at Voom,
-an on-demand helicopter startup
+the on-demand helicopter startup
 from Airbus.
-Now
-I'm spending
-more and more time
+Now I'm spending
+more time
 with independent founders.
 
 If you've ever dreamed
