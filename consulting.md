@@ -40,11 +40,11 @@ you make
 that dream
 a reality.
 
-  <div class="usa-graphic-list__row grid-row grid-gap margin-y-2">
-    <div class="usa-media-block tablet:grid-col">
+  <div class="grid-row flex-column">
+    <div class="usa-media-block grid-col margin-y-2">
       <div class="border padding-3 height-full">
         <i class="far fa-hammer usa-media-block__img font-sans-3xl"></i>
-        <div class="usa-media-block__body">
+        <div class="usa-media-block__body measure-1">
           <h2 class="usa-graphic-list__heading">Build Your App</h2>
           <p>Twelve-week program to turn your idea into a functioning application.</p>
           <p>$80k per month for three months</p>
@@ -52,34 +52,30 @@ a reality.
         </div>
       </div>
     </div>
-    <div class="usa-media-block tablet:grid-col">
+
+    <div class="usa-media-block grid-col margin-y-2">
       <div class="border padding-3 height-full">
         <i class="far fa-notes-medical usa-media-block__img font-sans-3xl"></i>
-        <div class="usa-media-block__body">
+        <div class="usa-media-block__body measure-1">
           <h2 class="usa-graphic-list__heading">Rails Rescue</h2>
           <p>Highly experienced and highly skilled engineers to focus on making
           your Rails application more reliable, more maintainable, and more
           secure.</p>
           <p>$1,500 per day, per engineer</p>
-          <a class="usa-button usa-button--secondary"
-          href="/consulting/rails_rescue">Learn More</a>
+          <a class="usa-button usa-button--secondary" href="/consulting/rails_rescue">Learn More</a>
         </div>
       </div>
     </div>
-  </div>
-  <div class="usa-graphic-list__row grid-row grid-gap margin-y-2">
-    <div class="usa-media-block tablet:grid-col">
-      <div class="border padding-3 height-full width-full">
+
+    <div class="usa-media-block grid-col margin-y-2">
+      <div class="border padding-3 height-full">
         <i class="far fa-handshake usa-media-block__img font-sans-3xl"></i>
-        <div class="usa-media-block__body">
+        <div class="usa-media-block__body measure-1">
           <h2 class="usa-graphic-list__heading">Partnerships</h2>
           <p>Let me be the technical expert for you and your existing app.</p>
           <p>Negotiable</p>
-          <a class="usa-button usa-button--secondary"
-          href="/consulting/partnerships">Learn More</a>
+          <a class="usa-button usa-button--secondary" href="/consulting/partnerships">Learn More</a>
         </div>
       </div>
-    </div>
-    <div class="usa-media-block tablet:grid-col">
     </div>
   </div>
