@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/TalariaSoftware/talariasoftware.github.io#readme",
   "dependencies": {
-    "uswds": "^2.10.0"
+    "uswds": "^2.12.0"
   }
 }
