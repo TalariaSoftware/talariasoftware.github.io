@@ -43,5 +43,5 @@ customers.{::comment}Make into a pullquote{:/comment}
 
 This program is not available to everyone. It is a highly collaborative
 process. You will be working closely with our team and we are very selective
-about who we work with. If this interests you, click here to book an interview
-with me.
+about who we work with. If this interests you, [click here to book an interview
+with me.](https://app.harmonizely.com/damien/build-your-app)

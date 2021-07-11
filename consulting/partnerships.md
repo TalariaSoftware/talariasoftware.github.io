@@ -34,4 +34,4 @@ and an application that is generating revenue
 with good prospects for the future.
 
 Because this is a full partnership, I cannot offer it to everyone. If this is
-something that interests you, click here to book an interview with me.
+something that interests you, [click here to book an interview with me.](https://app.harmonizely.com/damien/partnership)
