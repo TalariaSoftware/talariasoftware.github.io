@@ -10,7 +10,7 @@ Build Your App is a twelve-week program to turn your idea into a functioning
 application.
 
 This is for entrepreneurs who have the resources and are ready to
-commit to making their dream a reality. You need to understand your customers,
+commit to making their vision a reality. You need to understand your customers,
 understand their needs, and be ready and able to invest in creating a solution
 for them.
 
@@ -41,7 +41,7 @@ and customers of your app will be. But if you have the resources and believe in
 your idea, it is the best and fastest way to get a working app in front of your
 customers.{::comment}Make into a pullquote{:/comment}
 
-This program is not available for everyone. It is a highly collaborative
-process, you will be working closely with our team and we are very selective
+This program is not available to everyone. It is a highly collaborative
+process. You will be working closely with our team and we are very selective
 about who we work with. If this interests you, click here to book an interview
 with me.

@@ -7,8 +7,7 @@ permalink: /consulting/partnerships
 
 Percentage of revenue or profit
 
-Our partnership program provides long-term support technical support for your
-web application.
+Our partnership program provides long-term support for your web application.
 
 This is for business owners who
 have a working Rails app with paying customers. We provide the technical

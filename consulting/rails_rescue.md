@@ -48,7 +48,7 @@ that we work together.
 
 ## Is This for You?
 
-This program is not available for everyone. It is a highly collaborative
-process, you will be working closely with our team and we are very selective
+This program is not available to everyone. It is a highly collaborative
+process. You will be working closely with our team and we are very selective
 about who we work with. If this interests you, click here to book an interview
 with me.
