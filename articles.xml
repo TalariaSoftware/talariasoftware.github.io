@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-04T23:26:15-07:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Connecting Arts and Technology with Marlena Compton</title><link href="/articles/connecting_arts_and_technology_with_marlena_compton" rel="alternate" type="text/html" title="Connecting Arts and Technology with Marlena Compton" /><published>2021-05-02T00:00:00-07:00</published><updated>2021-05-02T00:00:00-07:00</updated><id>/articles/connecting_arts_and_technology_with_marlena_compton</id><content type="html" xml:base="/articles/connecting_arts_and_technology_with_marlena_compton">&lt;p&gt;I was one of the hosts lucky enough to welcome the brilliant and insightful
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-05T00:18:37-07:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Making Peace and Creating Trust with Brianna McGowen</title><link href="/articles/making_peace_and_creating_trust_with_brianna_mcgowen" rel="alternate" type="text/html" title="Making Peace and Creating Trust with Brianna McGowen" /><published>2021-08-05T00:00:00-07:00</published><updated>2021-08-05T00:00:00-07:00</updated><id>/articles/making_peace_and_creating_trust_with_brianna_mcgowen</id><content type="html" xml:base="/articles/making_peace_and_creating_trust_with_brianna_mcgowen">&lt;p&gt;I was one of the hosts lucky enough to welcome the careful and capable
+Brianna McGowen to the Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/making-peace-and-creating-trust&quot;&gt;episode
+244&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Brianna’s superpower is her awareness of and physical connection to people’s
+feelings.&lt;/p&gt;
+
+&lt;p&gt;We discussed the importance of trust and techniques for making technical and
+political systems more equitable. We had some amazing realizations about
+reinforcement systems, inherent dangers in measurement, and the importance of
+confidence intervals, and other non-binary ways of thinking.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.fireside.fm/v2/nERs6yQ-+gnAixZKJ?theme=dark&quot; width=&quot;740&quot; height=&quot;200&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;You can learn more about Brianna on &lt;a href=&quot;https://twitter.com/CodeToMove&quot;&gt;Twitter&lt;/a&gt; of from her &lt;a href=&quot;https://codetomove.com&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="greater_than_code" /><summary type="html">I was one of the hosts lucky enough to welcome the careful and capable Brianna McGowen to the Greater than Code podcast episode 244.</summary></entry><entry><title type="html">Connecting Arts and Technology with Marlena Compton</title><link href="/articles/connecting_arts_and_technology_with_marlena_compton" rel="alternate" type="text/html" title="Connecting Arts and Technology with Marlena Compton" /><published>2021-05-02T00:00:00-07:00</published><updated>2021-05-02T00:00:00-07:00</updated><id>/articles/connecting_arts_and_technology_with_marlena_compton</id><content type="html" xml:base="/articles/connecting_arts_and_technology_with_marlena_compton">&lt;p&gt;I was one of the hosts lucky enough to welcome the brilliant and insightful
 Marlena Compton to the Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/connecting-arts-and-technology&quot;&gt;episode
 236&lt;/a&gt;.&lt;/p&gt;
 
@@ -198,63 +212,4 @@ as soon as your app needs to know who its users are.&lt;/p&gt;
 &lt;h2 id=&quot;gotchas&quot;&gt;Gotchas&lt;/h2&gt;
 
 &lt;p&gt;Authentication is separate from authorization. We’ll talk about authorization in
-a separate article.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">Update the Readme</title><link href="/articles/update_the_readme" rel="alternate" type="text/html" title="Update the Readme" /><published>2021-01-26T00:00:00-08:00</published><updated>2021-01-26T00:00:00-08:00</updated><id>/articles/update_the_readme</id><content type="html" xml:base="/articles/update_the_readme">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
-recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
-
-&lt;p&gt;In this article, we are talking about updating the readme file.&lt;/p&gt;
-
-&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
-
-&lt;p&gt;Every time there is some new piece of information that every developer will
-need, or that is not obvious or easy to find, add that to the “readme” file.&lt;/p&gt;
-
-&lt;p&gt;Setting up a new development machine or onboarding a new developer is a great
-time to overhaul your readme file. Change anything that is incorrect, unclear,
-or missing.&lt;/p&gt;
-
-&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
-
-&lt;p&gt;Opening an unfamiliar codebase can be very intimidating. A readme file gives
-future developers a way to get their bearings. It can’t tell you where
-everything is, but it can let you know where to start looking – and that is huge.&lt;/p&gt;
-
-&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
-
-&lt;p&gt;Your readme file should probably include the name of the app, what it does, how
-to set up your development environment, how to run the tests, how to deploy, and any other information a new developer is likely to need.&lt;/p&gt;
-
-&lt;p&gt;This should go into a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README.md&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here is an example readme file:&lt;/p&gt;
-
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gh&quot;&gt;# Hello World&lt;/span&gt;
-
-Universal greeter for all human and non-human entities
-
-&lt;span class=&quot;gu&quot;&gt;## Development&lt;/span&gt;
-
-Instructions on how to develop go here
-
-&lt;span class=&quot;gu&quot;&gt;### Specs&lt;/span&gt;
-
-&lt;span class=&quot;sb&quot;&gt;`rake`&lt;/span&gt;
-
-&lt;span class=&quot;gu&quot;&gt;### Deployment&lt;/span&gt;
-
-&lt;span class=&quot;sb&quot;&gt;`bin/deploy`&lt;/span&gt;
-
-&lt;span class=&quot;gu&quot;&gt;### Updating libraries&lt;/span&gt;
-
-&lt;span class=&quot;sb&quot;&gt;`bin/gem_update`&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;alternatives&quot;&gt;Alternatives&lt;/h2&gt;
-
-&lt;p&gt;In the long ago time, readme files were named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README.txt&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README&lt;/code&gt; or
-occasionally &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Readme&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The all caps version of the file name makes it very easy to notice in a file
-listing.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt; extension indicates that the file is Markdown so it gets rendered
-nicely in GitHub and elsewhere.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
+a separate article.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
