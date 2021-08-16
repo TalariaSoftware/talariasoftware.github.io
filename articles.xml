@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-15T23:26:05-07:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Making Peace and Creating Trust with Brianna McGowen</title><link href="/articles/making_peace_and_creating_trust_with_brianna_mcgowen" rel="alternate" type="text/html" title="Making Peace and Creating Trust with Brianna McGowen" /><published>2021-08-05T00:00:00-07:00</published><updated>2021-08-05T00:00:00-07:00</updated><id>/articles/making_peace_and_creating_trust_with_brianna_mcgowen</id><content type="html" xml:base="/articles/making_peace_and_creating_trust_with_brianna_mcgowen">&lt;p&gt;I was one of the hosts lucky enough to welcome the careful and capable
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-16T00:19:02-07:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Hacking Reality with Rony Abovitz</title><link href="/articles/hacking_reality_with_rony_abovitz" rel="alternate" type="text/html" title="Hacking Reality with Rony Abovitz" /><published>2021-08-16T00:00:00-07:00</published><updated>2021-08-16T00:00:00-07:00</updated><id>/articles/hacking_reality_with_rony_abovitz</id><content type="html" xml:base="/articles/hacking_reality_with_rony_abovitz">&lt;p&gt;I was one of the hosts lucky enough to welcome the charming
+Rony Abovitz to the Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/hacking-reality&quot;&gt;episode
+245&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Rony’s superpower is his free-wheeling imagination, insight, and intuition.&lt;/p&gt;
+
+&lt;p&gt;We discussed the dichotomy between environments that are open, free, and
+unstructured contrasted with the rigid hierarchies and bureaucracies that we all
+despise. We also made connections between that and the nature of human
+enlightenment and transcendence.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.fireside.fm/v2/nERs6yQ-+_WKc6-3y?theme=dark&quot; width=&quot;740&quot; height=&quot;200&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;You can learn more about Rony from his bio on &lt;a href=&quot;https://www.greaterthancode.com/guests/rony-abovitz&quot;&gt;Greater Than Code&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="greater_than_code" /><summary type="html">I was one of the hosts lucky enough to welcome the charming Rony Abovitz to the Greater than Code podcast episode 245.</summary></entry><entry><title type="html">Making Peace and Creating Trust with Brianna McGowen</title><link href="/articles/making_peace_and_creating_trust_with_brianna_mcgowen" rel="alternate" type="text/html" title="Making Peace and Creating Trust with Brianna McGowen" /><published>2021-08-05T00:00:00-07:00</published><updated>2021-08-05T00:00:00-07:00</updated><id>/articles/making_peace_and_creating_trust_with_brianna_mcgowen</id><content type="html" xml:base="/articles/making_peace_and_creating_trust_with_brianna_mcgowen">&lt;p&gt;I was one of the hosts lucky enough to welcome the careful and capable
 Brianna McGowen to the Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/making-peace-and-creating-trust&quot;&gt;episode
 244&lt;/a&gt;.&lt;/p&gt;
 
@@ -195,21 +208,4 @@ going through as a society, how we feel about it, and what to do about it.&lt;/p
 
 &lt;iframe src=&quot;https://player.fireside.fm/v2/nERs6yQ-+0NcwU7Ey?theme=dark&quot; width=&quot;740&quot; height=&quot;200&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;You can hear more from Mando by &lt;a href=&quot;https://twitter.com/mandoescamilla&quot;&gt;finding him on Twitter.&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="greater_than_code" /><summary type="html">I was one of the hosts lucky enough to welcome the lovely Mando Escamilla to the Greater than Code podcast episode 219.</summary></entry><entry><title type="html">Add Authentication</title><link href="/articles/add_authentication" rel="alternate" type="text/html" title="Add Authentication" /><published>2021-02-02T00:00:00-08:00</published><updated>2021-02-02T00:00:00-08:00</updated><id>/articles/add_authentication</id><content type="html" xml:base="/articles/add_authentication">&lt;p&gt;This is part of &lt;a href=&quot;/articles/joyful_rails&quot;&gt;Joyful Rails&lt;/a&gt;, a list of
-recommendations to make developing your Rails app more productive and joyful.&lt;/p&gt;
-
-&lt;p&gt;In this article, we are talking about adding authentication.&lt;/p&gt;
-
-&lt;h2 id=&quot;when&quot;&gt;When&lt;/h2&gt;
-
-&lt;p&gt;Authentication is the process of identifying who your user is. You should add it
-as soon as your app needs to know who its users are.&lt;/p&gt;
-
-&lt;h2 id=&quot;how&quot;&gt;How&lt;/h2&gt;
-
-&lt;p&gt;Use &lt;a href=&quot;https://github.com/heartcombo/devise#getting-started&quot;&gt;Devise&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;gotchas&quot;&gt;Gotchas&lt;/h2&gt;
-
-&lt;p&gt;Authentication is separate from authorization. We’ll talk about authorization in
-a separate article.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
+&lt;p&gt;You can hear more from Mando by &lt;a href=&quot;https://twitter.com/mandoescamilla&quot;&gt;finding him on Twitter.&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="greater_than_code" /><summary type="html">I was one of the hosts lucky enough to welcome the lovely Mando Escamilla to the Greater than Code podcast episode 219.</summary></entry></feed>
