@@ -260,7 +260,7 @@ these files so I don’t care about their style.</p>
 <p>A combination of clear naming and RSpec specifications obviates the need for
 class documentation blocks.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Style/Documentation</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Style/Documentation</span><span class="pi">:</span>
   <span class="na">Enabled</span><span class="pi">:</span> <span class="no">false</span>
 </code></pre></div></div>
 
@@ -278,7 +278,7 @@ class documentation blocks.</p>
   <span class="ss">:forth</span><span class="p">,</span> <span class="ss">:fifth</span><span class="p">,</span> <span class="ss">:sixth</span><span class="p">,</span> <span class="ss">:seventh</span><span class="p">,</span> <span class="ss">:eigth</span><span class="p">)</span>
 </code></pre></div></div>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Layout/ArgumentAlignment</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Layout/ArgumentAlignment</span><span class="pi">:</span>
   <span class="na">EnforcedStyle</span><span class="pi">:</span> <span class="s">with_fixed_indentation</span>
 </code></pre></div></div>
 
@@ -286,7 +286,7 @@ class documentation blocks.</p>
 
 <!-- Why -->
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Layout/FirstArrayElementIndentation</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Layout/FirstArrayElementIndentation</span><span class="pi">:</span>
   <span class="na">EnforcedStyle</span><span class="pi">:</span> <span class="s">consistent</span>
 </code></pre></div></div>
 
@@ -294,7 +294,7 @@ class documentation blocks.</p>
 
 <p>Implicit hashes do not need to be formatted like hashes.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Layout/HashAlignment</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Layout/HashAlignment</span><span class="pi">:</span>
   <span class="na">EnforcedLastArgumentHashStyle</span><span class="pi">:</span> <span class="s">ignore_implicit</span>
 </code></pre></div></div>
 
@@ -303,7 +303,7 @@ class documentation blocks.</p>
 <p>Cop directives should not need to be under our line length requirements.
 This makes it much easer to apply a cop directive to a single line of code.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Layout/LineLength</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Layout/LineLength</span><span class="pi">:</span>
   <span class="na">IgnoreCopDirectives</span><span class="pi">:</span> <span class="no">true</span>
 </code></pre></div></div>
 
@@ -311,7 +311,7 @@ This makes it much easer to apply a cop directive to a single line of code.</p>
 Rails are over 80 characters. With this, you won’t need to fix them or delete
 them.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Layout/LineLength</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Layout/LineLength</span><span class="pi">:</span>
   <span class="na">IgnoredPatterns</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s1">'</span><span class="s">^\s*#</span><span class="nv"> </span><span class="s">'</span>
 </code></pre></div></div>
@@ -321,7 +321,7 @@ them.</p>
 <p>Similar to argument alignment, the default setting <code class="language-plaintext highlighter-rouge">with_first_parameter</code> wastes
 too much space.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Layout/ParameterAlignment</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Layout/ParameterAlignment</span><span class="pi">:</span>
   <span class="na">EnforcedStyle</span><span class="pi">:</span> <span class="s">with_fixed_indentation</span>
 </code></pre></div></div>
 
@@ -330,7 +330,7 @@ too much space.</p>
 <p>Writing idiomatic RSpec requires violating this rule, so we exclude RSpec files
 from it.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Lint/AmbiguousBlockAssociation</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Lint/AmbiguousBlockAssociation</span><span class="pi">:</span>
   <span class="na">Exclude</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s2">"</span><span class="s">**/*_spec.rb"</span>
 </code></pre></div></div>
@@ -340,7 +340,7 @@ from it.</p>
 <p>Idiomatic RSpec often has very long blocks. There is no harm in configuration
 files having long blocks. So we exclude both of those.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Metrics/BlockLength</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Metrics/BlockLength</span><span class="pi">:</span>
   <span class="na">Exclude</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s">Guardfile</span>
     <span class="pi">-</span> <span class="s">config/environments/*</span>
@@ -353,7 +353,7 @@ files having long blocks. So we exclude both of those.</p>
 <p>It usually isn’t helpful to break up migration methods, so we allow them to get
 as long as they need.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Metrics/MethodLength</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Metrics/MethodLength</span><span class="pi">:</span>
   <span class="na">Exclude</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s2">"</span><span class="s">db/migrate/*.rb"</span>
 
@@ -372,7 +372,7 @@ as long as they need.</p>
 <span class="p">}.</span><span class="nf">join</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div></div>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Style/BlockDelimiters</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Style/BlockDelimiters</span><span class="pi">:</span>
   <span class="na">EnforcedStyle</span><span class="pi">:</span> <span class="s">braces_for_chaining</span>
 </code></pre></div></div>
 
@@ -384,7 +384,7 @@ as long as they need.</p>
 <span class="k">end</span>
 </code></pre></div></div>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Style/EmptyMethod</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Style/EmptyMethod</span><span class="pi">:</span>
   <span class="na">EnforcedStyle</span><span class="pi">:</span> <span class="s">expanded</span>
 </code></pre></div></div>
 
@@ -394,7 +394,7 @@ as long as they need.</p>
 codebase with good specs. There is no need to clutter up our files trying to
 prepare for it.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Style/FrozenStringLiteralComment</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Style/FrozenStringLiteralComment</span><span class="pi">:</span>
   <span class="na">Enabled</span><span class="pi">:</span> <span class="no">false</span>
 </code></pre></div></div>
 
@@ -411,7 +411,7 @@ characters.</p>
 <p>For this reason, we exclude Ruby files that are likely to contain natural
 language text strings.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Style/StringLiterals</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Style/StringLiterals</span><span class="pi">:</span>
   <span class="na">Exclude</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s">lib/tasks/*.rake</span>
     <span class="pi">-</span> <span class="s">spec/**/*_spec.rb</span>
@@ -430,13 +430,13 @@ makes it easier to add, remove, and reorder items.</p>
 <p>As a bonus, it makes it easier to read Git commits because changing one item
 only changes one line in the file.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Style/TrailingCommaInArguments</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Style/TrailingCommaInArguments</span><span class="pi">:</span>
   <span class="na">EnforcedStyleForMultiline</span><span class="pi">:</span> <span class="s">comma</span>
 
-<span class="s">Style/TrailingCommaInArrayLiteral</span><span class="pi">:</span>
+<span class="na">Style/TrailingCommaInArrayLiteral</span><span class="pi">:</span>
   <span class="na">EnforcedStyleForMultiline</span><span class="pi">:</span> <span class="s">comma</span>
 
-<span class="s">Style/TrailingCommaInHashLiteral</span><span class="pi">:</span>
+<span class="na">Style/TrailingCommaInHashLiteral</span><span class="pi">:</span>
   <span class="na">EnforcedStyleForMultiline</span><span class="pi">:</span> <span class="s">comma</span>
 </code></pre></div></div>
 
