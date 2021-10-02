@@ -11,7 +11,7 @@ booking platform. And we did it one small step at a time.
 <figure class='float-left margin-4 margin-left-0'>
   <img class='maxh-mobile' src='/images/articles/mirko-blicke-RndRFUz8RS4-unsplash.jpg' alt='large outdoor staircase'>
   <figcaption class='font-body-3xs'>
-    Photo by <a href='https://unsplash.com/@mirkoblicke'>Mirko Blicke</a>
+    Photo by Mirko Blicke
   </figcaption>
 </figure>
 

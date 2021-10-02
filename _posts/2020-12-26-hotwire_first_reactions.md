@@ -70,7 +70,7 @@ There are two main libraries that make up Hotwire: Turbo and Stimulus.
 
 ### Turbo
 
-[Turbo](https://turbo.hotwire.dev) is the next evolution of
+[Turbo](https://turbo.hotwired.dev) is the next evolution of
 [Turbolinks](https://github.com/turbolinks/turbolinks).
 
 Turbolinks uses JavaScript to replace the body of an HTML page. By avoiding a
