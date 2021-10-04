@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-03T23:24:55-07:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Hacking Reality with Rony Abovitz</title><link href="/articles/hacking_reality_with_rony_abovitz" rel="alternate" type="text/html" title="Hacking Reality with Rony Abovitz" /><published>2021-08-16T00:00:00-07:00</published><updated>2021-08-16T00:00:00-07:00</updated><id>/articles/hacking_reality_with_rony_abovitz</id><content type="html" xml:base="/articles/hacking_reality_with_rony_abovitz">&lt;p&gt;I was one of the hosts lucky enough to welcome the charming
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/articles.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-04T00:19:40-07:00</updated><id>/articles.xml</id><title type="html">Talaria Software</title><subtitle>Software is a means to an end. Your real goals are to delight your customers, grow your business, and make people's lives better. Building software is only valuable when it helps you do those things.</subtitle><entry><title type="html">Something Something with Eva PenzeyMoog</title><link href="/articles/designing_for_safety_with_eva_penzymoog" rel="alternate" type="text/html" title="Something Something with Eva PenzeyMoog" /><published>2021-10-04T00:00:00-07:00</published><updated>2021-10-04T00:00:00-07:00</updated><id>/articles/designing_for_safety_with_eva_penzymoog</id><content type="html" xml:base="/articles/designing_for_safety_with_eva_penzymoog">&lt;p&gt;I was one of the hosts lucky enough to welcome the insightful and visionary
+Eva PenzeyMoog to the Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/designing-for-safety&quot;&gt;episode
+252&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Eva’s superpower is her ADHD-mediated hyper-focus.&lt;/p&gt;
+
+&lt;p&gt;We discussed her book, &lt;em&gt;Design for Safety&lt;/em&gt; and challenges for tech creators when
+technology so easily becomes a tool for interpersonal abuse. We also talked
+how to move forward given that if the things you are building can be used for
+harm, they will be used for harm.&lt;/p&gt;
+
+&lt;p&gt;Warning: there is some discussion of domestic violence, abuse, and interpersonal
+saftey in this episode.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.fireside.fm/v2/nERs6yQ-+Wz3yFAjF?theme=dark&quot; width=&quot;740&quot; height=&quot;200&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;You can learn more about Eva from &lt;a href=&quot;https://evapenzeymoog.com&quot;&gt;her website&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="greater_than_code" /><summary type="html">I was one of the hosts lucky enough to welcome the insightful and visionary Eva PenzeyMoog to the Greater than Code podcast episode 252.</summary></entry><entry><title type="html">Hacking Reality with Rony Abovitz</title><link href="/articles/hacking_reality_with_rony_abovitz" rel="alternate" type="text/html" title="Hacking Reality with Rony Abovitz" /><published>2021-08-16T00:00:00-07:00</published><updated>2021-08-16T00:00:00-07:00</updated><id>/articles/hacking_reality_with_rony_abovitz</id><content type="html" xml:base="/articles/hacking_reality_with_rony_abovitz">&lt;p&gt;I was one of the hosts lucky enough to welcome the charming
 Rony Abovitz to the Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/hacking-reality&quot;&gt;episode
 245&lt;/a&gt;.&lt;/p&gt;
 
@@ -196,16 +212,4 @@ easy to understand, test, and maintain.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/ryanb/cancan#readme&quot;&gt;Cancan&lt;/a&gt; is another option and I am sure
 there are many more. I like Pundit enough that I haven’t explored any
-others.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry><entry><title type="html">“How are you doing?” with Mando Escamilla</title><link href="/articles/how_are_you_doing_with_mando_escamilla" rel="alternate" type="text/html" title="“How are you doing?” with Mando Escamilla" /><published>2021-02-04T00:00:00-08:00</published><updated>2021-02-04T00:00:00-08:00</updated><id>/articles/how_are_you_doing_with_mando_escamilla</id><content type="html" xml:base="/articles/how_are_you_doing_with_mando_escamilla">&lt;p&gt;I was one of the hosts lucky enough to welcome the lovely Mando Escamilla to the
-Greater than Code podcast &lt;a href=&quot;https://www.greaterthancode.com/how-are-you-doing&quot;&gt;episode 219&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Mando’s superpower is the ability to talk about anything personal with other
-people. He got it during a difficult time in his life when he suddenly could no
-longer bottle up his feelings.&lt;/p&gt;
-
-&lt;p&gt;We discussed how we are all managing the difficult and traumatic time we are
-going through as a society, how we feel about it, and what to do about it.&lt;/p&gt;
-
-&lt;iframe src=&quot;https://player.fireside.fm/v2/nERs6yQ-+0NcwU7Ey?theme=dark&quot; width=&quot;740&quot; height=&quot;200&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;You can hear more from Mando by &lt;a href=&quot;https://twitter.com/mandoescamilla&quot;&gt;finding him on Twitter.&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="greater_than_code" /><summary type="html">I was one of the hosts lucky enough to welcome the lovely Mando Escamilla to the Greater than Code podcast episode 219.</summary></entry></feed>
+others.&lt;/p&gt;</content><author><name></name></author><category term="software" /><category term="rails" /><category term="joyful_rails" /><summary type="html">This is part of Joyful Rails, a list of recommendations to make developing your Rails app more productive and joyful.</summary></entry></feed>
