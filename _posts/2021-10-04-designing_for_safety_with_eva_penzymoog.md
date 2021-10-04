@@ -1,7 +1,7 @@
 ---
-title: Something Something with Eva PenzeyMoog
+title: Desiging for Safety with Eva PenzeyMoog
 description: Eva Penzey-Moog was our guest on Greater than Code
-published_at: 2021-09-XX 07:00 -0800
+published_at: 2021-10-04 07:00 -0800
 tags: greater_than_code
 ---
 
