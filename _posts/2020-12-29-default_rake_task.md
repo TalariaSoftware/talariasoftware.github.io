@@ -56,7 +56,7 @@ In `lib/tasks/license_finder.rake` put
 
 ```ruby
 task license_finder: :environment do
-  sh 'license_finder', '--quiet'
+  sh 'bundle', 'exec', 'license_finder'
 end
 ```
 
@@ -90,6 +90,8 @@ if Gem::Specification.find_all_by_name('brakeman').present?
   end
 end
 ```
+
+(Adapted from [Brakeman documentation](https://brakemanscanner.org/docs/rake/))
 
 Now you can run `rake brakeman:check`.
 
