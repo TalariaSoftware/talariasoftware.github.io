@@ -193,4 +193,4 @@ information available.
 
 The API was incorporated
 in the CDC website
-and is [available there](https://faq.coronavirus.gov/api/).
+and was available at https://faq.coronavirus.gov/api/.
