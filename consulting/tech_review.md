@@ -5,7 +5,7 @@ permalink: /consulting/tech_review
 
 # Expert Tech Review
 
-$3,000
+Starting at $3,000
 
 The Expert Tech Review provides targeted technical expertise for your business
 needs.
@@ -28,9 +28,9 @@ to your business.
 ## How It Works
 
 We start by meeting
-with you,
-learning about your business,
-and your situation.
+with you
+to learn about your business
+and what you are trying to accomplish.
 Then we collaborate
 to identify and prioritize
 what you need to know.
@@ -43,7 +43,7 @@ of experience
 to research, discover, and collate
 the information you need.
 
-After a couple of days,
+Within three business days,
 we'll deliver a report
 detailing what we've found
 in a clear an actionable manner.
