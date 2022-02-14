@@ -255,7 +255,7 @@ easy to run them after every change and before every deploy.</p>
 <p>In <code class="language-plaintext highlighter-rouge">lib/tasks/license_finder.rake</code> put</p>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">task</span> <span class="ss">license_finder: :environment</span> <span class="k">do</span>
-  <span class="n">sh</span> <span class="s1">'license_finder'</span><span class="p">,</span> <span class="s1">'--quiet'</span>
+  <span class="n">sh</span> <span class="s1">'bundle'</span><span class="p">,</span> <span class="s1">'exec'</span><span class="p">,</span> <span class="s1">'license_finder'</span>
 <span class="k">end</span>
 </code></pre></div></div>
 
@@ -287,6 +287,8 @@ easy to run them after every change and before every deploy.</p>
   <span class="k">end</span>
 <span class="k">end</span>
 </code></pre></div></div>
+
+<p>(Adapted from <a href="https://brakemanscanner.org/docs/rake/">Brakeman documentation</a>)</p>
 
 <p>Now you can run <code class="language-plaintext highlighter-rouge">rake brakeman:check</code>.</p>
 
@@ -439,7 +441,7 @@ command: <code class="language-plaintext highlighter-rouge">rake</code>.</p>
               
 
               <div>
-                &copy; 2015&mdash;2021 Talaria Research LLC
+                &copy; 2015&mdash;2022 Talaria Research LLC
               </div>
           
         
