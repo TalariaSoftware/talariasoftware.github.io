@@ -67,6 +67,17 @@ a reality.
     </div>
     <div class="usa-media-block grid-col margin-y-2">
       <div class="border padding-3 height-full">
+        <i class="far fa-stethoscope usa-media-block__img font-sans-3xl"></i>
+        <div class="usa-media-block__body measure-1">
+          <h2 class="usa-graphic-list__heading">Expert Tech Review</h2>
+          <p>Targeted technical expertise for your business needs.</p>
+          <p>Starting at $3,000</p>
+          <a class="usa-button usa-button--secondary" href="/consulting/rails_rescue">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="usa-media-block grid-col margin-y-2">
+      <div class="border padding-3 height-full">
         <i class="far fa-handshake usa-media-block__img font-sans-3xl"></i>
         <div class="usa-media-block__body measure-1">
           <h2 class="usa-graphic-list__heading">Partnerships</h2>
