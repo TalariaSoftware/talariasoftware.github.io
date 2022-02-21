@@ -37,7 +37,7 @@ what you need to know.
 
 After that, we get to work.
 Working from
-our list of priorities,
+your list of priorities,
 we apply decades
 of experience
 to research, discover, and collate
@@ -61,4 +61,4 @@ into making
 the best decision you can.
 But if this is something
 that interests you,
-[click here to book an interview with me.](https://app.harmonizely.com/damien/expert-tech-review)
+[click here to book a free consultation with me.](https://app.harmonizely.com/damien/expert-tech-review)
