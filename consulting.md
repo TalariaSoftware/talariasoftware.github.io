@@ -72,7 +72,7 @@ a reality.
           <h2 class="usa-graphic-list__heading">Expert Tech Review</h2>
           <p>Targeted technical expertise for your business needs.</p>
           <p>Starting at $3,000</p>
-          <a class="usa-button usa-button--secondary" href="/consulting/rails_rescue">Learn More</a>
+          <a class="usa-button usa-button--secondary" href="/consulting/tech_review">Learn More</a>
         </div>
       </div>
     </div>
