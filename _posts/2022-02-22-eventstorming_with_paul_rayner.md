@@ -5,7 +5,7 @@ published_at: 2022-02-22 07:00 -0800
 tags: greater_than_code
 ---
 
-Mandy Moore, Jessica Kerr and I welcomed the generous and kind Paul Rayner to
+Mandy Moore, Jessica Kerr, and I welcomed the generous and kind Paul Rayner to
 the Greater than Code podcast [episode
 271](https://www.greaterthancode.com/eventstorming).
 
