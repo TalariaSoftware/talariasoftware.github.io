@@ -14,6 +14,9 @@ task :html_proofer do
     enforce_https: true,
     http_status_ignore: [403], # All About Cookies returns 403
     parallel: { in_processes: 3 },
+    url_ignore: [
+      'http://www.andconf.io/', # Their SSL certificate no longer works
+    ]
   }
   proofer = HTMLProofer.check_directory('./_site', options)
 

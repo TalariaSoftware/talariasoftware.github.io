@@ -50,4 +50,4 @@ them that. If your specifications are used to drive the application development,
 
 <hr/>
 
-The idea for this essay originated in a Twitter [conversation](https://twitter.com/ExMember/status/471745713764712450) with [Dave Brady.](https://twitter.com/dbrady) It was further expanded for a lighting talk I gave at [&:conf.](https://www.andconf.io/)
+The idea for this essay originated in a Twitter [conversation](https://twitter.com/ExMember/status/471745713764712450) with [Dave Brady.](https://twitter.com/dbrady) It was further expanded for a lighting talk I gave at [&:conf.](http://www.andconf.io/)
