@@ -17,6 +17,3 @@ discussion on the intersection of cybersecurity and employee wellness. Nyota
 summed it up at one point by saying "resilience is being able to take a breath."
 
 <iframe src="https://player.fireside.fm/v2/nERs6yQ-+CF5WpS5g?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
-
-You can learn more about Nyota from her [website](https://transition365.com) or
-follow her on [Instagram.](https://instagram.com/nyota.transition365)
