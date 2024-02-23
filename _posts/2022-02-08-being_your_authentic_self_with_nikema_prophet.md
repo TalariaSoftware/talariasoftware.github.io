@@ -16,5 +16,5 @@ and being radically soft.
 
 <iframe src="https://player.fireside.fm/v2/nERs6yQ-+OezG1NT3?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
 
-You can learn more about Nikema from her [website](https://nikemaprophet.com) or
-her posts on [Twitter.](https://twitter.com/dev_nikema)
+You can learn more about Nikema from her posts on
+[Twitter.](https://twitter.com/dev_nikema)
