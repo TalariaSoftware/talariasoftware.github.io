@@ -43,10 +43,10 @@ easy to understand, test, and maintain.
 
 ## How
 
-Use [Pundit](https://github.com/varvet/pundit#readme).
+Use [Pundit](https://github.com/varvet/pundit).
 
 ## Alternatives
 
-[Cancan](https://github.com/ryanb/cancan#readme) is another option and I am sure
+[Cancan](https://github.com/ryanb/cancan) is another option and I am sure
 there are many more. I like Pundit enough that I haven't explored any
 others.

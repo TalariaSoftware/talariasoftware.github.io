@@ -74,7 +74,7 @@ bundle exec license_finder licenses add sha.js BSD-3-Clause
 
 Finally, if you followed the advice on [library vulnerability
 checks](library_vulnerability_checks) then you installed
-[bundler-audit](https://github.com/rubysec/bundler-audit#readme). Bundler-audit
+[bundler-audit](https://github.com/rubysec/bundler-audit). Bundler-audit
 is has a GPL license, which means we can't incorporate it into non-GPL code. But
 it is not part of our app – it's only a tool we use – so it's okay.
 
