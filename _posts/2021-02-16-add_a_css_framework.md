@@ -32,7 +32,7 @@ your application completely unusable when the user does not have Javascript,
 when there is an issue downloading the JavaScript, or when there is a bug in the
 Javascript. Bulma has no JavaScript so it does not have that problem.
 
-You can [install](https://bulma.io/documentation/overview/start/) it as an NPM
+You can [install](https://bulma.io/documentation/start/installation/) it as an NPM
 package, load it remotely, download and use the compiled CSS, or download and
 use the source Sass. (That last option is unsupported.)
 
