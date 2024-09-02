@@ -16,5 +16,3 @@ frameworks like asking what benefits for contributors to open source? What are
 the benefits to the sponsors?
 
 <iframe src="https://player.fireside.fm/v2/nERs6yQ-+ZujGiaxI?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
-
-You can learn more about Jen from their [portfolio site](https://jenweber.github.io/portfolio/).
