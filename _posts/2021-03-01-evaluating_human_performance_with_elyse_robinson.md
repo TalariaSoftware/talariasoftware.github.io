@@ -6,8 +6,7 @@ tags: greater_than_code
 ---
 
 I was one of the hosts lucky enough to welcome the fearless Elyse Robinson to
-the Greater than Code podcast [episode
-222](https://www.greaterthancode.com/evaluating-human-performance).
+the Greater than Code podcast episode 222.
 
 Elyse's superpower is her fearlessness which she developed from being driven
 into scary situations.
