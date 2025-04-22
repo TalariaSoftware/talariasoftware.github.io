@@ -176,7 +176,7 @@ regarding the coronavirus pandemic.
 
 In collaboration
 with the office
-of the [CTO of NYC](https://www.nyc.gov/assets/cto/) and [18F](https://18f.gsa.gov),
+of the [CTO of NYC](https://www.nyc.gov/assets/cto/) and [18F](https://en.wikipedia.org/wiki/18F),
 the digital services agency
 of the Federal Government,
 Talaria Software designed, implemented, and deployed an API
