@@ -3,11 +3,11 @@ title: Better Allies with Karen Catlin
 description: Karen Catlin was our guest on Greater than Code
 published_at: 2021-03-09 07:00 -0800
 tags: greater_than_code
+greater_than_code_url: https://www.greaterthancode.com/better-allies 
 ---
 
 I was one of the hosts lucky enough to welcome the insightful Karen Catlin to
-the Greater than Code podcast [episode
-224](https://www.greaterthancode.com/better-allies).
+the Greater than Code podcast episode 224.
 
 Karen's superpower is an ability to simplify broad and complex ideas. She uses
 it to help people become better allies for marginalized people in the workplace.

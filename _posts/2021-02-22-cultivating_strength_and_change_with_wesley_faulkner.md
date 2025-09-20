@@ -3,11 +3,11 @@ title: Cultivating Strength and Change with Wesley Faulkner
 description: Wesley Faulkner was our guest on Greater than Code
 published_at: 2021-02-22 07:00 -0800
 tags: greater_than_code
+greater_than_code_url: https://www.greaterthancode.com/cultivating-strength-and-change
 ---
 
 I was one of the hosts lucky enough to welcome the caring Wesley Faulkner to the
-Greater than Code podcast [episode
-221](https://www.greaterthancode.com/cultivating-strength-and-change).
+Greater than Code podcast episode 221.
 
 Wesley's superpower is connecting with people on a personal level. It's a skill
 he developed from not having a particular group he felt he fit in with.

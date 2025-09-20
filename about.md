@@ -44,7 +44,7 @@ of his local neighborhood council.
 Damien is a frequent guest
 on tech podcasts
 and is a co-host
-on [Greater than Code](https://www.greaterthancode.com/hosts/damien-burke).
+on Greater than Code.
 
 ### Rob Head
 

@@ -3,10 +3,11 @@ title: '"How are you doing?" with Mando Escamilla'
 description: Mando Escamilla was our guest on Greater than Code
 published_at: 2021-02-04 07:00 -0800
 tags: greater_than_code
+greater_than_code_url: https://www.greaterthancode.com/how-are-you-doing
 ---
 
 I was one of the hosts lucky enough to welcome the lovely Mando Escamilla to the
-Greater than Code podcast [episode 219](https://www.greaterthancode.com/how-are-you-doing).
+Greater than Code podcast episode 219.
 
 Mando's superpower is the ability to talk about anything personal with other
 people. He got it during a difficult time in his life when he suddenly could no

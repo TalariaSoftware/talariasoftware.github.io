@@ -3,10 +3,11 @@ title: Reframing the Value of Open Source with Jen Weber
 description: Jen Weber was our guest on Greater than Code
 published_at: 2021-12-20 07:00 -0800
 tags: greater_than_code
+greater_than_code_url: https://www.greaterthancode.com/reframing-the-value-of-open-source
 ---
 
 Arty Starr and I welcomed the brilliant and insightful Jen Weber to the Greater
-than Code podcast [episode 253](https://www.greaterthancode.com/reframing-the-value-of-open-source).
+than Code podcast episode 253.
 
 Their superpower is an ability to visualize how things go well.
 

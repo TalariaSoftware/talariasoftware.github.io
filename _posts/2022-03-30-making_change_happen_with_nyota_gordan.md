@@ -3,11 +3,11 @@ title: Making Change Happen with Nyota Gordan
 description: Nyota Gordan was our guest on Greater than Code
 published_at: 2022-03-14 07:00 -0800
 tags: greater_than_code
+greater_than_code_url: https://www.greaterthancode.com/making-change-happen-why-not-you
 ---
 
 Casey Watts, John Sawers, and I welcomed the insightful and enlightening Nyota
-Gordan to the Greater than Code podcast [episode
-275](https://www.greaterthancode.com/making-change-happen-why-not-you).
+Gordan to the Greater than Code podcast episode 275.
 
 Nyota's superpower is an ability hear what people are saying and make it more
 clear, actionable, and profitable.

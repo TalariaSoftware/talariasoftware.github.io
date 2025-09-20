@@ -3,11 +3,11 @@ title: Connecting Arts and Technology with Marlena Compton
 description: Marlena Compton was our guest on Greater than Code
 published_at: 2021-05-26 07:00 -0800
 tags: greater_than_code
+greater_than_code_url: https://www.greaterthancode.com/connecting-arts-and-technology
 ---
 
 I was one of the hosts lucky enough to welcome the brilliant and insightful
-Marlena Compton to the Greater than Code podcast [episode
-236](https://www.greaterthancode.com/connecting-arts-and-technology).
+Marlena Compton to the Greater than Code podcast episode 236.
 
 Marlena's superpower is bringing the arts to tech.
 

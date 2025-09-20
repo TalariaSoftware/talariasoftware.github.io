@@ -3,10 +3,11 @@ title: Robot and Human Collaboration with Julie Shah
 description: Julie Shah was our guest on Greater than Code
 published_at: 2021-01-21 07:00 -0800
 tags: greater_than_code
+greater_than_code_url: https://www.greaterthancode.com/robot-and-human-collaboration
 ---
 
 I was one of the hosts lucky enough to welcome the insightful Julie Shah to the
-Greater than Code podcast [episode 216](https://www.greaterthancode.com/robot-and-human-collaboration).
+Greater than Code podcast episode 216.
 
 Prof. Shah directs the Interactive Robotics Group in the Schwarzman College of
 Computing at MIT and is an associate dean of social implications and

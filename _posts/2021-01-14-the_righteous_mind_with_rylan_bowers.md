@@ -3,10 +3,11 @@ title: The Righteous Mind with Rylan Bowers
 description: Rylan Bowers was our guest on Greater than Code
 published_at: 2021-01-14 07:00 -0800
 tags: greater_than_code
+greater_than_code_url: https://www.greaterthancode.com/the-righteous-mind
 ---
 
 I was one of the hosts lucky enough to welcome the lovely Ryan Bowers to the
-Greater than Code podcast [episode 214](https://www.greaterthancode.com/the-righteous-mind).
+Greater than Code podcast episode 214.
 
 We discussed ["The Righteous Mind"](https://righteousmind.com) by Jonathan Haidt
 and dug into the nature and origin of morality and moral decision making. This

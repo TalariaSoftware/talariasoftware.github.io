@@ -3,11 +3,11 @@ title: Making Peace and Creating Trust with Brianna McGowen
 description: Brianna McGowen was our guest on Greater than Code
 published_at: 2021-08-05 07:00 -0800
 tags: greater_than_code
+greater_than_code_url: https://www.greaterthancode.com/making-peace-and-creating-trust
 ---
 
 I was one of the hosts lucky enough to welcome the careful and capable
-Brianna McGowen to the Greater than Code podcast [episode
-244](https://www.greaterthancode.com/making-peace-and-creating-trust).
+Brianna McGowen to the Greater than Code podcast episode 244.
 
 Brianna's superpower is her awareness of and physical connection to people's
 feelings.
