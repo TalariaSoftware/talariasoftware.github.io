@@ -16,6 +16,7 @@ task :html_proofer do
     parallel: { in_processes: 3 },
     url_ignore: [
       'http://www.andconf.io/', # Their SSL certificate no longer works
+      'https://unsplash.com/@nshuman1291', # Returns 401 to bot requests
     ]
   }
   proofer = HTMLProofer.check_directory('./_site', options)
