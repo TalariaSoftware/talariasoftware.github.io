@@ -55,7 +55,7 @@ AllCops:
     - node_modules/**/*
 ```
 
-### [Documentation](https://docs.rubocop.org/rubocop/cops_style.html#styledocumentation)
+### [Documentation](https://docs.rubocop.org/rubocop/latest/cops_style.html#styledocumentation)
 
 A combination of clear naming and RSpec specifications obviates the need for
 class documentation blocks.
@@ -65,7 +65,7 @@ Style/Documentation:
   Enabled: false
 ```
 
-### [Argument Alignment](https://docs.rubocop.org/rubocop/cops_layout#layoutargumentalignment)
+### [Argument Alignment](https://docs.rubocop.org/rubocop/latest/cops_layout#layoutargumentalignment)
 
 The default style, `with_first_argument`, wastes too much space.
 
@@ -86,7 +86,7 @@ Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 ```
 
-### [First Array Element Indentation](https://docs.rubocop.org/rubocop/cops_layout#layoutfirstarrayelementindentation)
+### [First Array Element Indentation](https://docs.rubocop.org/rubocop/latest/cops_layout#layoutfirstarrayelementindentation)
 
 <!-- Why -->
 
@@ -95,7 +95,7 @@ Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 ```
 
-### [Hash Alignment](https://docs.rubocop.org/rubocop/cops_layout#layouthashalignment)
+### [Hash Alignment](https://docs.rubocop.org/rubocop/latest/cops_layout#layouthashalignment)
 
 Implicit hashes do not need to be formatted like hashes.
 
@@ -104,7 +104,7 @@ Layout/HashAlignment:
   EnforcedLastArgumentHashStyle: ignore_implicit
 ```
 
-### [Line Length](https://docs.rubocop.org/rubocop/cops_layout#layoutlinelength)
+### [Line Length](https://docs.rubocop.org/rubocop/latest/cops_layout#layoutlinelength)
 
 Cop directives should not need to be under our line length requirements.
 This makes it much easer to apply a cop directive to a single line of code.
@@ -124,7 +124,7 @@ Layout/LineLength:
     - '^\s*# '
 ```
 
-### [Parameter Alignment](https://docs.rubocop.org/rubocop/cops_layout#layoutparameteralignment)
+### [Parameter Alignment](https://docs.rubocop.org/rubocop/latest/cops_layout#layoutparameteralignment)
 
 Similar to argument alignment, the default setting `with_first_parameter` wastes
 too much space.
@@ -134,7 +134,7 @@ Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
 ```
 
-### [Ambiguous Block Association](https://docs.rubocop.org/rubocop/cops_lint#lintambiguousblockassociation)
+### [Ambiguous Block Association](https://docs.rubocop.org/rubocop/latest/cops_lint#lintambiguousblockassociation)
 
 Writing idiomatic RSpec requires violating this rule, so we exclude RSpec files
 from it.
@@ -145,7 +145,7 @@ Lint/AmbiguousBlockAssociation:
     - "**/*_spec.rb"
 ```
 
-### [Block Length](https://docs.rubocop.org/rubocop/cops_metrics#metricsblocklength)
+### [Block Length](https://docs.rubocop.org/rubocop/latest/cops_metrics#metricsblocklength)
 
 Idiomatic RSpec often has very long blocks. There is no harm in configuration
 files having long blocks. So we exclude both of those.
@@ -159,7 +159,7 @@ Metrics/BlockLength:
     - "**/*_spec.rb"
 ```
 
-### [Method Length](https://docs.rubocop.org/rubocop/cops_metrics#metricsmethodlength)
+### [Method Length](https://docs.rubocop.org/rubocop/latest/cops_metrics#metricsmethodlength)
 
 It usually isn't helpful to break up migration methods, so we allow them to get
 as long as they need.
@@ -171,7 +171,7 @@ Metrics/MethodLength:
 
 ```
 
-### [Block Delimiters](https://docs.rubocop.org/rubocop/cops_style#styleblockdelimiters)
+### [Block Delimiters](https://docs.rubocop.org/rubocop/latest/cops_style#styleblockdelimiters)
 
 Use `do`...`end` for a multiline block, unless you are chaining.
 
@@ -190,7 +190,7 @@ Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
 ```
 
-### [Empty Method](https://docs.rubocop.org/rubocop/cops_style#styleemptymethod)
+### [Empty Method](https://docs.rubocop.org/rubocop/latest/cops_style#styleemptymethod)
 
 Empty methods are unlikely to stay empty, so let's make it easy to edit them.
 
@@ -204,7 +204,7 @@ Style/EmptyMethod:
   EnforcedStyle: expanded
 ```
 
-### [Frozen String Literal Comment](https://docs.rubocop.org/rubocop/cops_style#stylefrozenstringliteralcomment)
+### [Frozen String Literal Comment](https://docs.rubocop.org/rubocop/latest/cops_style#stylefrozenstringliteralcomment)
 
 The eventual transition to frozen string literals will not be difficult for a
 codebase with good specs. There is no need to clutter up our files trying to
@@ -215,7 +215,7 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 ```
 
-### [String Literals](https://docs.rubocop.org/rubocop/cops_style#stylestringliterals)
+### [String Literals](https://docs.rubocop.org/rubocop/latest/cops_style#stylestringliterals)
 
 String literals should be double-quoted when interpolated, when they include a
 single-quote character, or when they are natural language texts.
@@ -238,11 +238,11 @@ Style/StringLiterals:
 ### Trailing Commas
 
 Including trailing commas in
-[arguments](https://docs.rubocop.org/rubocop/cops_style#styletrailingcommainarguments),
+[arguments](https://docs.rubocop.org/rubocop/latest/cops_style#styletrailingcommainarguments),
 [array
-literals](https://docs.rubocop.org/rubocop/cops_style#styletrailingcommainarrayliteral),
+literals](https://docs.rubocop.org/rubocop/latest/cops_style#styletrailingcommainarrayliteral),
 and [hash
-literals](https://docs.rubocop.org/rubocop/cops_style#styletrailingcommainhashliteral)
+literals](https://docs.rubocop.org/rubocop/latest/cops_style#styletrailingcommainhashliteral)
 makes it easier to add, remove, and reorder items.
 
 As a bonus, it makes it easier to read Git commits because changing one item
