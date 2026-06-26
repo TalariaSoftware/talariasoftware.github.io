@@ -17,5 +17,3 @@ We discussed how we are all managing the difficult and traumatic time we are
 going through as a society, how we feel about it, and what to do about it.
 
 <iframe src="https://player.fireside.fm/v2/nERs6yQ-+0NcwU7Ey?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
-
-You can hear more from Mando by [finding him on Twitter.](https://twitter.com/mandoescamilla)

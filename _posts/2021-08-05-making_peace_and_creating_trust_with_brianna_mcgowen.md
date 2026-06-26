@@ -19,4 +19,4 @@ confidence intervals, and other non-binary ways of thinking.
 
 <iframe src="https://player.fireside.fm/v2/nERs6yQ-+gnAixZKJ?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
 
-You can learn more about Brianna on [Twitter](https://twitter.com/CodeToMove) of from her [website](https://codetomove.com).
+You can learn more about Brianna from her [website](https://codetomove.com).
